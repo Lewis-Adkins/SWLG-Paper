@@ -1,0 +1,8 @@
+\section{Conclusion}
+\label{sec:conclusion}
+Our goal was to compare the forecasting of a RNN of relativistic electrons to be able to predict incoming protons  thrity minutes to an hour later. Using multiple positional encoding methods we were able to compare our model to a regular NN and RNN model performing the same task
+
+Overall, our results indicate better  reduction in MAE but relatively similar lag and F1 scores, however highly outperforming the forecasting matrix from \cite{posner2007forecasting}. Mirroring \cite{torres2025machine}, transformers have issues with delyaed SEP proton predictions whic leads to yielding poorer recall, precision, and therefore F1 scores. scaling these models with more electron inputs would lead to higher proton prediciton accuracy.
+
+\subsection{Future Work}
+After a baseline comparison of Torres RNN model, a hyper parameterization search can be used to find the model with the highest prediction accuracy. Other inputs to further inform the model such as coronal mass ejections (CME) or  magnetic B fields could also yield a higher prediction accuracy and F1 score. Further investigation of the effects of space weather into the the satellites components is another possibility. This requires satellite specific models to be produced to take in Single Event Upset (SEU) as an input. The main goal is to transfer techiniques developed here towards LEO sats such as GOES with there proton flux data.

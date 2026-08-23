@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+
+\label{tab:f1_comparison}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l cccc cccc}
+\toprule
+& \multicolumn{4}{c}{$t+6$} & \multicolumn{4}{c}{$t+12$} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9}
+Method & W & EW & AW & EAW & W & EW & AW & EAW \\
+\midrule
+Linear Reg   & 0.000 & 0.000 & 0.160 & 0.160 & 0.100 & 0.100 & 0.519 & 0.519 \\
+Zero-Init    & \textbf{0.040} (0.055) & \textbf{0.040} (0.055) & 0.613 (0.078) & 0.613 (0.078) & 0.132 (0.079) & \textbf{0.150} (0.120) & 0.732 (0.075) & 0.716 (0.045) \\
+Sinusoidal   & 0.038 (0.052) & 0.039 (0.053) & 0.632 (0.068) & 0.632 (0.068) & \textbf{0.137} (0.053) & 0.137 (0.053) & \textbf{0.745} (0.091) & \textbf{0.745} (0.091) \\
+RoPE         & 0.036 (0.081) & 0.036 (0.081) & \textbf{0.643} (0.112) & \textbf{0.643} (0.112) & 0.115 (0.079) & 0.115 (0.079) & 0.690 (0.071) & 0.690 (0.071) \\
+\bottomrule
+\end{tabular}%
+}
+
+\caption{Event-detection F1 scores by approach and encoding method, 2-hour alert window (mean $\pm$ std over 5 seeds; Linear Regression is a single deterministic run) No-Phases.}
+\end{table}

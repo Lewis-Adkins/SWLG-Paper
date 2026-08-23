@@ -1,0 +1,95 @@
+\begin{figure}[H]
+    \centering
+    \resizebox{0.6\textwidth}{!}{
+    \begin{tikzpicture}[
+        pebox/.style={
+            draw, rounded corners=2pt, fill=green!25,
+            minimum width=2cm, minimum height=1cm, thick,
+        },
+        mhbox/.style={
+            draw, rounded corners=2pt, fill=red!25,
+            minimum width=3cm, minimum height=1.5cm, thick,
+        },
+        normbox/.style={
+            draw, rounded corners=2pt, fill=orange!25,
+            minimum width=3.0cm, minimum height=.5cm, thick,
+        },
+        feedforwardbox/.style={
+            draw, rounded corners=2pt, fill=violet!25,
+            minimum width=3.0cm, minimum height=1.5cm, thick,
+        },
+        linearbox/.style={
+            draw, rounded corners=2pt, fill=yellow!25,
+            minimum width=3.5cm, minimum height=.5cm, thick,
+        },
+        softmaxbox/.style={
+            draw, rounded corners=2pt, fill=teal!25,
+            minimum width=3.5cm, minimum height=.5cm, thick,
+        },
+        scale = 1
+    ]
+
+        % outer container: the whole encoder block
+
+
+        \node (pe) at (0,-8) {$\bigoplus$};
+        \node[
+            draw,
+            rounded corners=15pt,
+            fill=gray!25,
+            minimum width=6cm,
+            minimum height=8.5cm,
+            thick,
+            above = 20mm of pe,
+        ] (outer){};
+
+        % positional-encoding options, stacked left of pe: RoPE level with pe,
+        % Sinusoidal/Zero-Init symmetric above/below it -- no manual coordinates
+        
+        \node[text= olive, text width = 3 cm, align=center](pe_disclaimer) at (-6,-6){Only one of the positoinal enoders (RoPE, Sin, Zero) are used for each training run }
+        \node[pebox, above left =.5mm and 2cm of pe] (Sinusoidal) {Sinusoidal};
+        \node[pebox, below left =.5mm and 2cm of pe] (Zero-Init) {Zero-Init};
+        \node[mhbox, above=35mm of pe, text width = 2 cm, align=center] (MultiHead) {Multi-Head Attention};
+        \node[normbox, above = 1.5 cm of MultiHead] (norm1){Norm};
+        \node[pebox, left=2cm of MultiHead] (RoPE) {RoPE};
+        \node[
+            draw, rounded corners=5pt, fill=blue!25,
+            minimum width=2cm, minimum height=1cm, thick,
+            below=10mm of pe,
+        ] (Input_Embedding) {Input Embedding};
+        \node[feedforwardbox, above =  5mm of norm1, text width = 2 cm, align=center](FeedForward){Feed Forward};
+        \node[below= 1cm of Input_Embedding, text width = 3cm, align=center](input) {2 hour window of high and low electrons w/ current proton flux};
+        \node[normbox, below = 2cm of MultiHead](norm2){Norm};
+
+
+        \node[align = center] at (-5,-2){$\times 1$ Encoding Layers};
+        \node[above = 5mm of MultiHead] (pe2) {$\bigoplus$};
+        \node[above = 5mm of FeedForward] (pe3) {$\bigoplus$};
+        \node (pe) at (0,-8) {$\bigoplus$};
+        \node[linearbox, above = 8mm of pe3](linear){Linear};
+
+        \draw[->,thick](input.north) -- (Input_Embedding.south);
+        \draw[->, thick, rounded corners=5pt] (Input_Embedding.north) -- (pe.south);
+        \draw[->, thick, rounded corners=5pt] (RoPE.east) -- (MultiHead.west);
+        \draw[->, thick, rounded corners=5pt] (Zero-Init.east) -| ++(5mm,8.55mm) -- (pe.west);
+        \draw[->, thick, rounded corners=5pt] (Sinusoidal.east) -| ++(5mm,-8.55mm) -- (pe.west);
+        \draw[->, thick, rounded corners=5pt] (pe.east) -| ++(15mm,0) |- (pe2.east);
+        \draw[->, thick, rounded corners=5pt] (pe2.east) -| ++(15mm,0) |- (pe3.east);
+        \draw[->, thick, rounded corners=5pt] (norm2.north) |- ++(-7mm,15mm) -| ($(MultiHead.south west) + (5mm,0)$);
+        \draw[->, thick, rounded corners=5pt] (norm2.north) |- ++(7mm,15mm) -| ($(MultiHead.south east) - (5mm,0)$);
+        \draw[->, thick] (norm2.north)  -- (MultiHead.south);
+        \draw[->, thick] (pe.north)  -- (norm2.south);
+        \draw[->,thick](norm1.north) -- (FeedForward.south);
+        \draw[->,thick](FeedForward.north) -- (pe3.south);
+        \draw[->, thick](pe3.north) -- (linear.south);
+        \draw[->, thick , rounded corners=5pt]($(pe)!0.60!(MultiHead)$) -| ++(-25mm, 15mm) |- (norm1.west);
+        \draw[->,thick](MultiHead.north)--(pe2.south);
+        \draw[->, thick](pe2.north)--(norm1.south);
+        \draw[->,thick, text width = 3 cm, align=center](linear.north) -- ++(0,5mm) node[above] {Forecasted proton flux at $t+6$/$t+12$};
+        \path (5,-2); % invisible point, balances the bounding box against the "$\times 1$" label on the left
+    \end{tikzpicture}
+    }
+    \caption{M1- Transformer Architecture with positional encodings}
+    
+    \label{fig:transformer-pe}
+\end{figure}

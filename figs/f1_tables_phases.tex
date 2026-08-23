@@ -1,0 +1,22 @@
+\begin{table}[H]
+\centering
+
+\label{tab:f1_comparison}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l cccc cccc}
+\toprule
+& \multicolumn{4}{c}{$t+6$} & \multicolumn{4}{c}{$t+12$} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9}
+Method & W & EW & AW & EAW & W & EW & AW & EAW \\
+\midrule
+Linear Reg   & 0.348 & 0.364 & 0.562 & 0.581 & 0.250 & 0.261 & 0.706 & 0.788 \\
+Torres M1    & 0.30 & 0.48 & 0.62 & 0.76 & 0.16 & \textbf{0.38} & 0.72 & 0.85 \\
+Posner       & \textbf{0.56} & \textbf{0.69} & 0.59 & 0.67 & \textbf{0.31} & 0.36 & 0.67 & 0.72 \\
+Zero-Init    & 0.309 (0.092) & 0.320 (0.091) & 0.743 (0.055) & 0.761 (0.063) & 0.176 (0.054) & 0.206 (0.040) & 0.782 (0.039) & 0.821 (0.042) \\
+Sinusoidal   & 0.350 (0.099) & 0.365 (0.102) & \textbf{0.806} (0.067) & \textbf{0.829} (0.068) & 0.226 (0.043) & 0.238 (0.043) & \textbf{0.824} (0.024) & \textbf{0.852} (0.025) \\
+\bottomrule
+\end{tabular}%
+}
+
+\caption{Event-detection F1 scores by approach and encoding method, 2-hour alert window (mean $\pm$ std over 5 seeds; Linear Regression, Torres M1, and POSNER are single deterministic runs), Phases.}
+\end{table}
