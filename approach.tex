@@ -1,16 +1,31 @@
 \section{Approach}
 \label{sec:approach}
-We propose \hl{3 or 4} time series transformers of different architectures to forecast proton intensities from preceding relativistic electrons. We use a window of electron and proton intensities to make predictions. Current transformer models have been appealing as to researchers as they have the ability to capture long range dependencies and scale effectively with large dataset. This makes them suitable  for our challenge of  time series forecasting with multi horizon demand predictions.\cite{zhao2026transformersurvey}. we make a selection of transformer models of different architectures to model our incoming proton intensity flux. 
+We propose \hl{3 or 4} time series transformers of different architectures to forecast proton intensities from preceding relativistic electrons. We use a window of electron and proton intensities to make predictions. Current transformer models have been appealing as to researchers as they have the ability to capture long range dependencies and scale effectively with large dataset. This makes them suitable  for our challenge of  time series forecasting with multi horizon demand predictions.\cite{zhao2026transformersurvey}. We make a selection of transformer models of different architectures to model our incoming proton intensity flux. 
 
 Section \ref{sec:input} will discuss the time time series datas and characteristics. Section \ref{sec:m1transformer} outline our transformer approach and compare the architectures with \cite{torres2025machine}. In Section \ref{sec:positionalencodingmethods}, we will explain each of the used archtiectures in our study.
 
 \subsection{Input}
 \label{sec:input}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[scale=.40]{plots/data_overview.png}
+    \caption{SOHO COSTEP-EPHIN dataset from 1995-2002}
+    \label{fig:sinusoidal_t6_comparison}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[scale=.40]{plots/data_overview_single.png}
+    \caption{SOHO COSTEP-EPHIN dataset from 1995-2002}
+    \label{fig:sinusoidal_t6_comparison}
+\end{figure}
+
 The input data  is obtained from the Comprehensive Suprathermal and Energetic Particle Analyzer - Electron Proton Helium Instrument (COSTEP-EPHIN)  on the Solar and Heliospheric Observatory (SOHO) located at Lagrange Point 1 (L1). The main features we will be using to make are proton flux predictions are two electron intensities channels $\geq$0.25 and $\geq$0.67 MeV and the current proton intensity channel $\geq$10 MeV \cite{mullermellin1995costep}. In total, the number of timestamped fluxes is $\approx 600,000$ entries. The resultant proton channel has been integrated across several channels (P4, P8, P25, P41) and interpolated using the power-law spectrum. A peak detection algorithm then sliced each SEP event for storms larger than 10 pfu and timestamped each phase within storm: Onset, threshold, peak, and end. The onset is defined when the flux rises three times the error bar above the pre-event background, the threshold is when the flux first crosses over 10 pfu and the end time is when it drops again below 2 pfu.\cite{torres2025machine}. Each timestamp in our event catalogue is given a bool idicating which phase the flux is in. The proton flux projections are calculated by a 2 hour window of the two electron channels and the proton fluxes and then casted out by both 30 minutes $(t+6)$ and 1 hour $(t+12)$.
 
 \subsection{M1 Transformer}
 \label{sec:m1transformer}
-We name our transfomer "M1 Transformer" after the M1 RNN in \cite{torres2025machine}. RNNs are unreliable for long range forecasting and irregular patterns \cite{zhao2026transformersurvey}. This is prevalent in our particle flux data with long periods of noise with sudden spikes when a storm occurs. Transformers are able to capture these long patterns of behavior with improved predictions with parallel processing while RNNs process only in series. The Transformer attention mechanism is able to analyze all time steps at once and focus on relevant steps regardless of order \cite{vaswani2017attention}.  This method of parallel analytical processing reveals subtle patterns that would be overlooked by RNNs. \cite{zhao2026transformersurvey}. Our transformer will only have an encoding only architecture as we are forecasting one value of proton flux, therefore a single output layer is required only. If we were to predict a series proton fluxes then a decoder would be required.
+We name our transfomer "M1 Transformer" after the M1 RNN in \cite{torres2025machine}. RNNs are unreliable for long range forecasting and irregular patterns \cite{zhao2026transformersurvey}. This is prevalent in our particle flux data with long periods of noise with sudden spikes when a storm occurs. Transformers are able to capture these long patterns of behavior with improved predictions with parallel processing while RNNs process only in series. The Transformer attention mechanism is able to analyze all time steps at once and focus on relevant steps regardless of order \cite{vaswani2017attention}.  This method of parallel analytical processing reveals subtle patterns that would be overlooked by RNNs \cite{zhao2026transformersurvey}. Our transformer will only have an encoding only architecture as we are forecasting one value of proton flux, therefore a single output layer is required only. If we were to predict a series proton fluxes then a decoder would be required.
 
 \input{figs/transformer_architecture.tex}
 
@@ -19,7 +34,7 @@ We must ensure that the total number of parameters of our transformer models (Si
 
 
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \begin{tikzpicture}
 \matrix (tbl) [
@@ -88,14 +103,14 @@ A property of RoPE is long term decay. This means that pairs of tokens at large 
 
 
 \subsubsection{Zero-Initialized}
-Zero-Initialized positional encoding is an absolute positional that sets all  positional encoding parameters in a transformer to zero at the start of training. With a zero or near zero initialization, models on their own learn patterns that are used to make predictions with zero valued starting weights. Zero init contrast Sinusoidal who all have non zero starting weight values. RoPE does not have positional parameters rather computes weights analytically. This makes it reliable for generalization which is ideal for SEP data made almost entirely of background fluxes \cite{torres2025machine}. Commonly, small near zero initializations sampled with normal distributions \eqref{normalDistWeight} were found to perform better than larger ones \cite{ito2024learning}. In this study we use a zero initialized model \eqref{sigmaWeightZero}.;
-\begin{equation}
-\label{normalDistWeight}
-    \mathscr{N} ( \mathbf{0}, \mathbf{\Sigma}), \mathbf{\Sigma} = \sigma\mathbf{I}\\\\
-\end{equation}
-\begin{equation}
-    \label{sigmaWeightZero}
-    \sigma \in \left\{ 0 \right\}
-\end{equation}
+Zero-Initialized positional encoding is an absolute positional that sets all  positional encoding parameters in a transformer to zero at the start of training This means that positon of a timestamped flux has equal effects on each other at the start. then as training continues, near timestamped fluxes learn to correlate to each other rather than further ones. With a zero or near zero initialization, models on their own learn patterns that are used to make predictions with zero valued starting weights. Zero init contrast Sinusoidal who all have non zero starting weight values. RoPE does not have positional parameters rather computes weights analytically. This makes it reliable for generalization which is ideal for SEP data made almost entirely of background fluxes \cite{torres2025machine}. Commonly, small near zero initializations sampled with normal distributions were found to perform better than larger ones \cite{ito2024learning}.
+% \begin{equation}
+% \label{normalDistWeight}
+%     \mathscr{N} ( \mathbf{0}, \mathbf{\Sigma}), \mathbf{\Sigma} = \sigma\mathbf{I}
+% \end{equation}
+% \begin{equation}
+%     \label{sigmaWeightZero}
+%     \sigma \in \left\{ 0 \right\}
+% \end{equation}
 
 Most timestamps in the relatively small proton electron flux dataset are near zero background values. A larger starting weights already has background information included leading to forecasting more background in the future during the early portion of training. Its not until after rounds of epochs to unlearn patterns are to finally map where spikes in fluxes start to occur in order to make accurate predictions.

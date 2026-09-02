@@ -35,7 +35,7 @@ An F1 score evaluates the performance of our forecasting model. The score is cal
     \text{F1} = \frac{2 \times \text{precision} \times \text{recall}}{\text{precision} + \text{recall}}
 \end{equation}.
 \subsubsection{Learning and Evaluation Procedures}
-We do ten randomized 80/20 splits of  our raw particle intensity data into training and test sets chronologically respectively. Each dataset runs 10 models with each seed totaling 100 models for one forecasting time \cite{pastore2021extrapolating} . One of the datasets is the original chronological split that Torres uses where there is 21 SEP identified events in the training set and 18 SEP events in the test set. \citet[Table-1]{torres2025machine}. 
+We do ten randomized 80/20 splits of  our raw particle intensity data into training and test sets chronologically respectively. Each train/test split runs 10 models with each seed totaling 100 models for one forecasting time \cite{pastore2021extrapolating} . One of the train/test split is the original chronological split that Torres uses where there is 21 SEP identified events in the training set and 18 SEP events in the test set. \citeA[Table 1]{torres2025machine}. 
 
 To properly compare our transformer model with RNN and NN models we train the transformer to minimizes loss by the mean square error (MSE) in log space between the target proton intensity and the predicted proton intensity. The output will also be in natural logarithm space \cite{torres2025machine}.
 
@@ -52,16 +52,16 @@ The baseline models are deterministic so we will only report a single run
 
 \subsubsection{Results}
 
-We compare the performance of our models to the different methods offered by Torres for t+6 and t+12 in Figure \ref{fig: Comparison of lag and MAE between Torres and transformer models}. For both t+6 and t+12 we see similar behavior. All models of different architecture (Rope, Sinusoidal, Zero Init) tend to outperform Torres's RNN and NN for MAE at both $t+6$ and $t+12$ Neural network models have more fluctuation in their predictions which can yield larger vertical gaps, particularity when the proton flux is relatively flat or slow rising \cite{torres2025machine}.
+We compare the performance of our models to the different methods offered by Torres for t+6 and t+12 in Figure \ref{fig:mae_lag_comparison}. For both t+6 and t+12 we see similar behavior. All models of different architecture (Rope, Sinusoidal, Zero Init) tend to outperform Torres's RNN and NN for MAE at both $t+6$ and $t+12$ Neural network models have more fluctuation in their predictions which can yield larger vertical gaps, particularity when the proton flux is relatively flat or slow rising \cite{torres2025machine}.
 
 Lag, however, tends to measure larger. Torres explained their lag problem underperformed \cite{posner2007forecasting} forecasting matrix as the method over predicts proton intensity. Reducing the lag in the forecasting was hoped to be solved by a transformer. 
 
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{plots/sin_phases_t6_linear_vs_transformer.png}
     \caption{This image is from real results from my cross validation split of 10 datasets but only for my sin encoded transformer. incomplete but wanted to show this here for now.}
-    \label{fig:my_unique_label}
+    \label{fig:sinusoidal_t6_comparison}
 \end{figure}
 
 \input{figs/mae_lag}

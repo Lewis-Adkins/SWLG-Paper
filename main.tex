@@ -1,36 +1,52 @@
-\documentclass{article}
-\usepackage{graphicx} % Required for inserting images
+\documentclass[draft]{agujournal2025}
 
-\usepackage[skip=10pt plus 2pt, indent=0pt]{parskip}
 \usepackage{amsmath}
 \usepackage{booktabs}
-\usepackage{float}
 \usepackage{tikz}
 \usepackage{mathrsfs}
-\usetikzlibrary{matrix}
 \usepackage{soul}
-\usepackage[colorlinks=true, linkcolor=blue]{hyperref}
-\usepackage{tikz}
-\usetikzlibrary{shapes, positioning, arrows.meta, fit, backgrounds}
-\usetikzlibrary{calc}
-\usepackage{csvsimple}
-\usepackage{longtable}
-\usepackage{natbib}
-\title{Comparative Analysis of Proton Flux Forecasting with a Time Series Transformer}
-\author{Lewis Adkins \\ George Mason University \\ Space Weather Lab Group}
-\date{August 2026}
+\usetikzlibrary{matrix, shapes, positioning, arrows.meta, fit, backgrounds, calc}
 
 \begin{document}
-\maketitle 
+
+\journalname{Space Weather}
+
+\title{Comparative Analysis of Proton Flux Forecasting with a Time Series Transformer}
+
+\authors{Lewis Adkins\affil{1}}
+\affiliation{1}{Space Weather Lab Group, George Mason University}
+
+\authoraddr{Lewis Adkins, Space Weather Lab Group, George Mason University, email: TBD}
+\authorrunninghead{Adkins}
+\titlerunninghead{Comparative Analysis of Proton Flux Forecasting}
+
+\keypoints{TBD}{TBD}{TBD}
+
+\maketitle
+
+\begin{abstract}
+Solar storms are able to cause damage to vulnerable space and ground based platform components. These solar storms consists of many classes of particles such as electrons, protons, alpha particles, heavy nuclei and neutrons. Particles that cause the most damage to equipment are protons  $>$ 10 MeV  colliding with satellites and discharging above the critical charge, $Q_c$, to cause single event upsets (SEUs). An SEU is the process in which a bit flip occurs in the static random access memory unit causing anomalies in data or soft errors. To safeguard against these events we predict solar storms from the Comprehensive Suprathermal and Energetic Particle Analyzer - Electron Proton Helium Instrument (COSTEP-EPHIN) on the Solar and Heliospheric Observatory (SOHO) particle flux channels.  Two  current relativistic electron intensity channels ($>.25$ and $>0.67$) and proton fluxes from solar storms to forecast future proton intensity levels. The dataset spans from December of 1995 to January of 2002 with a 5 minute cadence.  Using particle flux to predict  was previously attempted using a forecasting matrix mapping the Electron Increase Parameter to the electron intensity which would give a heatmap of the proton intensity. With the advent of machine learning, Neural Networks and Recurrent Neural Networks provided better forecasting F1 values than it predecessors. We choose a collection of transformer architectures to evaluate against each previous models and compare against Mean Absolute Error (MAE), lag from onset to peak fluxes, and F1 scores. We demonstrate a reduction in the MAE across all transformer architectures with similar lag values. On average we find improved F1 scores marking a well designed forecasting model. This paper will demonstrate a baseline case to make related predictions on other satellite platforms such as GOES.  
+\begin{plainlanguagesummary}
+TBD.
+\end{plainlanguagesummary}
+\end{abstract}
 
 
+\clearpage
 \input{introduction}
+\clearpage
 \input{related_work}
+\clearpage
 \input{approach}
+\clearpage
 \input{evaluation}
+\clearpage
 \input{conclusion}
 
 
+\clearpage
+\input{declarations}
+
+\clearpage
 \bibliography{references}
-\bibliographystyle{apalike}
 \end{document}
