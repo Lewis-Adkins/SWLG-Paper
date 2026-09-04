@@ -35,7 +35,7 @@ An F1 score evaluates the performance of our forecasting model. The score is cal
     \text{F1} = \frac{2 \times \text{precision} \times \text{recall}}{\text{precision} + \text{recall}}
 \end{equation}.
 \subsubsection{Learning and Evaluation Procedures}
-We do ten randomized 80/20 splits of  our raw particle intensity data into training and test sets chronologically respectively. Each train/test split runs 10 models with each seed totaling 100 models for one forecasting time \cite{pastore2021extrapolating} . One of the train/test split is the original chronological split that Torres uses where there is 21 SEP identified events in the training set and 18 SEP events in the test set. \citeA[Table 1]{torres2025machine}. 
+We do ten randomized 80/20 splits of  our raw particle intensity data into training and test sets chronologically respectively. Each train/test split runs 10 models with each seed totaling 100 models for one forecasting time \cite{pastore2021extrapolating} . the first train/test split (dataset0) is the original chronological split that Torres uses where there is 21 SEP identified events in the training set and 18 SEP events in the test set. \citeA[Table 1]{torres2025machine}. 
 
 To properly compare our transformer model with RNN and NN models we train the transformer to minimizes loss by the mean square error (MSE) in log space between the target proton intensity and the predicted proton intensity. The output will also be in natural logarithm space \cite{torres2025machine}.
 
@@ -64,6 +64,18 @@ Lag, however, tends to measure larger. Torres explained their lag problem underp
     \label{fig:sinusoidal_t6_comparison}
 \end{figure}
 
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{plots/overall_comparison_t+6.png}
+    \caption{Bootstrap of Rope,Sin and Zero init models compared with linear regression  MAE, Lags and Predictive efficiencies with forecasting time of 30 minutes w/ phases TODO add torres nn and rnn}
+    \label{fig:sinusoidal_t6_comparison}
+\end{figure}
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{plots/overall_comparison_t+12.png}
+    \caption{Bootstrap of Rope,Sin and Zero init models compared with linear regression  MAE, Lags and Predictive efficiencies with forecasting time of 60 minutes w/ phases TODO add torres nn and rnn}
+    \label{fig:sinusoidal_t6_comparison}
+\end{figure}
 \input{figs/mae_lag}
 
 % \hl{add phases lag and MAE. possibly table. get rid of chart title}
@@ -73,6 +85,19 @@ Additional evaluations are needed to score our proton intensity predictions. We 
 
 \input{figs/f1_table_no_phases}
 \input{figs/f1_tables_phases}
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{plots/f1_comparison_t+6.png}
+    \caption{Bootstrap of Rope,Sin and Zero init models comparing with linear regression f1 scores 30 minutes w/ phases TODO add torres nn and rnn}
+    \label{fig:sinusoidal_t6_comparison}
+\end{figure}
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{plots/f1_comparison_t+12.png}
+    \caption{Bootstrap of Rope,Sin and Zero init models comparing with linear regression f1 scores 60 minutes w/ phases TODO add torres nn and rnn}
+    \label{fig:sinusoidal_t6_comparison}
+\end{figure}
+\input{figs/mae_lag}
 
 
 
