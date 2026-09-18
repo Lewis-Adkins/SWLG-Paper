@@ -52,7 +52,7 @@ The baseline models are deterministic so we will only report a single run
 
 \subsubsection{Results}
 
-We compare the performance of our models to the different methods offered by Torres for t+6 and t+12 in Figure \ref{fig:mae_lag_comparison}. For both t+6 and t+12 we see similar behavior. All models of different architecture (Rope, Sinusoidal, Zero Init) tend to outperform Torres's RNN and NN for MAE at both $t+6$ and $t+12$ Neural network models have more fluctuation in their predictions which can yield larger vertical gaps, particularity when the proton flux is relatively flat or slow rising \cite{torres2025machine}.
+We compare the performance of our models to the different methods offered by Torres for t+6 and t+12 in Figure \ref{fig:mae_lag_comparison}. For both t+6 and t+12 we see similar behavior. All models of different architecture (Rope, Sinusoidal, Zero Init) slightly outperforms Torres's RNN and NN for MAE at both $t+6$ and $t+12$ Neural network models have more fluctuation in their predictions which can yield larger vertical gaps, particularity when the proton flux is relatively flat or slow rising \cite{torres2025machine}.
 
 Lag, however, tends to measure larger. Torres explained their lag problem underperformed \cite{posner2007forecasting} forecasting matrix as the method over predicts proton intensity. Reducing the lag in the forecasting was hoped to be solved by a transformer. 
 
@@ -83,8 +83,8 @@ Lag, however, tends to measure larger. Torres explained their lag problem underp
 
 Additional evaluations are needed to score our proton intensity predictions. We evaluate our ability to predict protons $>10 \text{ MeV}$ above $10 \text{ pfu}$ (Threshold to Peak). a warning period is defined  as all consecutive timestamps during which the prediction is above the threshold.
 
-\input{figs/f1_table_no_phases}
-\input{figs/f1_tables_phases}
+% \input{figs/f1_table_no_phases}
+% \input{figs/f1_tables_phases}
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{plots/f1_comparison_t+6.png}
