@@ -1,0 +1,23 @@
+\begin{figure}[!htbp]
+\centering
+\begin{tikzpicture}
+\matrix (tbl) [
+    matrix of nodes,
+    nodes={draw, minimum width=3cm, minimum height=0.8cm, anchor=center},
+    row sep=-\pgflinewidth,   % rows/cols share borders instead of doubling them
+    column sep=-\pgflinewidth,
+    column 1/.style={nodes={font=\bfseries}},   % bold first column
+    row 1/.style={nodes={font=\bfseries, fill=gray!20}}  % shaded header row
+]
+{
+    Models              & Parameters \\
+    NN    & 2,311       \\
+    RNN     & 3,181       \\
+    Sinusoidal     & 3,361       \\
+    Zero Init   & 3,761 \\
+    RoPE   & 3,361 \\
+};
+\end{tikzpicture}
+\caption{Model type and their number of total parameters}
+\label{fig:param-table-template}
+\end{figure}

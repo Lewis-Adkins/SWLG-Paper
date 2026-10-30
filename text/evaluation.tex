@@ -1,22 +1,28 @@
 \section{Experimental Evaluation}
 \label{sec:experimentalevaluation}
-We test our models by the ability to forecast proton flux at two horizons: 30 minutes $(t+6)$ and 60 min $(t+12)$. the second task is forecasting the occurrence of SEP events (protons intensity exceeding a threshold) 30 and 60 minutes ahead.
+We measure teh forecasting effectiveness on its abilities to predict the proton flux and if an SEP event occurs 30 (t+6) minutes and (t+12) minutes ahead.
 
 \subsection{Evaluation of SEP Time-Intensity Profile Prediction}
 \subsubsection{Evaluation Criteria}
-\cite{torres2025machine} uses two grading criteria for their models: lag and MAE.
-The intensity models are graded using mean absolute error (MAE). this calculates the absolute difference between the actual and predicted values at each timestamps. We do not care about background noise portion of our so we only evaluate when a rise in proton flux occurs to the peak (onset to peak).
+We compute  mean absolute error (MAE) across all models and their predictions. We sum all errors at each timestep between the true versus predicted proton flux and take the mean.
 
 \begin{align}
-    MAE = \frac{1}{n}\sum |x_{\text{model}}-x_{\text{obs}}|
+    MAE = \frac{1}{n}\sum |x_{\text{pred}}-x_{\text{true}}|
 \end{align}
 
-Lag is another graded feature we are interested in. We want to know whether predictions are on time or too late. we shift our predictions between the onset and peak of each event and test to align with the targets and measuring MAE at each shift. The shift with the lowest MAE is considered the lag.
+We measure the lag time of between the predicted and true proton flux. We shift our predicted protons between the onset and peak of each event align with the true protons and measure MAE at each shift. Once we have the minimum value of MAE we measure the time lag.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth,height=0.25\textheight,keepaspectratio]{figs/4.1.2 Learning and Evaluation Procedure/drawing_bootstrap example.png}
+    \caption{Placeholder: will be replaced with real data showing background chunks and event chunks.}
+    \label{fig:bootstrap_chunking}
+\end{figure}
 
 A third prediction efficiency metric is used as a comparison as well. For a discrete time series as
 
 \begin{align}
-  PE = 1 - \frac{\langle (x_{\text{model}} - x_{\text{obs}})^2\rangle}{\sigma^2_{\text{obs}}}  
+  PE = 1 - \frac{SSR}{SST}
 \end{align}
 
 with $\langle . \rangle$ denoting arithmetic mean, $x_{\text{obs}}$ the observation, $x_{\text{mod}}$ the modeled signal, and $\sigma_{\text{obs}}^2$ as the variance in the observed signal. PE indicated perfect model performance and PE = 0 indicated performance comparable to predicting the arithmetic mean of the observed signal. PE can reach unlimited negative values. \cite{Rastatter2011PE}
@@ -35,8 +41,58 @@ An F1 score evaluates the performance of our forecasting model. The score is cal
     \text{F1} = \frac{2 \times \text{precision} \times \text{recall}}{\text{precision} + \text{recall}}
 \end{equation}.
 \subsubsection{Learning and Evaluation Procedures}
-We do ten randomized 80/20 splits of  our raw particle intensity data into training and test sets chronologically respectively. Each train/test split runs 10 models with each seed totaling 100 models for one forecasting time \cite{pastore2021extrapolating} . the first train/test split (dataset0) is the original chronological split that Torres uses where there is 21 SEP identified events in the training set and 18 SEP events in the test set. \citeA[Table 1]{torres2025machine}. 
 
+In measure variability of our statistics we run ten blocked bootstraps experiments. A block bootstrap partitions the original data and resample the blocks in a shuffled order for a new time series dataset. This is different than a standard bootstrap since we want to preserve the loss of the electron - proton rising patterns necessary to make predictions. 
+
+We first block from $t-36$ before the onset of each event to the end and slice them out. This leaves us with the background data left in the time series.  For this we choose a block size of $n^{1/3}$ where $n$ is the length of our time series data. \cite{bertail2024optimal}. Repeating this process nine times plus our original dataset, $d_0$, we are left with ten total datasets. 
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth,height=0.25\textheight,keepaspectratio]{figs/4.1.2 Learning and Evaluation Procedure/drawing_bootstrap example.png}
+    \caption{Placeholder: will be replaced with real data showing background chunks and event chunks.}
+    \label{fig:bootstrap_chunking}
+\end{figure}
+
+Each dataset is split into training and testing portions with an 80/20 ratio. $d_0$ contains $21$ SEP events in the training split and $18$ in the test split. Bootstrapping randomly switches these events from train or test portions allowing forecasting models learn from all $39$ SEP events rather than $21$. Each machine learning model trains 10 models on each dataset totaling 100 models for one forecasting time lead $(t+6, t+12)$.
+
+For each model and dataset we produce a sample for each metric. we assume a student-t distribution for a  small sample size and unknown variance. we choose a mean estimate for all samples to get a bootstrap estimate $\hat{\theta}$:
+$$
+\begin{align*}
+    \hat{\theta}^* = \frac{1}{n} \sum_i^n \theta_i^*
+\end{align*}
+$$
+
+For each metric measured from a model trained on a dataset we compute the mean bootstrap estimate
+
+$$
+\bar{\theta} = \frac{1}{B}\sum_i^B \hat{\theta}_i^*
+$$
+
+Where $B$ is the number of bootstrap estimates.
+
+We retrieve the bias for the small sample size and the standard error:
+$$
+\begin{align*}
+    S_{\hat{\theta}}^2 &= \frac{1}{B-1} \sum_i^B (\hat{\theta}_i^* - \bar{\theta}^*) ^2\\\\
+    S_{b}^2 &= \frac{1}{B} \sum_i^B (\hat{\theta}_i^* - \bar{\theta}^*) ^2
+\end{align*}
+$$
+
+A bootstrap confidence is calculated with a significance value of $\alpha = .05$:
+$$
+\begin{align*}
+    CI = \left(\bar{\theta} - t_{\alpha/2} \frac{s_\theta}{\sqrt{n}} , \bar{\theta} + t_{\alpha/2} \frac{s_\theta}{\sqrt{n}} \right)
+\end{align*}
+$$
+
+ A Welch -T Test compares the mean performance of each champion model to baseline model.
+ $$
+ \begin{align*}
+     \text{t-stat} = \frac{(\bar{x}_{base} - \bar{x}_\text{champ}) - (\bar{\mu}_{base} - \bar{\mu}_\text{champ})}{\sqrt{\frac{s_{\text{base}}}{n_\text{base}}+\frac{s_{\text{champ}}}{n_\text{champ}}}}
+ \end{align*}
+ $$
+
+\subsubsection{Torres Machine Learning Model}
 To properly compare our transformer model with RNN and NN models we train the transformer to minimizes loss by the mean square error (MSE) in log space between the target proton intensity and the predicted proton intensity. The output will also be in natural logarithm space \cite{torres2025machine}.
 
 To match the RNN and NN, weights are updated using Adam optimizer and we converge if the loss function does not change by more the $10^{-4}$ over 20 iterations. We train five separate models at different seeds $(1-5)$ and average and standard deviation of MAE and lag \cite{torres2025machine}.
