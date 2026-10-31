@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: apacite.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: references.bib
+Warning--entry type for "SOHOCOSTEPEPHINCDFPT1M" isn't style-file defined
+--line 166 of file references.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+You've used 18 entries,
+            6951 wiz_defined-function locations,
+            1391 strings with 15099 characters,
+and the built_in function-call counts, 41513 in all, are:
+= -- 4942
+> -- 380
+< -- 2186
++ -- 2338
+- -- 34
+* -- 2889
+:= -- 7880
+add.period$ -- 69
+call.type$ -- 18
+change.case$ -- 308
+chr.to.int$ -- 0
+cite$ -- 36
+duplicate$ -- 1195
+empty$ -- 1495
+format.name$ -- 706
+if$ -- 7482
+int.to.chr$ -- 0
+int.to.str$ -- 54
+missing$ -- 0
+newline$ -- 500
+num.names$ -- 136
+pop$ -- 549
+preamble$ -- 1
+purify$ -- 73
+quote$ -- 0
+skip$ -- 2513
+stack$ -- 0
+substring$ -- 2496
+swap$ -- 688
+text.length$ -- 48
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 1600
+warning$ -- 0
+while$ -- 242
+width$ -- 0
+write$ -- 654
+(There was 1 warning)
