@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.30)  31 OCT 2026 13:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.30)  31 OCT 2026 15:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2019,28 +2019,48 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26 <./figs/results/true_vs_pred/best_model_counts_phases.png> <./figs/results/true_vs_pred/best_model_counts_nophases.png>]
-Overfull \hbox (13.29333pt too wide) in paragraph at lines 122--126
-[]\OT1/cmr/m/n/10 We test whether each cham-pion is bet-ter than each base-line within ev-ery cat-e-gory, 
+Overfull \hbox (0.65443pt too wide) in paragraph at lines 120--123
+[]\OT1/cmr/m/n/10 We score each model as an alert sys-tem fol-low-ing []Torres et al.[], 2025). An alert 
  []
 
 
-Overfull \hbox (9.65446pt too wide) in paragraph at lines 122--126
-\OT1/cmr/m/n/10 us-ing the one-sided Welch's $\OML/cmm/m/it/10 t$\OT1/cmr/m/n/10 -test []Welch, 1947) on the per-dataset means and the one- 
+Overfull \hbox (15.46017pt too wide) in paragraph at lines 120--123
+\OT1/cmr/m/n/10 be-gins when the pre-dicted pro-ton flux reaches $[](10)$ (10 pfu) and stays on un-til an alert 
  []
 
 
-Overfull \hbox (16.46007pt too wide) in paragraph at lines 122--126
-\OT1/cmr/m/n/10 sided Lev-ene's test with the me-dian cen-tre []Zhou et al.[], 2023) on the per-dataset spread, 
+Overfull \hbox (12.71011pt too wide) in paragraph at lines 120--123
+\OT1/cmr/m/n/10 win-dow has passed af-ter the last pre-dic-tion above the thresh-old. An event caught by an 
  []
 
 
-Overfull \hbox (11.25508pt too wide) in paragraph at lines 122--126
-\OT1/cmr/m/n/10 both at $\OML/cmm/m/it/10  \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05$. For the lags the Welch's $\OML/cmm/m/it/10 t$\OT1/cmr/m/n/10 -test com-pares the dis-tance from zero, $\OMS/cmsy/m/n/10 j[]j$\OT1/cmr/m/n/10 . 
+Overfull \hbox (6.07112pt too wide) in paragraph at lines 120--123
+\OT1/cmr/m/n/10 alert that cov-ers its thresh-old cross-ing is a true pos-i-tive, an event with no such alert is 
  []
 
 
-Overfull \hbox (1.4531pt too wide) in paragraph at lines 122--126
-\OT1/cmr/m/n/10 Re-ject-ing $\OML/cmm/m/it/10 H[]$ \OT1/cmr/m/n/10 means the cham-pion has the bet-ter mean (Welch) or the smaller spread 
+Overfull \hbox (25.54346pt too wide) in paragraph at lines 120--123
+\OT1/cmr/m/n/10 a false neg-a-tive, and an alert that touches no event is a false pos-i-tive. The four ap-proaches 
+ []
+
+
+Overfull \hbox (7.29338pt too wide) in paragraph at lines 120--123
+\OT1/cmr/m/n/10 dif-fer in when an alert starts and how it is ex-tended: W starts the alert at the fore-cast 
+ []
+
+
+Overfull \hbox (6.8768pt too wide) in paragraph at lines 120--123
+\OT1/cmr/m/n/10 tar-get time and ex-tends it only while con-sec-u-tive pre-dic-tions stay above the thresh-old, 
+ []
+
+
+Overfull \hbox (8.15456pt too wide) in paragraph at lines 120--123
+\OT1/cmr/m/n/10 EW also ex-tends it when-ever an-other pre-dic-tion above the thresh-old ar-rives within the 
+ []
+
+
+Overfull \hbox (3.1545pt too wide) in paragraph at lines 120--123
+\OT1/cmr/m/n/10 alert win-dow, AW and EAW are W and EW with the alert start-ing when the fore-cast 
  []
 
 
@@ -2050,43 +2070,159 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27 <./figs/results/true_vs_pred/event_01_phases.png>]
-<figs/results/hypothesis_testing/welch_sin.png, id=143, 685.96275pt x 643.203pt>
-File: figs/results/hypothesis_testing/welch_sin.png Graphic file (type png)
-<use figs/results/hypothesis_testing/welch_sin.png>
-Package pdftex.def Info: figs/results/hypothesis_testing/welch_sin.png  used on input line 129.
-(pdftex.def)             Requested size: 397.48499pt x 372.7145pt.
+<figs/results/f1/f1_approaches_t+6_phases.png, id=143, 469.755pt x 469.755pt>
+File: figs/results/f1/f1_approaches_t+6_phases.png Graphic file (type png)
+<use figs/results/f1/f1_approaches_t+6_phases.png>
+Package pdftex.def Info: figs/results/f1/f1_approaches_t+6_phases.png  used on input line 126.
+(pdftex.def)             Requested size: 337.86465pt x 337.86494pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
-[]\OT1/cmr/bx/n/9 Figure  18. \OT1/cmr/m/n/9 One-sided Welch's $\OML/cmm/m/it/9 t$\OT1/cmr/m/n/9 -test of the si-nu-soidal trans-former against each base-line, for
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\OT1/cmr/bx/n/9 Figure  18. \OT1/cmr/m/n/9 F1 against alert win-dow for the four alert-ing ap-proaches (W, EW, EAW, AW),
+ []
+
+<figs/results/f1/f1_approaches_t+6_nophases.png, id=144, 469.755pt x 469.755pt>
+File: figs/results/f1/f1_approaches_t+6_nophases.png Graphic file (type png)
+<use figs/results/f1/f1_approaches_t+6_nophases.png>
+Package pdftex.def Info: figs/results/f1/f1_approaches_t+6_nophases.png  used on input line 133.
+(pdftex.def)             Requested size: 337.86465pt x 337.86494pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+[]\OT1/cmr/bx/n/9 Figure  19. \OT1/cmr/m/n/9 F1 against alert win-dow for the four alert-ing ap-proaches (W, EW, EAW, AW),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+\OT1/cmr/m/n/9 ($\OML/cmm/m/it/9 t \OT1/cmr/m/n/9 + 6$, no-phases). Each line is the mean over the 10 boot-strap datasets (seeds av-er-aged per
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28 <./figs/results/f1/f1_approaches_t+6_phases.png>]
+<figs/results/f1/f1_approaches_t+12_phases.png, id=149, 469.755pt x 469.755pt>
+File: figs/results/f1/f1_approaches_t+12_phases.png Graphic file (type png)
+<use figs/results/f1/f1_approaches_t+12_phases.png>
+Package pdftex.def Info: figs/results/f1/f1_approaches_t+12_phases.png  used on input line 140.
+(pdftex.def)             Requested size: 337.86465pt x 337.86494pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
+[]\OT1/cmr/bx/n/9 Figure  20. \OT1/cmr/m/n/9 F1 against alert win-dow for the four alert-ing ap-proaches (W, EW, EAW, AW),
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29 <./figs/results/f1/f1_approaches_t+6_nophases.png>]
+<figs/results/f1/f1_approaches_t+12_nophases.png, id=154, 469.755pt x 469.755pt>
+File: figs/results/f1/f1_approaches_t+12_nophases.png Graphic file (type png)
+<use figs/results/f1/f1_approaches_t+12_nophases.png>
+Package pdftex.def Info: figs/results/f1/f1_approaches_t+12_nophases.png  used on input line 147.
+(pdftex.def)             Requested size: 337.86465pt x 337.86494pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\OT1/cmr/bx/n/9 Figure  21. \OT1/cmr/m/n/9 F1 against alert win-dow for the four alert-ing ap-proaches (W, EW, EAW, AW),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\OT1/cmr/m/n/9 ($\OML/cmm/m/it/9 t \OT1/cmr/m/n/9 + 12$, no-phases). Each line is the mean over the 10 boot-strap datasets (seeds av-er-aged per
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30 <./figs/results/f1/f1_approaches_t+12_phases.png>]
+Overfull \hbox (16.09903pt too wide) in paragraph at lines 151--156
+[]\OT1/cmr/m/n/10 For ($\OML/cmm/m/it/10 t \OT1/cmr/m/n/10 + 6$, phases) the high-est F1 of XXXX is from model XXXXXX with ap-proach 
+ []
+
+
+Overfull \hbox (2.46008pt too wide) in paragraph at lines 151--156
+\OT1/cmr/m/n/10 XXX at an alert win-dow of XXX. ($\OML/cmm/m/it/10 t \OT1/cmr/m/n/10 + 6$, no-phases) the high-est F1 was YYY with ap- 
+ []
+
+
+Overfull \hbox (0.88675pt too wide) in paragraph at lines 151--156
+\OT1/cmr/m/n/10 phases) the high-est F1 is WWW with ap-proach WWW. \OT1/cmr/m/it/10 Stuff here on why i think the 
+ []
+
+
+Overfull \hbox (13.30673pt too wide) in paragraph at lines 151--156
+\OT1/cmr/m/it/10 win-ning mod-els and ap-proaches are who they are, and how the F1 changes with the alert 
+ []
+
+
+Overfull \hbox (13.29333pt too wide) in paragraph at lines 160--164
+[]\OT1/cmr/m/n/10 We test whether each cham-pion is bet-ter than each base-line within ev-ery cat-e-gory, 
+ []
+
+
+Overfull \hbox (9.65446pt too wide) in paragraph at lines 160--164
+\OT1/cmr/m/n/10 us-ing the one-sided Welch's $\OML/cmm/m/it/10 t$\OT1/cmr/m/n/10 -test []Welch, 1947) on the per-dataset means and the one- 
+ []
+
+
+Overfull \hbox (16.46007pt too wide) in paragraph at lines 160--164
+\OT1/cmr/m/n/10 sided Lev-ene's test with the me-dian cen-tre []Zhou et al.[], 2023) on the per-dataset spread, 
+ []
+
+
+Overfull \hbox (11.25508pt too wide) in paragraph at lines 160--164
+\OT1/cmr/m/n/10 both at $\OML/cmm/m/it/10  \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05$. For the lags the Welch's $\OML/cmm/m/it/10 t$\OT1/cmr/m/n/10 -test com-pares the dis-tance from zero, $\OMS/cmsy/m/n/10 j[]j$\OT1/cmr/m/n/10 . 
+ []
+
+
+Overfull \hbox (1.4531pt too wide) in paragraph at lines 160--164
+\OT1/cmr/m/n/10 Re-ject-ing $\OML/cmm/m/it/10 H[]$ \OT1/cmr/m/n/10 means the cham-pion has the bet-ter mean (Welch) or the smaller spread 
+ []
+
+[31 <./figs/results/f1/f1_approaches_t+12_nophases.png>]
+<figs/results/hypothesis_testing/welch_sin.png, id=164, 685.96275pt x 643.203pt>
+File: figs/results/hypothesis_testing/welch_sin.png Graphic file (type png)
+<use figs/results/hypothesis_testing/welch_sin.png>
+Package pdftex.def Info: figs/results/hypothesis_testing/welch_sin.png  used on input line 167.
+(pdftex.def)             Requested size: 397.48499pt x 372.7145pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
+[]\OT1/cmr/bx/n/9 Figure  22. \OT1/cmr/m/n/9 One-sided Welch's $\OML/cmm/m/it/9 t$\OT1/cmr/m/n/9 -test of the si-nu-soidal trans-former against each base-line, for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
 \OT1/cmr/m/n/9 ev-ery met-ric and cat-e-gory, on the per-dataset means. Green: $\OML/cmm/m/it/9 H[]$ \OT1/cmr/m/n/9 re-jected (si-nu-soidal trans-former
  []
 
 
-Overfull \hbox (20.96016pt too wide) in paragraph at lines 133--135
+Overfull \hbox (20.96016pt too wide) in paragraph at lines 171--173
 []\OT1/cmr/m/n/10 Against XXXX the si-nu-soidal trans-former has a sig-nif-i-cantly bet-ter mean in XXXX, 
  []
 
 
-Overfull \hbox (14.88751pt too wide) in paragraph at lines 133--135
+Overfull \hbox (14.88751pt too wide) in paragraph at lines 171--173
 \OT1/cmr/m/n/10 while against YYYY it is not sig-nif-i-cantly bet-ter in any met-ric ex-cept YYYY. \OT1/cmr/m/it/10 Stuff here 
  []
 
-<figs/results/hypothesis_testing/levene_sin.png, id=144, 685.96275pt x 643.203pt>
+<figs/results/hypothesis_testing/levene_sin.png, id=165, 685.96275pt x 643.203pt>
 File: figs/results/hypothesis_testing/levene_sin.png Graphic file (type png)
 <use figs/results/hypothesis_testing/levene_sin.png>
-Package pdftex.def Info: figs/results/hypothesis_testing/levene_sin.png  used on input line 138.
+Package pdftex.def Info: figs/results/hypothesis_testing/levene_sin.png  used on input line 176.
 (pdftex.def)             Requested size: 397.48499pt x 372.7145pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
-[]\OT1/cmr/bx/n/9 Figure  19. \OT1/cmr/m/n/9 One-sided Lev-ene's test (me-dian cen-tre) of the si-nu-soidal trans-former against each
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+[]\OT1/cmr/bx/n/9 Figure  23. \OT1/cmr/m/n/9 One-sided Lev-ene's test (me-dian cen-tre) of the si-nu-soidal trans-former against each
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
 \OT1/cmr/m/n/9 base-line, for ev-ery met-ric and cat-e-gory, on the per-dataset val-ues. Green: $\OML/cmm/m/it/9 H[]$ \OT1/cmr/m/n/9 re-jected (si-nu-soidal
  []
 
@@ -2096,27 +2232,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28 <./figs/results/hypothesis_testing/welch_sin.png>])
-Overfull \hbox (30.82127pt too wide) in paragraph at lines 142--42
+ [32 <./figs/results/hypothesis_testing/welch_sin.png>])
+Overfull \hbox (30.82127pt too wide) in paragraph at lines 180--42
 []\OT1/cmr/m/n/10 Against XXXX the si-nu-soidal trans-former has a sig-nif-i-cantly smaller spread in XXXX, 
  []
 
 
-Overfull \hbox (17.6653pt too wide) in paragraph at lines 142--42
+Overfull \hbox (17.6653pt too wide) in paragraph at lines 180--42
 \OT1/cmr/m/n/10 while against YYYY it is not sig-nif-i-cantly tighter in any met-ric ex-cept YYYY. \OT1/cmr/m/it/10 Stuff here 
  []
 
 
-Overfull \hbox (7.80124pt too wide) in paragraph at lines 142--42
+Overfull \hbox (7.80124pt too wide) in paragraph at lines 180--42
 \OT1/cmr/m/it/10 on why the spread of the si-nu-soidal trans-former is or is not smaller than each base-line. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--42
+Underfull \hbox (badness 10000) in paragraph at lines 180--42
  
  []
 
-[29 <./figs/results/hypothesis_testing/levene_sin.png>] (text/conclusion.tex
+[33 <./figs/results/hypothesis_testing/levene_sin.png>] (text/conclusion.tex
 Overfull \hbox (1.57115pt too wide) in paragraph at lines 3--5
 []\OT1/cmr/m/n/10 Our goal was to com-pare the fore-cast-ing of a RNN of rel-a-tivis-tic elec-trons to be 
  []
@@ -2186,9 +2322,9 @@ Overfull \hbox (7.62671pt too wide) in paragraph at lines 10--44
 \OT1/cmr/m/n/10 put. The main goal is to trans-fer te-chiniques de-vel-oped here to-wards LEO sats such as 
  []
 
-[30
+[34
 
-] (text/declarations.tex) [31
+] (text/declarations.tex) [35
 
 ] (main.bbl
 Underfull \hbox (badness 1748) in paragraph at lines 16--31
@@ -2271,7 +2407,7 @@ Underfull \vbox (badness 5862) has occurred while \output is active []
 
 Underfull \vbox (badness 5862) has occurred while \output is active []
 
- [32
+ [36
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 331--339
@@ -2328,7 +2464,7 @@ Underfull \hbox (badness 7888) in paragraph at lines 536--553
 []\OT1/cmr/m/n/10 Zhou, Y., Zhu, Y., & Wong, W. K.  (2023).  Sta-tis-ti-cal tests for ho-mo-gene-ity of 
  []
 
-) [33] (main.aux)
+) [37] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -2347,17 +2483,17 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred when \ifx on line 2 was incomplete) 
 Here is how much of TeX's memory you used:
- 18018 strings out of 467867
- 399019 string characters out of 5418334
- 802554 words of memory out of 5000000
- 46453 multiletter control sequences out of 15000+600000
+ 18050 strings out of 467867
+ 400563 string characters out of 5418334
+ 802654 words of memory out of 5000000
+ 46485 multiletter control sequences out of 15000+600000
  637201 words of font info for 76 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  88i,16n,94p,505b,1031s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (33 pages, 3095979 bytes).
+Output written on main.pdf (37 pages, 3473514 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
+ 279 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

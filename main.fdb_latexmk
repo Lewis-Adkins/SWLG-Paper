@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1793468465.05797 "main.aux" "main.bbl" "main" 1793468470.03061 0
+["bibtex main"] 1793474100.83933 "main.aux" "main.bbl" "main" 1793474106.30829 0
   "./references.bib" 1793456067 8120 f728331b65fc6acb5b5562fd36ea31c9 ""
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374952728 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "main.aux" 1793468469 11886 8c1991bcad185970c1f75791d39cff4f "pdflatex"
+  "main.aux" 1793474105 12310 a9a8bd74b07acfa937a5d6f20ff2ee03 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1793468465.28902 "c:/Users/Lewis/Documents/SWLG-Paper/main.tex" "main.pdf" "main" 1793468470.03141 0
+["pdflatex"] 1793474101.117 "c:/Users/Lewis/Documents/SWLG-Paper/main.tex" "main.pdf" "main" 1793474106.30937 0
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1793386789 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1793386577 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1793386578 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -213,13 +213,17 @@
   "figs/results/bootstrap/pe_bars_grouped.png" 1793467893 45473 bf39f93c8a4e881538df3adc3c9fee33 ""
   "figs/results/bootstrap/pe_boxplot_grouped.png" 1793467892 74389 28bd8d1838007c5cc7a4a5064d4da0d0 ""
   "figs/results/bootstrap/train_time_bars_grouped.png" 1793467021 49792 e02ea54fc028b187952cb25e10966a4b ""
+  "figs/results/f1/f1_approaches_t+12_nophases.png" 1793470121 80257 53cffb19c4e5273e3a2873ac0ea1aff0 ""
+  "figs/results/f1/f1_approaches_t+12_phases.png" 1793470121 109139 1e7e993b161d4130fed60d624347e1e0 ""
+  "figs/results/f1/f1_approaches_t+6_nophases.png" 1793470121 77750 8bf01232e7927c30796e80a0c8711b5a ""
+  "figs/results/f1/f1_approaches_t+6_phases.png" 1793470120 109870 527a4e3f9eccec6e1becdb0cd5f4ebda ""
   "figs/results/hypothesis_testing/levene_sin.png" 1793468310 165932 4a744e8f2522a2d381a104dc3c4c3d09 ""
   "figs/results/hypothesis_testing/welch_sin.png" 1793468310 179146 45197b4d71fc5455b41cae055f74852a ""
   "figs/results/true_vs_pred/best_model_counts_nophases.png" 1793467893 34885 83383746a167fce393e858ad11cf43fc ""
   "figs/results/true_vs_pred/best_model_counts_phases.png" 1793467893 34644 f9ff27a6c44bf6dce5eb73b80ab56364 ""
   "figs/results/true_vs_pred/event_01_phases.png" 1793467893 905683 92e87b5ad2016d0ccff7c07f8bd850fd ""
-  "main.aux" 1793468469 11886 8c1991bcad185970c1f75791d39cff4f "pdflatex"
-  "main.bbl" 1793468465 14834 ad9df939f0e5b66db597697bee48d173 "bibtex main"
+  "main.aux" 1793474105 12310 a9a8bd74b07acfa937a5d6f20ff2ee03 "pdflatex"
+  "main.bbl" 1793474101 14834 ad9df939f0e5b66db597697bee48d173 "bibtex main"
   "main.tex" 1793457840 1147 3a44d2a71b0ef15c49ddc912b485d6bb ""
   "text/abstract.tex" 1793387116 1901 5c2da3170f54abf27b1c9e259de19cab ""
   "text/approach.tex" 1793457658 10490 95b3d66bca25e2026d562ef8d220d53c ""
@@ -229,7 +233,7 @@
   "text/introduction.tex" 1793387037 2922 14ff5d1d20318ea6a66759fd0d709f2d ""
   "text/plain_english_summary.tex" 1793386359 0 d41d8cd98f00b204e9800998ecf8427e ""
   "text/related_work.tex" 1793387037 923 c7a72da1ae9ffd47a707cf813be66c8b ""
-  "text/results.tex" 1793468466 11257 7fa371011afc9e5ff9acf5548610351b ""
+  "text/results.tex" 1793474100 14329 a86d4a2a3ecebd25430b0ca7dad5d131 ""
   (generated)
   "main.aux"
   "main.log"

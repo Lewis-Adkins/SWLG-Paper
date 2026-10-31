@@ -116,6 +116,44 @@ where $N$ is the number of time steps from onset to peak and $\bar{x}$ is the me
     \label{fig:true_vs_pred_event1}
 \end{figure}
 
+\subsubsection{F1}
+We score each model as an alert system following \cite{torres2025machine}. An alert begins when the predicted proton flux reaches $\ln(10)$ (10 pfu) and stays on until an alert window has passed after the last prediction above the threshold.
+An event caught by an alert that covers its threshold crossing is a true positive, an event with no such alert is a false negative, and an alert that touches no event is a false positive.
+The four approaches differ in when an alert starts and how it is extended: W starts the alert at the forecast target time and extends it only while consecutive predictions stay above the threshold, EW also extends it whenever another prediction above the threshold arrives within the alert window, AW and EAW are W and EW with the alert starting when the forecast is issued, $t$ steps earlier.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figs/results/f1/f1_approaches_t+6_phases.png}
+    \caption{F1 against alert window for the four alerting approaches (W, EW, EAW, AW), ($t+6$, phases). Each line is the mean over the 10 bootstrap datasets (seeds averaged per dataset) with a $\pm$ one standard deviation band. Baselines are dashed and champions solid.}
+    \label{fig:f1_t6_phases}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figs/results/f1/f1_approaches_t+6_nophases.png}
+    \caption{F1 against alert window for the four alerting approaches (W, EW, EAW, AW), ($t+6$, no-phases). Each line is the mean over the 10 bootstrap datasets (seeds averaged per dataset) with a $\pm$ one standard deviation band. Baselines are dashed and champions solid.}
+    \label{fig:f1_t6_nophases}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figs/results/f1/f1_approaches_t+12_phases.png}
+    \caption{F1 against alert window for the four alerting approaches (W, EW, EAW, AW), ($t+12$, phases). Each line is the mean over the 10 bootstrap datasets (seeds averaged per dataset) with a $\pm$ one standard deviation band. Baselines are dashed and champions solid.}
+    \label{fig:f1_t12_phases}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figs/results/f1/f1_approaches_t+12_nophases.png}
+    \caption{F1 against alert window for the four alerting approaches (W, EW, EAW, AW), ($t+12$, no-phases). Each line is the mean over the 10 bootstrap datasets (seeds averaged per dataset) with a $\pm$ one standard deviation band. Baselines are dashed and champions solid.}
+    \label{fig:f1_t12_nophases}
+\end{figure}
+For ($t+6$, phases) the highest F1 of XXXX is from model XXXXXX with approach XXX at an alert window of XXX.
+($t+6$, no-phases) the highest F1 was YYY with approach YYY.
+($t+12$, phases) the highest F1 is ZZZ with approach ZZZ.
+($t+12$, no-phases) the highest F1 is WWW with approach WWW.
+\textit{Stuff here on why i think the winning models and approaches are who they are, and how the F1 changes with the alert window.}
+
 
 \subsection{Hypothesis Testing}
 \label{sec:hypothesis_testing}
