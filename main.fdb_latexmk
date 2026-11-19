@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1793474100.83933 "main.aux" "main.bbl" "main" 1793474106.30829 0
-  "./references.bib" 1793456067 8120 f728331b65fc6acb5b5562fd36ea31c9 ""
+["bibtex main"] 1795068689.28334 "main.aux" "main.bbl" "main" 1795069098.05559 0
+  "./references.bib" 1795066804 28948 b72ee339724d2b6234c587f652ccb5cc ""
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374952728 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "main.aux" 1793474105 12310 a9a8bd74b07acfa937a5d6f20ff2ee03 "pdflatex"
+  "main.aux" 1795069097 13142 b1e1248d0f16fafbb050bcfe4f30f1e0 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1793474101.117 "c:/Users/Lewis/Documents/SWLG-Paper/main.tex" "main.pdf" "main" 1793474106.30937 0
+["pdflatex"] 1795069093.40617 "c:/Users/Lewis/Documents/SWLG-Paper/main.tex" "main.pdf" "main" 1795069098.05623 0
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1793386789 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1793386577 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1793386578 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -181,7 +181,7 @@
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/tex/latex/tools/indentfirst.sty" 1761901070 1618 30b01152766afcef2ed8f904cfdd3cc6 ""
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/Lewis/Documents/SWLG-Paper/main.tex" 1793457840 1147 3a44d2a71b0ef15c49ddc912b485d6bb ""
+  "c:/Users/Lewis/Documents/SWLG-Paper/main.tex" 1795053082 1534 fc7f706c71a929c108de08bc0d4d2598 ""
   "figs/agu/agujournal2025.cls" 1793386359 66604 ce017f982165d540863e127a3ff62ac7 ""
   "figs/approach/input/data_overview.png" 1793386359 306931 59c9a9e14947a969c5e224868393531a ""
   "figs/approach/input/data_overview_single.png" 1793386359 382954 ee98a6c39b25f4ef73441f59d9a8340d ""
@@ -222,18 +222,18 @@
   "figs/results/true_vs_pred/best_model_counts_nophases.png" 1793467893 34885 83383746a167fce393e858ad11cf43fc ""
   "figs/results/true_vs_pred/best_model_counts_phases.png" 1793467893 34644 f9ff27a6c44bf6dce5eb73b80ab56364 ""
   "figs/results/true_vs_pred/event_01_phases.png" 1793467893 905683 92e87b5ad2016d0ccff7c07f8bd850fd ""
-  "main.aux" 1793474105 12310 a9a8bd74b07acfa937a5d6f20ff2ee03 "pdflatex"
-  "main.bbl" 1793474101 14834 ad9df939f0e5b66db597697bee48d173 "bibtex main"
-  "main.tex" 1793457840 1147 3a44d2a71b0ef15c49ddc912b485d6bb ""
-  "text/abstract.tex" 1793387116 1901 5c2da3170f54abf27b1c9e259de19cab ""
-  "text/approach.tex" 1793457658 10490 95b3d66bca25e2026d562ef8d220d53c ""
+  "main.aux" 1795069097 13142 b1e1248d0f16fafbb050bcfe4f30f1e0 "pdflatex"
+  "main.bbl" 1795068689 20440 cbde8e50e290e9ee71c9f3e94d8a272d "bibtex main"
+  "main.tex" 1795053082 1534 fc7f706c71a929c108de08bc0d4d2598 ""
+  "text/abstract.tex" 1795052657 20 1dc04139a615819eb415c78705704f15 ""
+  "text/approach.tex" 1795053036 10366 96f5badf1a5f50e286b33345d540a5f5 ""
   "text/conclusion.tex" 1793387116 1455 0ed4e41ce26a3d2b3698ed989cdbec0b ""
   "text/declarations.tex" 1793386359 139 0c7f68174e83522b1703927b5765da18 ""
-  "text/evaluation.tex" 1793457840 7555 13767d0186b2fbf322f67cb6e67c1beb ""
-  "text/introduction.tex" 1793387037 2922 14ff5d1d20318ea6a66759fd0d709f2d ""
+  "text/evaluation.tex" 1795053036 7448 82e78245ff08ac6ade85567d75add6c7 ""
+  "text/introduction.tex" 1795069092 3992 9dd596c8fa407ba11ed0d30ffd990a99 ""
   "text/plain_english_summary.tex" 1793386359 0 d41d8cd98f00b204e9800998ecf8427e ""
   "text/related_work.tex" 1793387037 923 c7a72da1ae9ffd47a707cf813be66c8b ""
-  "text/results.tex" 1793474100 14329 a86d4a2a3ecebd25430b0ca7dad5d131 ""
+  "text/results.tex" 1795053036 14147 90b6d667da66d110d26f41676633e3b9 ""
   (generated)
   "main.aux"
   "main.log"

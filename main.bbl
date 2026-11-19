@@ -1,35 +1,6 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Barak%
-, Reed%
-\BCBL {}\ \BBA {} LaBel%
-}{%
-Barak%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {1999}}%
-}]{%
-barak1999figure}
-\APACinsertmetastar {%
-barak1999figure}%
-\begin{APACrefauthors}%
-Barak, J.%
-, Reed, R\BPBI A.%
-\BCBL {}\ \BBA {} LaBel, K\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1999}{{\APACmonth{12}}}{}.
-\newblock
-{\BBOQ}\APACrefatitle {On the Figure of Merit Model for {SEU} Rate
-  Calculations} {On the figure of merit model for {SEU} rate
-  calculations}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{IEEE Transactions on Nuclear
-  Science}{46}{6}{1504--1510}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Bertail%
 \ \BBA {} Dudek%
 }{%
@@ -94,37 +65,71 @@ Cai, L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Carlton%
-, Morgan%
-, Lohmeyer%
-\BCBL {}\ \BBA {} Cahoy%
+Camporeale%
 }{%
-Carlton%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2018}}%
+Camporeale%
+}{%
+{\protect \APACyear {2019}}%
 }]{%
-carlton2018telemetry}
+Camporeale2019}
 \APACinsertmetastar {%
-carlton2018telemetry}%
+Camporeale2019}%
 \begin{APACrefauthors}%
-Carlton, A.%
-, Morgan, R.%
-, Lohmeyer, W.%
-\BCBL {}\ \BBA {} Cahoy, K.%
+Camporeale, E.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2018}{}{}.
+\APACrefYearMonthDay{2019}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Telemetry Fault-Detection Algorithms: Applications for
-  Spacecraft Monitoring and Space Environment Sensing} {Telemetry
-  fault-detection algorithms: Applications for spacecraft monitoring and space
-  environment sensing}.{\BBCQ}
+{\BBOQ}\APACrefatitle {The Challenge of Machine Learning in Space Weather:
+  Nowcasting and Forecasting} {The challenge of machine learning in space
+  weather: Nowcasting and forecasting}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of Aerospace Information
-  Systems}{15}{5}{239--252}.
+\APACjournalVolNumPages{Space Weather}{17}{8}{1166-1207}.
 \newblock
-\begin{APACrefDOI} \doi{10.2514/1.I010587} \end{APACrefDOI}
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018SW002061}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2018SW002061} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dayeh%
+\ \protect \BOthers {.}}{%
+Dayeh%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+Dayeh2024}
+\APACinsertmetastar {%
+Dayeh2024}%
+\begin{APACrefauthors}%
+Dayeh, M\BPBI A.%
+, Chatterjee, S.%
+, Muñoz-Jaramillo, A.%
+, Moreland, K.%
+, Bain, H\BPBI M.%
+\BCBL {}\ \BBA {} Hart, S\BPBI T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {MEMPSEP-II. Forecasting the Properties of Solar
+  Energetic Particle Events Using a Multivariate Ensemble Approach}
+  {Mempsep-ii. forecasting the properties of solar energetic particle events
+  using a multivariate ensemble approach}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{22}{9}{e2023SW003697}.
+\newblock
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2023SW003697}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{e2023SW003697 2023SW003697}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2023SW003697} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -156,6 +161,37 @@ Delacre, M.%
   Psychology}{30}{1}{92--101}.
 \newblock
 \begin{APACrefDOI} \doi{10.5334/irsp.82} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Eastwood%
+\ \protect \BOthers {.}}{%
+Eastwood%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+eastwood2017economic}
+\APACinsertmetastar {%
+eastwood2017economic}%
+\begin{APACrefauthors}%
+Eastwood, J\BPBI P.%
+, Biffis, E.%
+, Hapgood, M\BPBI A.%
+, Green, L.%
+, Bisi, M\BPBI M.%
+, Bentley, R\BPBI D.%
+\BDBL {}Burnett, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Economic Impact of Space Weather: Where Do We
+  Stand?} {The economic impact of space weather: Where do we stand?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Risk Analysis}{37}{2}{206--218}.
+\newblock
+\begin{APACrefDOI} \doi{10.1111/risa.12765} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -222,35 +258,40 @@ Müller-Mellin, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Noeldeke%
+N{\'u}{\~n}ez%
 \ \protect \BOthers {.}}{%
-Noeldeke%
+N{\'u}{\~n}ez%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
+{\protect \APACyear {2018}}%
 }]{%
-noeldeke2021single}
+nunez2018hesperia}
 \APACinsertmetastar {%
-noeldeke2021single}%
+nunez2018hesperia}%
 \begin{APACrefauthors}%
-Noeldeke, C.%
-, Boettcher, M.%
-, Mohr, U.%
-, Gaisser, S.%
-, Alvarez~Rua, M.%
-, Eickhoff, J.%
-\BDBL {}Varatharajoo, R.%
+N{\'u}{\~n}ez, M.%
+, Klein, K\BHBI L.%
+, Heber, B.%
+, Malandraki, O\BPBI E.%
+, Zucca, P.%
+, Labrens, J.%
+\BDBL {}Pavlos, E.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2021}{}{}.
+\APACrefYearMonthDay{2018}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Single event upset investigations on the ``Flying
-  Laptop'' satellite mission} {Single event upset investigations on the
-  ``flying laptop'' satellite mission}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{HESPERIA} Forecasting Tools: Real-Time and Post-Event}
+  {{HESPERIA} forecasting tools: Real-time and post-event}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Acta Astronautica}{}{}{}.
+\BIn{} O\BPBI E.~Malandraki\ \BBA {} N\BPBI B.~Crosby\ (\BEDS), \APACrefbtitle
+  {Solar Particle Radiation Storms Forecasting and Analysis: The {HESPERIA}
+  {HORIZON} 2020 Project and Beyond} {Solar particle radiation storms
+  forecasting and analysis: The {HESPERIA} {HORIZON} 2020 project and beyond}\
+  (\BVOL~444, \BPGS\ 113--131).
 \newblock
-\begin{APACrefDOI} \doi{10.1016/j.actaastro.2020.12.052} \end{APACrefDOI}
+\APACaddressPublisher{Cham}{Springer}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-319-60051-2_7} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -278,6 +319,45 @@ Posner, A.%
 \APACjournalVolNumPages{Space Weather}{5}{5}{}.
 \newblock
 \begin{APACrefDOI} \doi{10.1029/2006SW000268} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Posner%
+\ \protect \BOthers {.}}{%
+Posner%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+Posner2024}
+\APACinsertmetastar {%
+Posner2024}%
+\begin{APACrefauthors}%
+Posner, A.%
+, Malandraki, O\BPBI E.%
+, Karavolos, M.%
+, Tziotziou, K.%
+, Smanis, F.%
+, Heber, B.%
+\BDBL {}Veldes, G\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {HESPERIA REleASE+: Improving Solar Proton Event
+  Forecasting by Means of Automated Recognition of Type-III Radio Bursts}
+  {Hesperia release+: Improving solar proton event forecasting by means of
+  automated recognition of type-iii radio bursts}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{22}{12}{e2024SW004013}.
+\newblock
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2024SW004013}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{e2024SW004013 2024SW004013}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2024SW004013} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -310,6 +390,33 @@ Rastätter, L.%
 \APACjournalVolNumPages{Space Weather}{9}{4}{S04005}.
 \newblock
 \begin{APACrefDOI} \doi{10.1029/2010SW000617} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Reames%
+}{%
+Reames%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+reames2021solar}
+\APACinsertmetastar {%
+reames2021solar}%
+\begin{APACrefauthors}%
+Reames, D\BPBI V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2021}.
+\newblock
+\APACrefbtitle {Solar Energetic Particles: A Modern Primer on Understanding
+  Sources, Acceleration and Propagation} {Solar energetic particles: A modern
+  primer on understanding sources, acceleration and propagation}\
+  (\PrintOrdinal{2nd}\ \BEd, \BVOL~978).
+\newblock
+\APACaddressPublisher{Cham}{Springer}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-030-66402-2} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -402,36 +509,6 @@ Torres, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Van~Hollebeke%
-, Ma~Sung%
-\BCBL {}\ \BBA {} McDonald%
-}{%
-Van~Hollebeke%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {1975}}%
-}]{%
-vanhollebeke1975variation}
-\APACinsertmetastar {%
-vanhollebeke1975variation}%
-\begin{APACrefauthors}%
-Van~Hollebeke, M\BPBI A\BPBI I.%
-, Ma~Sung, L\BPBI S.%
-\BCBL {}\ \BBA {} McDonald, F\BPBI B.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1975}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {The Variation of Solar Proton Energy Spectra and Size
-  Distribution with Heliolongitude} {The variation of solar proton energy
-  spectra and size distribution with heliolongitude}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Solar Physics}{41}{}{189--223}.
-\newblock
-\begin{APACrefDOI} \doi{10.1007/BF00152967} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Vaswani%
 \ \protect \BOthers {.}}{%
 Vaswani%
@@ -487,6 +564,121 @@ Welch, B\BPBI L.%
 \APACjournalVolNumPages{Biometrika}{34}{1--2}{28--35}.
 \newblock
 \begin{APACrefDOI} \doi{10.1093/biomet/34.1-2.28} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Whitman%
+\ \protect \BOthers {.}}{%
+Whitman%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+whitman2023}
+\APACinsertmetastar {%
+whitman2023}%
+\begin{APACrefauthors}%
+Whitman, K.%
+, Egeland, R.%
+, Richardson, I\BPBI G.%
+, Allison, C.%
+, Quinn, P.%
+, Barzilla, J.%
+\BDBL {}Hosseinzadeh, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Review of Solar Energetic Particle Prediction Models}
+  {Review of solar energetic particle prediction models}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Advances in Space Research}{72}{12}{5161-5242}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.sciencedirect.com/science/article/pii/S0273117722007244}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{COSPAR Space Weather Roadmap 2022-2024: Scientific Research and
+  Applications}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.asr.2022.08.006}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yu%
+\ \protect \BOthers {.}}{%
+Yu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2026}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+yu2026}
+\APACinsertmetastar {%
+yu2026}%
+\begin{APACrefauthors}%
+Yu, Y.%
+, Chen, Y.%
+, Zhao, L.%
+, Whitman, K.%
+, Manchester, W.%
+\BCBL {}\ \BBA {} Gombosi, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2026{\protect \BCnt {1}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Solar Energetic Particle Forecasting With Multi-Task
+  Deep Learning: SEPNET} {Solar energetic particle forecasting with multi-task
+  deep learning: Sepnet}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research: Machine Learning and
+  Computation}{3}{3}{e2026JH001247}.
+\newblock
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2026JH001247}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{e2026JH001247 2026JH001247}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2026JH001247} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yu%
+\ \protect \BOthers {.}}{%
+Yu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2026}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+nunez2022umasep}
+\APACinsertmetastar {%
+nunez2022umasep}%
+\begin{APACrefauthors}%
+Yu, Y.%
+, Chen, Y.%
+, Zhao, L.%
+, Whitman, K.%
+, Manchester, W.%
+\BCBL {}\ \BBA {} Gombosi, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2026{\protect \BCnt {2}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Solar Energetic Particle Forecasting With Multi-Task
+  Deep Learning: SEPNET} {Solar energetic particle forecasting with multi-task
+  deep learning: Sepnet}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research: Machine Learning and
+  Computation}{3}{3}{e2026JH001247}.
+\newblock
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2026JH001247}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{e2026JH001247 2026JH001247}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2026JH001247} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

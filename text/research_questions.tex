@@ -1,0 +1,35 @@
+\section*{Research Questions (Will be deleted in final draft)}
+
+See my research question notes on GitHub: \url{https://github.com/Lewis-Adkins/SWLG/blob/main/SEPTransformerZoo/Research\%20Questions.md}.
+
+\textbf{RQ1}: How does the forecasting performance of deep-learning models compare with statistical
+and other machine-learning approaches in predicting high-energy solar proton flux?
+This replicates Torres et al.\ and compares new transformer models against their RNN and NN.
+Inputs are the same: a 2-hour window of SEP observations used to predict $t+6$ and $t+12$.
+The goal is to establish a baseline of operating conditions and determine whether these models are comparable
+to Torres et al.\ and to other physics-based and statistical models, such as linear regression and Posner.
+The number of parameters for each model was recorded so that all models were of comparable size;
+these are relatively small models.
+
+\textbf{RQ2}: What is the relationship between forecasting performance and the scale of machine-learning models?
+Having obtained an initial reading of how transformers and other models predict protons, we are interested in
+adding complexity to our models by increasing the embedding vector length,
+\texttt{n\_layers}, \texttt{n\_encoding\_layers}, \texttt{dim\_vals}, \texttt{batch\_sizes}, etc.
+We then compare these new high-energy proton predictions to those from RQ1.
+Are improvements or degradations apparent? Do all models improve at the same rate, and across all metrics?
+If skill plateaus, where does that happen and why? Does the added model complexity justify the improvement?
+We need to define ``acceptable improvement.''
+
+\textbf{RQ3}: To what extent does the duration of the historical SEP observational window influence model forecasting performance?
+After choosing new scales for each model at the point where skill score plateaus in RQ2, we look for further improvements.
+So far, models have been trained on only two hours of data. We increase the time window to give the models more context
+on the behavior of SEP electrons and protons before making a prediction.
+Should we still evaluate only $t+6$ and $t+12$? How much additional training time is required?
+Is the change in skill score worth the added context?
+
+\textbf{RQ4}: At what lead time do the models' high-energy proton predictions cross a degradation threshold?
+In the ML community this is referred to as ``length generalization.'' Given a fixed 2-hour SEP window,
+how far into the future can we predict high-energy protons with acceptable accuracy?
+The key question is how to define the ``threshold.'' There are two approaches: the first is statistical,
+using residual analysis; the second, more relevant for CY27, incorporates satellite operator response time.
+Where does each model cross the threshold?

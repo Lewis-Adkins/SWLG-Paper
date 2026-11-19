@@ -1,18 +1,27 @@
 \documentclass[draft]{figs/agu/agujournal2025}
-
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{float}
 \usepackage{tikz}
 \usepackage{mathrsfs}
 \usepackage{soul}
+
 \usetikzlibrary{matrix, shapes, positioning, arrows.meta, fit, backgrounds, calc}
+
+% Fix overfull hboxes: the AGU class leaves \RaggedRightRightskip as a rigid 24pt
+% (no stretch), so ragged-right lines cannot break. Restore stretch and allow
+% emergency stretch for lines with unbreakable \texttt items.
+\AtBeginDocument{%
+  \setlength{\RaggedRightRightskip}{0pt plus 2em}%
+  \RaggedRight
+  \setlength{\emergencystretch}{2em}%
+}
 
 \begin{document}
 
 \journalname{Space Weather}
 
-\title{Comparative Analysis of Proton Flux Forecasting with a Time Series Transformer}
+\title{A Comparative Anlaysis of High Energy Proton Flux Forecasting Measured at Lagrange Point 1 with Time Series Transformers}
 
 \authors{Lewis Adkins\affil{1}}
 \affiliation{1}{Space Weather Lab Group, George Mason University}
@@ -24,7 +33,8 @@
 \keypoints{TBD}{TBD}{TBD}
 
 \maketitle
-
+% \clearpage
+% \input{text/research_questions}
 \clearpage
 \input{text/abstract}
 \clearpage
