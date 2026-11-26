@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1795674360.44557 "main.aux" "main.bbl" "main" 1795674364.68973 0
-  "./references.bib" 1795674270 30315 b313873b100a30b70e5d77cfed5e2a83 ""
+["bibtex main"] 1795711550.32817 "main.aux" "main.bbl" "main" 1795711729.23568 0
+  "./references.bib" 1795711081 31413 e02c02faec92b2a258d994e5fa7e9eab ""
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374952728 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "main.aux" 1795674364 14596 02f5380e174299795a995720a3db968d "pdflatex"
+  "main.aux" 1795711728 14970 ac572f20b2141bc0d4542138b6960012 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1795674360.66549 "c:/Users/Lewis/Documents/SWLG-Paper/main.tex" "main.pdf" "main" 1795674364.69034 0
+["pdflatex"] 1795711724.88708 "c:/Users/Lewis/Documents/SWLG-Paper/main.tex" "main.pdf" "main" 1795711729.23634 0
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1795216271 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1793386577 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1793386578 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -52,6 +52,7 @@
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1247596667 37912 07513ec114ac737ab54cea0152f4424b ""
+  "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1247596666 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1247596667 36094 798f80770b3b148ceedd006d487db67c ""
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -199,12 +200,8 @@
   "figs/approach/transformers/sinusoidal_positional_encoding/equations/cos_positional_encoding.tex" 1795666707 95 673099d2b5d256fcb51a9ae5594eaac0 ""
   "figs/approach/transformers/sinusoidal_positional_encoding/equations/sin_positional_encoding.tex" 1795666707 96 59a37eb5e150a9affd25679c332550c7 ""
   "figs/approach/transformers/transformer_architecture.tex" 1795661049 4718 38fd3a2b3e97d5296a1645a072d3ccfe ""
-  "figs/evaluation/time_intensity_profile/evaluation_criteria/equations/f1.tex" 1793386546 151 b07c22d2dd5ffaf634c0dddd4f10ad03 ""
   "figs/evaluation/time_intensity_profile/evaluation_criteria/equations/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png" 1793460471 98834 9f3bd735e6200b4b684fcf590000f753 ""
-  "figs/evaluation/time_intensity_profile/evaluation_criteria/equations/mae.tex" 1793388075 109 2dc777b6760be6d7aa2e1dd9611ae6e5 ""
-  "figs/evaluation/time_intensity_profile/evaluation_criteria/equations/precision.tex" 1793386546 94 80f4bec354cf96188c2c09feff82315c ""
-  "figs/evaluation/time_intensity_profile/evaluation_criteria/equations/prediction_efficiency.tex" 1793388087 143 d76591f227c13295a0410e9b8206859a ""
-  "figs/evaluation/time_intensity_profile/evaluation_criteria/equations/recall.tex" 1793386546 90 9cc7a3a1142c8d1b37c0e312954e4def ""
+  "figs/evaluation/time_intensity_profile/evaluation_criteria/tables/metrics_table.tex" 1795709146 1521 22ec6e8eb6888095d822da29526859e3 ""
   "figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/bootstrap_estimate.tex" 1793455747 98 0aa529fe70b22403c1251e9905c3ea3e ""
   "figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/bootstrap_stack.png" 1793460470 387883 18c5c3b97cf530da37d466624ea0f507 ""
   "figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/bootstrap_variance.tex" 1793390333 192 5679669de9de037ff0f894e57accffa8 ""
@@ -231,14 +228,14 @@
   "figs/results/true_vs_pred/best_model_counts_nophases.png" 1793467893 34885 83383746a167fce393e858ad11cf43fc ""
   "figs/results/true_vs_pred/best_model_counts_phases.png" 1793467893 34644 f9ff27a6c44bf6dce5eb73b80ab56364 ""
   "figs/results/true_vs_pred/event_01_phases.png" 1793467893 905683 92e87b5ad2016d0ccff7c07f8bd850fd ""
-  "main.aux" 1795674364 14596 02f5380e174299795a995720a3db968d "pdflatex"
-  "main.bbl" 1795674360 23125 ab53addf31ab28e1cf6f995e28c4f7cf "bibtex main"
+  "main.aux" 1795711728 14970 ac572f20b2141bc0d4542138b6960012 "pdflatex"
+  "main.bbl" 1795711550 24712 ccde2e4db4debfe24e76d84fac988cc3 "bibtex main"
   "main.tex" 1795651544 1570 753bb854c3177811f5a50e45d485e480 ""
   "text/abstract.tex" 1795052657 20 1dc04139a615819eb415c78705704f15 ""
-  "text/approach.tex" 1795674356 15322 1d9fa2d53d27bd5218d26508b8aeb28e ""
+  "text/approach.tex" 1795705322 16402 d63ae6ebb6e346eccdbc571bc533a947 ""
   "text/conclusion.tex" 1793387116 1455 0ed4e41ce26a3d2b3698ed989cdbec0b ""
   "text/declarations.tex" 1793386359 139 0c7f68174e83522b1703927b5765da18 ""
-  "text/evaluation.tex" 1795053036 7448 82e78245ff08ac6ade85567d75add6c7 ""
+  "text/evaluation.tex" 1795711724 5733 d600dd9be50d1fc5be2047afa0290ac0 ""
   "text/introduction.tex" 1795069157 3992 9dd596c8fa407ba11ed0d30ffd990a99 ""
   "text/plain_english_summary.tex" 1793386359 0 d41d8cd98f00b204e9800998ecf8427e ""
   "text/related_work.tex" 1793387037 923 c7a72da1ae9ffd47a707cf813be66c8b ""

@@ -1,17 +1,19 @@
 \section{Experimental Evaluation}
 \label{sec:experimentalevaluation}
-We measure teh forecasting effectiveness on its abilities to predict the proton flux and if an SEP event occurs 30 (t+6) minutes and (t+12) minutes ahead.
-
+Two objectives we want to complete in our evaluation process.Predicting the proton flux 30 minutes ($t+6$) and 60 minutes ($t+12$)
+into the future. The other is whether our models can predict the ocurence of sEP events with an advnaced warning system.
 \subsection{Evaluation of SEP Time-Intensity Profile Prediction}
-\subsubsection{Evaluation Criteria}
-We compute  mean absolute error (MAE) across all models and their predictions.
-We sum all errors at each timestep between the true versus predicted proton flux and take the mean.
+\subsubsection{Metrics}
 
-\input{figs/evaluation/time_intensity_profile/evaluation_criteria/equations/mae}
+To quantify the performance of predicting proton flux intensity we use four continuous deterministc variable regression metrics and
+three binary deterministic bianry classification scores \cite{Camporeale2019}. The continuous variable metrics are 
+measured for each event while the bianry classifications over the entire flux dataset. 
 
-We measure the lag time of between the predicted and true proton flux.
+\input{figs/evaluation/time_intensity_profile/evaluation_criteria/tables/metrics_table.tex}
+
+The metrics are standard in time series forecasting benchmarks except for lag, which measures if a preidction is on time, too late or too ealy.
 We shift our predicted protons between the onset and peak of each event align with the true protons and measure MAE at each shift.
-Once we have the minimum value of MAE we measure the time lag.
+Once we have the minimum value of MAE we measure the time lag \cite{torres2025machine}
 
 \begin{figure}[!htbp]
     \centering
@@ -20,23 +22,13 @@ Once we have the minimum value of MAE we measure the time lag.
     \label{fig:lag_event1}
 \end{figure}
 
-prediction efficiency metric is used as a comparison as well. For a discrete time series
-\input{figs/evaluation/time_intensity_profile/evaluation_criteria/equations/prediction_efficiency}
+\subsubsection{Resampled Block Bootstrapping}
 
-$x_{\text{true}}$  is the true proton,  $x_{\text{pred}}$ is the predicted signal, and $\sigma_{\text{true}}^2$ is the variance in the true signal.
-PE $=1$ indicates perfect model performance and PE $= 0$ indicates performance comparable to predicting the arithmetic mean of the true signal.
-PE $<0$ indicates poor predictions where guessing the predicted proton would be more effective.
-\cite{Rastatter2011PE}
+The resample bootstrap is a statistical process that measures the accuracy of our estimated metrics $\hat{\theta}$ with standard
+ $\hat{\sigma}$.  With the standard errors we can then approximate confidence intervals of our unknown parameter $\theta$ \cite{Efron1986}. All metrics are computed with
+ a $95 \%$ confidence interval.
 
-An F1 score evaluates the performance of our forecasting model.
-The score is calculated by arithmetic operations of the number of true positive, false positives, and false negatives the solve into the recall \eqref{recall} and precision \eqref{precision}. the recall and precision values are then used to calculate our final F1 score \eqref{F1}:
-\input{figs/evaluation/time_intensity_profile/evaluation_criteria/equations/recall}
-\input{figs/evaluation/time_intensity_profile/evaluation_criteria/equations/precision}
-\input{figs/evaluation/time_intensity_profile/evaluation_criteria/equations/f1}
-\subsubsection{Learning and Evaluation Procedures}
-
-To measure variability of our statistics we run ten blocked bootstraps experiments.
-A block bootstrap partitions the original data and resample the blocks in a shuffled order for a new time series dataset.
+For a time series, a A block bootstrap partitions the original data and resample the blocks in a shuffled order for a new time series dataset.
 A standard bootstrap samples individual timestamps of the fluxes from the original dataset  causing loss of the electron proton rising patterns 
 necessary to make predictions.
 
@@ -81,19 +73,3 @@ The associated alternative hypothesis tests for each metric is as follows:
 The Welch-T test does not test the variances of the sample metrics \cite{welch1947generalization}. The Levenes test has been used to measure the spread of samples \cite{zhou2023homogeneity}.
 \input{figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/levenes_test.tex}
 
-\subsubsection{Torres Machine Learning Model}
-To properly compare our transformer model with RNN and NN models we train the transformer to minimizes loss by the mean square error (MSE) in log space between the target proton intensity and the predicted proton intensity.
-The output will also be in natural logarithm space \cite{torres2025machine}.
-
-To match the RNN and NN, weights are updated using Adam optimizer and we converge if the loss function does not change by more the $10^{-4}$ over 20 iterations.
-
-
-
-\subsubsection{Baseline Methods Used for Comparison}
-\label{sec: baseline_methods_used_for_comparison}
-A persistent model as a baseline is included in our study. its a simple model in which the predicted proton flux value is the current proton flux value, a nowcast.
-\cite{posner2007forecasting} Forecasting matrix will be compared to as well across the same metrics.
-
-A multi variant linear regression model that reads in  our three channels of particle fluxes will also be used as a baseline for our transformer
-
-Because the models are detrerministic and are seedless they are only ran once per bootstrapped dataset.

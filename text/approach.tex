@@ -30,6 +30,15 @@ $7.8-10$ MeV is performed. The latter channel is determined by the a power law s
 SEP events were then identified for storms larger than 10 proton flux unit (pfu). Each event is partitioned into phases to highlight definable features: Onset, Threhsold, Peak, End.
 The onset is defined when the flux rises three times the error bar above the pre-event background, the threshold is when the flux first crosses over 10 pfu and the end time is when it drops again below 2 pfu.\cite{torres2025machine}.
 
+\subsection{Why Transformers}
+the computaitonal power of a transfomrer can be parelized requireing less operaitons. Long range dependencies can be handled much easier
+with larger winow lengths. Inputs  passes forward and back signals that help to make predictions.
+As the input window length grows, the harder it is to learn long range dpeendencies on RNN and NN modles \cite{zhao2026transformersurvey}. Self Attention could yield more interpretabhle models \cite{vaswani2017attention}.
+NN and RNN scale suboptimally to large datasets compared to transformer models \cite{zhao2026transformersurvey}
+
+Physics based models simulating particle accelration and trnasport processes are omputionatially expensive and with the limited amount of data limited \cite{Camporeale2019} \cite{yu2026} \cite{kasapis2026review}.
+Fruthermore lmiations in forecast timeliness forces a trade off with realism \cite{yu2026}.
+
 \subsection{Transformers}
 \label{sec:transformer}
 
@@ -63,12 +72,12 @@ The number of parameters in a model is proportional to the size of $\mathbf{W_p}
 
 To match parameter size of \cite{torres2025machine} we use $d = 16$. Our transformer models are slighlty larger than the RNN and NN provided by \cite{torres2025machine}. A model size $d=8$ would 
 greatly reduce the models far below the parameter count of RNN and NN.  Table \ref{tab:param-count} provides
-a count of all parameters in each model in this study.
+a count of all parameters in each machin learning model in this study.
 The RNN and NN are implemented  with two layers: One layer is hidden with 30 units and then a second dense single output layer.
 The RNN is comprised of  Gated Recurrent Units (GRU) for its  hidden layers while the NN uses hidden layers.
 The NN model uses the same three channels for 25 timestep intervals.
 The RNN  has the 30 GRU units plus our three channel input \cite{torres2025machine}. 
-
+All models (RNN,NN, transformers) minimize the loss function with mean square error during training.
 \input{figs/approach/transformers/transformer_architecture}
 
 
@@ -192,7 +201,9 @@ $$
 $W^O$ is the output ptojection of the attention layer.
 \label{sec:self-attention}
 
-\subsection{Why Self-Attention (Transformers)}
-the computaitonal power of a transfomrer can be parelized requireing less operaitons. Long range dependencies can be handled much easier
-with larger winow lengths. Inputs  passes forward and back signals that help to make predictions.
-As the input length grows $l$ the harder it is to learn long range dpeendencies. sekf attebtuib ciykd yield more interpretabhle models. \cite{vaswani2017attention} 
+\subsection{Statistical and Empirical Models}
+\label{sec: baseline_methods_used_for_comparison}
+A persistent model as a baseline is included in our study. its a simple nowcast model in which the predicted proton flux value is the current proton flux value.
+\cite{posner2007forecasting} Forecasting matrix will be compared to as well across the same metrics.
+
+A multi variant linear regression model that reads in  our three channels of particle fluxes will also be used as a baseline for our transformer.

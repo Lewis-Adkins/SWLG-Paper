@@ -195,6 +195,37 @@ Eastwood, J\BPBI P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Efron%
+\ \BBA {} Tibshirani%
+}{%
+Efron%
+\ \BBA {} Tibshirani%
+}{%
+{\protect \APACyear {1986}}%
+}]{%
+Efron1986}
+\APACinsertmetastar {%
+Efron1986}%
+\begin{APACrefauthors}%
+Efron, B.%
+\BCBT {}\ \BBA {} Tibshirani, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1986}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Bootstrap Methods for Standard Errors, Confidence
+  Intervals, and Other Measures of Statistical Accuracy} {Bootstrap methods for
+  standard errors, confidence intervals, and other measures of statistical
+  accuracy}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Statistical Science}{1}{1}{54--75}.
+\newblock
+\begin{APACrefURL} [{2026-11-26}]\url{http://www.jstor.org/stable/2245500}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Ito%
 \ \protect \BOthers {.}}{%
 Ito%
@@ -223,6 +254,38 @@ Ito, T.%
 \APACjournalVolNumPages{arXiv preprint arXiv:2406.08272}{}{}{}.
 \newblock
 \begin{APACrefDOI} \doi{10.48550/arXiv.2406.08272} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kasapis%
+\ \protect \BOthers {.}}{%
+Kasapis%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2026}}%
+}]{%
+kasapis2026review}
+\APACinsertmetastar {%
+kasapis2026review}%
+\begin{APACrefauthors}%
+Kasapis, S.%
+, Hosseinzadeh, P.%
+, Whitman, K.%
+, Egeland, R.%
+, Georgoulis, M.%
+, Vourlidas, A.%
+\BDBL {}Benella, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2026}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Review of Machine Learning Models for Solar Energetic
+  Particle Prediction} {Review of machine learning models for solar energetic
+  particle prediction}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:2606.19539}{}{}{}.
+\newblock
+\begin{APACrefDOI} \doi{10.48550/arXiv.2606.19539} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -423,38 +486,6 @@ Posner, A.%
 \APACrefnote{e2024SW004013 2024SW004013}
 \newblock
 \begin{APACrefDOI} \doi{https://doi.org/10.1029/2024SW004013} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Rastätter%
-\ \protect \BOthers {.}}{%
-Rastätter%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2011}}%
-}]{%
-Rastatter2011PE}
-\APACinsertmetastar {%
-Rastatter2011PE}%
-\begin{APACrefauthors}%
-Rastätter, L.%
-, Kuznetsova, M\BPBI M.%
-, Vapirev, A.%
-, Ridley, A.%
-, Wiltberger, M.%
-, Pulkkinen, A.%
-\BDBL {}Singer, H\BPBI J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2011}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Geospace Environment Modeling 2008–2009 Challenge:
-  Geosynchronous magnetic field} {Geospace environment modeling 2008–2009
-  challenge: Geosynchronous magnetic field}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Space Weather}{9}{4}{S04005}.
-\newblock
-\begin{APACrefDOI} \doi{10.1029/2010SW000617} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -813,6 +844,37 @@ Zerveas, G.%
 \APACjournalVolNumPages{arXiv preprint arXiv:2010.02803}{}{}{}.
 \newblock
 \begin{APACrefDOI} \doi{10.48550/arXiv.2010.02803} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zhao%
+\ \protect \BOthers {.}}{%
+Zhao%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2026}}%
+}]{%
+zhao2026transformersurvey}
+\APACinsertmetastar {%
+zhao2026transformersurvey}%
+\begin{APACrefauthors}%
+Zhao, J.%
+, Chu, F.%
+, Xie, L.%
+, Che, Y.%
+, Wu, Y.%
+\BCBL {}\ \BBA {} Burke, A\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2026}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Survey of Transformer Networks for Time Series
+  Forecasting} {A survey of transformer networks for time series
+  forecasting}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Science Review}{60}{}{100883}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.cosrev.2025.100883} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

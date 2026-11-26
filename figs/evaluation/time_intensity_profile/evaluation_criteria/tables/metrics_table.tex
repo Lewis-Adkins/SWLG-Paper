@@ -1,0 +1,22 @@
+\begin{table}[!htbp]
+\centering
+\caption{Evaluation metrics for continuous proton flux prediction and binary SEP event classification. $y_i$ and $\hat{y}_i$ are the true and predicted flux at time step $i$, $\bar{y}$ is the mean true flux, and $N$ is the number of time steps. For lag, $x_i$ and $\hat{x}_i$ are the true and predicted flux within the onset-to-peak window of an event, and $\tau$ is the time shift in 5-minute steps. TP, TN, FP, and FN are the numbers of true positive, true negative, false positive, and false negative event forecasts.}
+\label{tab:metrics}
+\renewcommand{\arraystretch}{2.2}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ll}
+\toprule
+\multicolumn{1}{c}{Continuous variable metrics} & \multicolumn{1}{c}{Binary classification metrics} \\
+\midrule
+$\displaystyle \text{MAE} = \frac{1}{N}\sum_{i=1}^{N} \left| \hat{y}_i - y_i \right|$
+  & $\displaystyle \text{HSS} = \frac{2\left(TP \cdot TN - FN \cdot FP\right)}{(TP + FN)(FN + TN) + (TP + FP)(FP + TN)}$ \\
+$\displaystyle \text{MSE} = \frac{1}{N}\sum_{i=1}^{N} \left( \hat{y}_i - y_i \right)^2$
+  & $\displaystyle \text{TSS} = \frac{TP}{TP + FN} - \frac{FP}{FP + TN}$ \\
+$\displaystyle \text{PE} = 1 - \frac{\sum_{i=1}^{N} \left( \hat{y}_i - y_i \right)^2}{\sum_{i=1}^{N} \left( y_i - \bar{y} \right)^2}$
+  & $\displaystyle \text{F1} = \frac{2\,TP}{2\,TP + FP + FN}$ \\
+$\displaystyle \text{Lag} = \operatorname{arg\,min}_{\tau}\frac{1}{N}\sum_{i=1}^{N} \left| \hat{x}_{i+\tau} - x_i \right|$
+  & \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
