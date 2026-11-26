@@ -226,6 +226,71 @@ Ito, T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Kazemnejad%
+, Padhi%
+, Natesan~Ramamurthy%
+, Das%
+\BCBL {}\ \BBA {} Reddy%
+}{%
+Kazemnejad%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+kazemnejad2023impact}
+\APACinsertmetastar {%
+kazemnejad2023impact}%
+\begin{APACrefauthors}%
+Kazemnejad, A.%
+, Padhi, I.%
+, Natesan~Ramamurthy, K.%
+, Das, P.%
+\BCBL {}\ \BBA {} Reddy, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Impact of Positional Encoding on Length
+  Generalization in Transformers} {The impact of positional encoding on length
+  generalization in transformers}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Advances in Neural Information Processing Systems.}
+  {Advances in neural information processing systems.}
+\newblock
+\begin{APACrefDOI} \doi{10.48550/arXiv.2305.19466} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+K{\"u}hl%
+\ \BBA {} Heber%
+}{%
+K{\"u}hl%
+\ \BBA {} Heber%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+kuhl2019revising}
+\APACinsertmetastar {%
+kuhl2019revising}%
+\begin{APACrefauthors}%
+K{\"u}hl, P.%
+\BCBT {}\ \BBA {} Heber, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Revising More Than 20 Years of {EPHIN} Ion Flux Data---A
+  New Data Product for Space Weather Applications} {Revising more than 20 years
+  of {EPHIN} ion flux data---a new data product for space weather
+  applications}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{17}{1}{84--98}.
+\newblock
+\begin{APACrefDOI} \doi{10.1029/2018SW002114} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Müller-Mellin%
 \ \protect \BOthers {.}}{%
 Müller-Mellin%
@@ -606,6 +671,41 @@ Whitman, K.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Wilkinson%
+, Daughtridge%
+, Stone%
+, Sauer%
+\BCBL {}\ \BBA {} Darling%
+}{%
+Wilkinson%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1991}}%
+}]{%
+wilkinson1991tdrs}
+\APACinsertmetastar {%
+wilkinson1991tdrs}%
+\begin{APACrefauthors}%
+Wilkinson, D\BPBI C.%
+, Daughtridge, S\BPBI C.%
+, Stone, J\BPBI L.%
+, Sauer, H\BPBI H.%
+\BCBL {}\ \BBA {} Darling, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1991}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {TDRS-1 Single Event Upsets and the Effect of the Space
+  Environment} {Tdrs-1 single event upsets and the effect of the space
+  environment}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Transactions on Nuclear
+  Science}{38}{6}{1708--1712}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/23.124166} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Yu%
 \ \protect \BOthers {.}}{%
 Yu%
@@ -682,34 +782,37 @@ Yu, Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Zhao%
+Zerveas%
+, Jayaraman%
+, Patel%
+, Bhamidipaty%
+\BCBL {}\ \BBA {} Eickhoff%
+}{%
+Zerveas%
 \ \protect \BOthers {.}}{%
-Zhao%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2026}}%
+{\protect \APACyear {2020}}%
 }]{%
-zhao2026transformersurvey}
+zerveas2020transformer}
 \APACinsertmetastar {%
-zhao2026transformersurvey}%
+zerveas2020transformer}%
 \begin{APACrefauthors}%
-Zhao, J.%
-, Chu, F.%
-, Xie, L.%
-, Che, Y.%
-, Wu, Y.%
-\BCBL {}\ \BBA {} Burke, A\BPBI F.%
+Zerveas, G.%
+, Jayaraman, S.%
+, Patel, D.%
+, Bhamidipaty, A.%
+\BCBL {}\ \BBA {} Eickhoff, C.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2026}{}{}.
+\APACrefYearMonthDay{2020}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {A Survey of Transformer Networks for Time Series
-  Forecasting} {A survey of transformer networks for time series
-  forecasting}.{\BBCQ}
+{\BBOQ}\APACrefatitle {A Transformer-based Framework for Multivariate Time
+  Series Representation Learning} {A transformer-based framework for
+  multivariate time series representation learning}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Computer Science Review}{60}{}{100883}.
+\APACjournalVolNumPages{arXiv preprint arXiv:2010.02803}{}{}{}.
 \newblock
-\begin{APACrefDOI} \doi{10.1016/j.cosrev.2025.100883} \end{APACrefDOI}
+\begin{APACrefDOI} \doi{10.48550/arXiv.2010.02803} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

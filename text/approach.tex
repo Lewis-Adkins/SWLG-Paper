@@ -1,121 +1,198 @@
 \section{Approach}
 \label{sec:approach}
-We propose seven time series transformers of different architectures to forecast proton intensities from preceding relativistic electrons.
-A transformer is a deep learning architecture that was first introduced in 2017 \cite{vaswani2017attention} as an improvement to previous machine learning models.
-We test this by using a window of electron and proton intensities to make future proton predictions.
-Current transformer models have been appealing as to researchers as they have the ability to capture long range dependencies and scale effectively with large dataset.
-This makes them suitable  for our challenge of  time series forecasting with multi horizon demand predictions.\cite{zhao2026transformersurvey}.
-We make a selection of transformer models of different architectures to model our incoming proton intensity flux. 
+SEP events are comprised of high energy particles such as protons, electrons and alpha particles, with protons being the highest risk to space and ground based infrastructure \cite{wilkinson1991tdrs}.
+At 1 AU, relativistic electrons experience less scattering than protons when traveling to earth. Because of this, an early wanring forecast model can be created that only uses preceding
+relativistc electrons to warn us of high energy protons \cite{posner2007forecasting}, \cite{torres2025machine}.  A time series of raw particle channels from COSTEP is used for forecasting using time series transformers.
+We build a series of transformer models with different encoding architectures that captures the correlation of proton and electron intensity
+using multiple methods.
 
-Section \ref{sec:input} will discuss the time time series dates and characteristics.
-Section \ref{sec:transformer} outline our transformer approach and compare the architectures with \cite{torres2025machine}.
-In Section \ref{sec:positionalencodingmethods}, we will explain each of the used architectures in our study.
+In Section \ref{sec:input} we discuss the particle time series and the instrument. Section \ref{sec:transformer} provides an explantion of what transformers are and they differ
+to previous machine learning models. \ref{sec:positionalencodingmethods} justifies the chosen positional encodings architectures.
 
 \subsection{Input}
 \label{sec:input}
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=\textwidth]{figs/approach/input/data_overview_single.png}
+    \includegraphics[width=\textwidth]{figs/approach/input/flux_series.png}
     \caption{SOHO COSTEP-EPHIN dataset from 1995-2002}
     \label{fig:data_overview_single}
 \end{figure}
 
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{figs/approach/input/data_overview.png}
-    \caption{SOHO COSTEP-EPHIN dataset from 1995-2002}
-    \label{fig:data_overview}
-\end{figure}
+The particle channel data are obtained from the Comprehensive Suprathermal and Energetic Particle Analyzer - Electron Proton Helium Instrument (COSTEP-EPHIN)  on the Solar and Heliospheric Observatory (SOHO). SOHO first launched on December 2nd 1995 to take in situ of energy depostion and particle acceleration in the solar atmosphere \cite{SOHOCOSTEPEPHINCDFPT1M}.
+SOHO orbits between the earth and sun around Lagrange Point 1 (L1), which is approximately 1.5 million kilometers from earth. L1 is an ideal location 
+for space weather isntrumetns as any satelltie situatued there enjoys an uninteruppted view of the sun.
+The EPHIN instirments switched to failure mode that reduced the energy ranges it was able to read on October of 1996 \cite{kuhl2019revising}.
+\cite{torres2025machine} provides a dataset of 39 SEP identified events using the particle data recorded by COSTEP-EPHIN. Two relatavistic electron intensities channels $\geq$0.25 and $\geq$0.67 MeV \cite{mullermellin1995costep} are the precursors for our incoming protons. Proton channels are seperated into four energy channels (P4,P8,P25, P41) each corresponding to  different energy ranges.
+Proton channel P4 corresponds to the energy range $4.3 - 7.8 \text{ MeV}$, P8 corresponds with $7.8-25 - 7.8 \text{ MeV}$,  P25 corresponds with  $25 - 40.9 \text{ MeV}$, and P41 corresponds with $40.9 - 53 - 7.8 \text{ MeV}$. To retreive a $>10$ MeV proton flux channel, a sum of the energy integrated fluxes P8,P25, and P41 channels minus the range
+$7.8-10$ MeV is performed. The latter channel is determined by the a power law spectrum  interpolation of the first two channels, P4 and P8, differential fluxes and their mean energies \cite{torres2025machine}.
 
-The input data  is obtained from the Comprehensive Suprathermal and Energetic Particle Analyzer - Electron Proton Helium Instrument (COSTEP-EPHIN)  on the Solar and Heliospheric Observatory (SOHO) located at Lagrange Point 1 (L1) \cite{SOHOCOSTEPEPHINCDFPT1M}.
-The main features we will be using to make are proton flux predictions are two electron intensities channels $\geq$0.25 and $\geq$0.67 MeV and the current proton intensity channel $\geq$10 MeV \cite{mullermellin1995costep}.
-In total, the number of timestamped fluxes is $\approx 600,000$ entries.
-The resultant proton channel has been integrated across several channels and interpolated using the power-law spectrum.
-Each channel corresponds to a range of proton energies.
-Proton channel P4 corresponds to the energy range $4.3 - 7.8 \text{ MeV}$, P8 corresponds with $7.8-25 - 7.8 \text{ MeV}$,  P25 corresponds with  $25 - 40.9 \text{ MeV}$, and P41 corresponds with $40.9 - 53 - 7.8 \text{ MeV}$  A peak detection algorithm then sliced each SEP event for storms larger than 10 proton flux unit ,(pfu), and timestamped each phase within storm: Onset, threshold, peak, and end.
+SEP events were then identified for storms larger than 10 proton flux unit (pfu). Each event is partitioned into phases to highlight definable features: Onset, Threhsold, Peak, End.
 The onset is defined when the flux rises three times the error bar above the pre-event background, the threshold is when the flux first crosses over 10 pfu and the end time is when it drops again below 2 pfu.\cite{torres2025machine}.
-Each timestamp in our event catalog is given a bool indicating which phase the flux is in.
-The proton flux projections are calculated by a 2 hour window of the two electron channels and the proton fluxes and then casted out by both 30 minutes $(t+6)$ and 1 hour $(t+12)$.
 
 \subsection{Transformers}
 \label{sec:transformer}
-Recurrent Neural Networks (RNN)s are unreliable for long range forecasting and irregular patterns \cite{zhao2026transformersurvey}.
-This is prevalent in our particle flux data with long periods of noise with sudden flux spikes when a storm occurs.
-The transformer architecture allows for capturing long patterns of behavior with improved predictions with parallel processing while RNNs process only in series.
-The Transformer attention mechanism is able to analyze all time steps at once and focus on relevant steps regardless of order \cite{vaswani2017attention}.
-This method of parallel analytical processing reveals subtle patterns that would be overlooked by RNNs \cite{zhao2026transformersurvey}.
-Our transformer will only have an encoding only architecture as we are forecasting one value of proton flux, therefore a single output layer is required only.
-If we were to predict a series proton fluxes then a decoder would be required.
 
-\input{figs/approach/transformers/transformer_architecture}
+The original transformer is comprised of encoder-decoder stacks with built in self attention modules that translates inputs $\mathbf{X}$ into vectors $\mathbf{Z}$,
+identifies correlations and relationships, and outputs a sequence of predictions $\mathbf{Y}$. The encoder stack handles the $\mathbf{X \rightarrow Z}$ transformations while the decoder  handles $\mathbf{Z \rightarrow Y}$ \cite{vaswani2017attention}.
+Because we are only predicting a singular timestamp of proton flux in the future, we drop our decoder stacks as its purpose is to gneerate a sequence of 
+outputs from $\mathbf{Y}$ rather than one value \cite{vaswani2017attention}.
 
-We want to avoid creating transformers that are larger than the provided models by \cite{torres2025machine} for our comparative analysis as it would lead to false improved scores.
-We measure the size of the models by counting the number of parameters within it.
-Parameters are the weights and biases inside a model whose values are learned form the trained data.
-If we increase the the number of parameters, the model is able to learn more complex relationships but with computation cost and the risk of overfitting.
+For our time series data, we use two hours of historical particle flux data of our two electron channels and $>10$ MeV proton channel. The magnitude in differences of fluxes between our channels  is large enough to cause 
+unstable trianing and testing therefore we apply a $\log$ transformation to the entire dataset, resulting compressing the mean and  variance on the same scale. The standard method is to 
+subtract by the mean and divide by the standard deviation, a process called "standardization". To ensure our NN and RNN
+align with \cite{torres2025machine} model results, the prior method is selected instead. 
+
+We set $t$ to indicate present time. Becasue of the cadence of 5 minutes,
+ $t - 25$ timestamps creates twenty-four 5-min intervals of particle flux forming a window of inputs before and including the current time. For each window, we define an input sample:
+$$
+\mathbf{X} \in \mathbb{R}^{l \times v} = \mathbb{R}^{25 \times 3}
+$$
+where $l$ is the length of the input window and $v$ is the number of variates. A processes that translates our particle fluxes at each timestep into transformer
+readable vecotrs, embedding, is calculated by:
+$$
+\mathbf{
+U} = \mathbf{XW_p}^T + \mathbf{1b_p}^T, \mathbf{1} \in \mathbb{R}^{l \times 1}
+$$
+$\mathbf{W_p} \in \mathbb{R}^{d \times v}$ and $\mathbf{b_p} \in \mathbb{R}^{d}$ are weighted and bias vectors respectively. They are initialized randomly at the start of training and then used to compute $\mathbf{U} \in \mathbb{R}^{l \times d}$.
+After every training cycle, these vectors  updates and learn to optimize minimizing loss, error.
+$d$  is the dimension of the embedding vector that represents our inputs. For large $d$, inputs are characterized at a higher resoltution allowing  models to learn finer grain patterns at the cost of compuational power and risk of overfitting. 
+The number of parameters in a model is proportional to the size of $\mathbf{W_p}$ and $\mathbf{b_p}$ \cite{vaswani2017attention} \cite{zerveas2020transformer}
+
+\input{figs/approach/transformers/parameter_count}
+
+To match parameter size of \cite{torres2025machine} we use $d = 16$. Our transformer models are slighlty larger than the RNN and NN provided by \cite{torres2025machine}. A model size $d=8$ would 
+greatly reduce the models far below the parameter count of RNN and NN.  Table \ref{tab:param-count} provides
+a count of all parameters in each model in this study.
 The RNN and NN are implemented  with two layers: One layer is hidden with 30 units and then a second dense single output layer.
 The RNN is comprised of  Gated Recurrent Units (GRU) for its  hidden layers while the NN uses hidden layers.
 The NN model uses the same three channels for 25 timestep intervals.
 The RNN  has the 30 GRU units plus our three channel input \cite{torres2025machine}. 
 
+\input{figs/approach/transformers/transformer_architecture}
 
-\input{figs/approach/transformers/parameter_count}
-
-
-The $+2$ in the RNN calculation is to reflect Keras' $\texttt{reset\_after = True}$ GRU parameterization
 
 \subsection{Positional Encoding Methods}
 \label{sec:positionalencodingmethods}
-RNN models read in data sequentially as they train, learning order inherently.
-Transformers, however, lack this ability due to parallelization in the processing and require positional encoding methods to order the tokens.
-In this study, we will be showcasing four positional encoding methods to forecast our SEP events: Sinusoidal, Rotary Positional Encoding (RoPE), Zero-Init.
-These approaches injections the positional information differently and results in varied SEP prediction accuracy.
+
+Transformer models computes updates in $\mathbf{W_p}$ and $\mathbf{b_p}$ in parallel. This allows for large input sequences
+to be read at the same time without "forgetting" related timestamps that are far apart from eachother in the window.  
+Any reshuffling of the vectors that make  up $\mathbf{U}$ has no effect on the the update calculation. 
+Additional positional information must be injected to bring  context to our input window \cite{vaswani2017attention}.
+For all input vectors $\mathbf{u_w}$ we add a $\mathbf{w_{\text{pos}, w}}$:
+$$
+\mathbf{U' = U + W_{\text{pos}}} , \mathbf{W_\text{pos}} \in \mathbb{R}^{l \times d}
+$$
+RNNs and NNs in contrast, reads the inputs sequentially learning order inherently.
+
+The particle flux dataset is small, therefore different positional encoding (PE) could effect predictions.
+PE is said to be a major factor in "length generalization", ability to extrapolate effectively  large sequences of events
+from smaller training context windows. Transformers without PE outperform those with explicit PE methods \cite{kazemnejad2023impact}. 
+
 
 \subsubsection{Sinusoidal Positional Encoding}
+\label{sec:sinusoidalPE}
 Sinusoidal positional encoding was first introduced in the original proposed transformer architecture paper \cite{vaswani2017attention}.
-It is an absolute position encoding method that uses $\sin$ and $\cos$ functions of different frequencies to encode the positional indexes of tokens in a sequence.
-For each token, a vector of dimension \texttt{dim\_val} is given. each token vector is determined by the position they are in, in a sequence and the length of the vector.
-Odd and even indexes in the vector are determined by \eqref{cosPE} and \eqref{sinPE} respectively.
-Both \eqref{cosPE} and \eqref{sinPE} are used rather than just \eqref{sinPE} because we can represent a linear relationship between two encoded positions.
-Once these tokens have their positional indexes the attention block computes their own QKV matrices allowing for predictions to occur.
+It is an absolute position encoding method that uses sinusoidal and cosine functions of different frequencies to encode the positional indexes of tokens in a sequence.
+The input window is split into smaller chunks called tokens. For each token, a vector of dimension, $d$ is generated. The vector is determined by the position, $pos$, in the window and the length of the vector, $d$.
+$i$ is the dimension of the PE vector. Odd and even indexes in the vector are determined by \eqref{cosPE} and \eqref{sinPE} respectively. This gives us a new vector $\mathbf{w_\text{pos}} \in \mathbb{R}^{l \times 1}$.
+\eqref{sinPE} and \eqref{cosPE} to represent a linear relationship between two encoded positions.
 
 \input{figs/approach/transformers/sinusoidal_positional_encoding/equations/sin_positional_encoding}
 
 \input{figs/approach/transformers/sinusoidal_positional_encoding/equations/cos_positional_encoding}
 
- The frequency of the $\sin$ and $\cos$ functions decreases exponentially by a scale factor as the position in the model dimensions increase.
- For short term we can find fine grain details in data, a $\sin/\cos$ function with a high frequency.
+ The frequency decreases exponentially by a scale factor as the position in the model dimensions increase.
+ Similarly stated in Section \ref{sec:transformer}, in the short term we can map small patterns in data, a $\sin/\cos$ function with a high frequency.
  At large vector indexes the frequency greatly decreases, taking on a more linear relationship.
- The sin and cos functions keep all values tokenized values within a range of [-1,1] which is easy for the transformer to understand eliminating the need for standardization.
- The positions are encoded uniquely based on value and position, allowing it to scale to unlimited sequence lengths. 
+ The positions are encoded uniquely based on value and position, allowing it to scale to unlimited sequence lengths. \cite{vaswani2017attention}
 
 \subsubsection{Rotary Positional Embedding}
-Rotary Positional Embedding (RoPE) is a relative positional embedding method that encodes the  relative positions of embedded vectors to the dot product of two rotated vectors.
-The rotation of the vectors is determined by their order in the sequence.
-The relative positions are then used for self attention formulation \cite{su2021roformer}.
-The rotated embedded vector is the product of the rotation matrix, query-key weight matrix and our input vector:
 
-\input{figs/approach/transformers/rotary_positional_embedding/equations/rope_matrix}
+Rotary Positional Embedding (RoPE) is a PE method that stores the poistion infomration of a token,$m$ in a squence
+in the total rotation of that query-key vectors by some angle $\theta_i$. The rotation amount is calculated by:
+$$
+\theta_i = 10000^{-2(i-1)/d}, \left\{i \in \mathbb{Z} \Bigg| 1 \leq i \leq \frac{d}{2}\right\}
+$$
+The rotation matrix is then applied to the token:
+$$
+r_{\theta_i} =  
+\begin{bmatrix} 
+\cos (m\theta_i) & -\sin (m\theta_i)  \\
+\sin (m\theta_i) & \cos (m\theta_i )
+\end{bmatrix}
+$$
+To generalize we stack our rotation values $\Theta = [\theta_1, ..., \theta_{d/2}]$ form the rotary matrix:
 
-in 2D coordinates.
-A simple rotation of the word embedding vector by an angle multiple of its position index is the main idea behind Rotary Position Embedding \cite{su2021roformer}.
+\begin{equation}
+\mathbf{R}^{d}_{\Theta,m} =
+\begin{pmatrix}
+r_{\theta_1} & \mathbf{0} & \cdots & \mathbf{0} \\
+\mathbf{0} & r_{\theta_2} & \cdots & \mathbf{0} \\
+\vdots & \vdots & \ddots & \vdots \\
+\mathbf{0} & \mathbf{0} & \cdots & r_{\theta_{d/2}}
+\end{pmatrix}
+= \operatorname{diag}\!\left(r_{\theta_1}, r_{\theta_2}, \dots, r_{\theta_{d/2}}\right)
+\end{equation}
+where each $\mathbf{0}$ is a $2 \times 2$ block of zeros, so $\mathbf{R}^{d}_{\Theta,m} \in \mathbb{R}^{d \times d}$.
+
+Unlike Section \ref{sec:sinusoidalPE} and Section \ref{sec:ZeroPE}, the transformations are applied
+directly to the self attention block as illustrated in \ref{fig:transformer-pe}, see Section \ref{sec:self-attention}.
+The attention weight between two query-key in a sequence, $\mathbf{q}_m^T \mathbf{k}_n$, where $n$ is the position of the key vector,
+is:
+\begin{equation}
+    \mathbf{q}_m^T \mathbf{k}_n = \mathbf{x}^T\mathbf{W}_q\mathbf{R}_{\Theta, n-m}^d \mathbf{W}_k\mathbf{x}_n
+\end{equation}
+where $ \mathbf{R}_{\Theta, n-m}^d = (\mathbf{R}_{\Theta, m}^d)^T \mathbf{R}_{\Theta, n}^d$.
 
 A property of RoPE is long term decay.
-This means that pairs of tokens at large relative distance will have less connection than those that are close to each other \cite{su2021roformer}.
+This means that pairs of query-key at large relative distance will have less connection than those that are close to each other \cite{su2021roformer}.
 For our flux data, this would coincide with the idea from \cite{posner2007forecasting} that only a short term forecasting of relativistic electrons is required to accurately predict future proton storms from 30 minutes to an hour. 
 
-
 \subsubsection{Zero-Initialized}
-Zero-Initialized positional encoding is an absolute positional that sets all  positional encoding parameters in a transformer to zero at the start of training This means that positon of a timestamped flux has equal effects on each other at the start. then as training continues, near timestamped fluxes learn to correlate to each other rather than further ones.
-With a zero or near zero initialization, models on their own learn patterns that are used to make predictions with zero valued starting weights.
+\label{sec:ZeroPE}
+Zero-Initialized positional encoding is another absolute positional that sets all  positional encoding parameters in a transformer to zero at the start of training. Positions of a timestamped flux has equal effects on each other at the start. As training continues, near timestamped fluxes learn to correlate to each other rather than further ones.
 Zero init contrast Sinusoidal who all have non zero starting weight values.
-RoPE does not have positional parameters rather computes weights analytically.
 This makes it reliable for generalization which is ideal for SEP data made almost entirely of background fluxes \cite{torres2025machine}.
-Commonly, small near zero initializations sampled with normal distributions were found to perform better than larger ones \cite{ito2024learning}.
+Small near zero initializations sampled with normal distributions were found to perform better than larger ones \cite{ito2024learning}.
 
 Most timestamps in the relatively small proton electron flux dataset are near zero background values.
 A larger starting weights already has background information included leading to forecasting more background in the future during the early portion of training.
-Its not until after rounds of epochs to unlearn patterns are to finally map where spikes in fluxes start to occur in order to make accurate predictions.
+Its not until after rounds of epochs the model unlearns patterns to map rising phases in fluxes occur to make accurate predictions.
 
-\subsection{Auto-Gluon}
+% \subsection{Auto-Gluon}
+% Recurrent Neural Networks (RNN)s are unreliable for long range forecasting and irregular patterns \cite{zhao2026transformersurvey}.
+% This is prevalent in our particle flux data with long periods of noise with sudden flux spikes when a storm occurs.
+% The transformer architecture allows for capturing long patterns of behavior with improved predictions with parallel processing while RNNs process only in series.
+% The Transformer attention mechanism is able to analyze all time steps at once and focus on relevant steps regardless of order \cite{vaswani2017attention}.
+% This method of parallel analytical processing reveals subtle patterns that would be overlooked by RNNs \cite{zhao2026transformersurvey}.
+% Our transformer will only have an encoding only architecture as we are forecasting one value of proton flux, therefore a single output layer is required only.
+% If we were to predict a series proton fluxes then a decoder would be required.
+
+
+\subsection{Self-Attention}
+After computing our new input vectors with added PE, it can be fed into our multihead attention block.
+To do this we first have to define our $QKV$ matrices. Randomly initialized weighted matrices $W_i^{QKV} \in \mathbb{R}^{d \times d_k}$ are procured.
+$d_k  =d/h$ where $h$ is the number of heads. Our $QKV$ matrices are therefore:
+
+\begin{align*}
+    Q = U'W_i^Q\\
+    K = U' W_i^K\\
+    V = U'W_i^V
+\end{align*}
+
+where $i$ is the index of the head. For Multihead:
+$$
+\text{MultiHead}(Q,K,V) = \text{Concat}(\text{head}_i)W^O
+$$
+and
+$$
+\text{head}_i = \text{softmax}\left(\frac{Q^TK}{\sqrt{d_k}}\right)V
+$$
+$W^O$ is the output ptojection of the attention layer.
+\label{sec:self-attention}
+
+\subsection{Why Self-Attention (Transformers)}
+the computaitonal power of a transfomrer can be parelized requireing less operaitons. Long range dependencies can be handled much easier
+with larger winow lengths. Inputs  passes forward and back signals that help to make predictions.
+As the input length grows $l$ the harder it is to learn long range dpeendencies. sekf attebtuib ciykd yield more interpretabhle models. \cite{vaswani2017attention} 

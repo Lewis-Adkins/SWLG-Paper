@@ -17,45 +17,45 @@ Database file #1: references.bib
 Warning--entry type for "SOHOCOSTEPEPHINCDFPT1M" isn't style-file defined
 --line 192 of file references.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 23 entries,
+You've used 26 entries,
             6951 wiz_defined-function locations,
-            1436 strings with 19357 characters,
-and the built_in function-call counts, 54787 in all, are:
-= -- 6524
-> -- 519
-< -- 2820
-+ -- 3077
-- -- 45
-* -- 3833
-:= -- 10147
-add.period$ -- 88
-call.type$ -- 23
-change.case$ -- 408
+            1451 strings with 20041 characters,
+and the built_in function-call counts, 61924 in all, are:
+= -- 7396
+> -- 587
+< -- 3194
++ -- 3473
+- -- 51
+* -- 4310
+:= -- 11462
+add.period$ -- 102
+call.type$ -- 26
+change.case$ -- 460
 chr.to.int$ -- 0
-cite$ -- 46
-duplicate$ -- 1691
-empty$ -- 2009
-format.name$ -- 971
-if$ -- 9935
+cite$ -- 52
+duplicate$ -- 1884
+empty$ -- 2255
+format.name$ -- 1091
+if$ -- 11241
 int.to.chr$ -- 0
-int.to.str$ -- 73
+int.to.str$ -- 82
 missing$ -- 0
-newline$ -- 665
-num.names$ -- 178
-pop$ -- 725
+newline$ -- 759
+num.names$ -- 202
+pop$ -- 848
 preamble$ -- 1
-purify$ -- 91
+purify$ -- 103
 quote$ -- 0
-skip$ -- 3301
+skip$ -- 3732
 stack$ -- 0
-substring$ -- 3324
-swap$ -- 977
-text.length$ -- 70
+substring$ -- 3738
+swap$ -- 1082
+text.length$ -- 76
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 2064
+type$ -- 2368
 warning$ -- 0
-while$ -- 327
+while$ -- 365
 width$ -- 0
-write$ -- 854
+write$ -- 983
 (There was 1 warning)
