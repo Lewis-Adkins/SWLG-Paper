@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.30)  27 NOV 2026 00:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.30)  27 NOV 2026 14:55
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Lewis/Documents/SWLG-Paper/main.tex
-(c:/Users/Lewis/Documents/SWLG-Paper/main.tex
+**./main.tex
+(main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (figs/agu/agujournal2025.cls
@@ -17,29 +16,36 @@ ELSE not published
 
 (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen148
 \Gin@req@width=\dimen149
 ) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -52,16 +58,20 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
 Package: lineno 2026/03/08 line numbers on paragraphs v5.9
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count275
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
 \linenopenalty=\count276
@@ -78,9 +88,11 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 \bframerule=\dimen153
 \bframesep=\dimen154
 \bframebox=\box53
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \CenteringLeftskip=\skip49
 \RaggedLeftLeftskip=\skip50
@@ -96,9 +108,11 @@ Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \RaggedLeftParindent=\skip60
 \RaggedRightParindent=\skip61
 \JustifyingParindent=\skip62
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
 Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count283
@@ -119,7 +133,8 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \belowcaptionskip=\skip66
 \c@appendnum=\count292
 \bibindent=\dimen155
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/apacite\apacite.sty
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/apacite\apacite.sty
 Package: apacite 2013/07/21 v6.03 APA citation
 \c@BibCnt=\count293
 \bibleftmargin=\skip67
@@ -127,21 +142,25 @@ Package: apacite 2013/07/21 v6.03 APA citation
 \bibparsep=\skip69
 \bibitemsep=\skip70
 \biblabelsep=\skip71
-)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip72
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
 \ex@=\dimen156
-)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen157
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count294
@@ -193,7 +212,8 @@ LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 )
 \@LN@amsmath@ams@eqpen=\count306
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen165
 \lightrulewidth=\dimen166
@@ -212,29 +232,52 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count309
 \@lastruleclass=\count310
 \@thisrulewidth=\dimen177
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count311
 \float@exts=\toks25
 \float@box=\box57
 \@float@everytoks=\toks26
 \@floatcapt=\box58
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
 \pgfutil@everybye=\toks27
 \pgfutil@tempdima=\dimen178
 \pgfutil@tempdimb=\dimen179
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
 \pgfutil@abb=\box59
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
 Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
 \pgfkeys@pathtoks=\toks28
 \pgfkeys@temptoks=\toks29
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks30
 ))
 \pgf@x=\dimen180
@@ -257,32 +300,76 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \t@pgf@tokb=\toks32
 \t@pgf@tokc=\toks33
 \pgf@sys@id@count=\count316
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
 File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
-))) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+)))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfsyssoftpath@smallbuffer@items=\count317
 \pgfsyssoftpath@bigbuffer@items=\count318
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
 \pgfmath@dimen=\dimen190
 \pgfmath@count=\count319
 \pgfmath@box=\box60
 \pgfmath@toks=\toks34
 \pgfmath@stack@operand=\toks35
 \pgfmath@stack@operation=\toks36
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
 \c@pgfmathroundto@lastzeros=\count320
-)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picminx=\dimen191
 \pgf@picmaxx=\dimen192
@@ -298,75 +385,130 @@ File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@yy=\dimen258
 \pgf@zx=\dimen259
 \pgf@zy=\dimen260
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@path@lastx=\dimen261
 \pgf@path@lasty=\dimen262
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@shorten@end@additional=\dimen263
 \pgf@shorten@start@additional=\dimen264
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box61
 \pgf@hbox=\box62
 \pgf@layerbox@main=\box63
 \pgf@picture@serial@count=\count321
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgflinewidth=\dimen265
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@pt@x=\dimen266
 \pgf@pt@y=\dimen267
 \pgf@pt@temp=\dimen268
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
 File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
 File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfarrowsep=\dimen269
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen270
 \pgf@sys@shading@range@num=\count322
 \pgf@shadingcount=\count323
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfexternal@startupbox=\box64
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
 File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
 File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
 File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
 File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+)))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodeparttextbox=\box65
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
 File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@nodesepstart=\dimen271
 \pgf@nodesepend=\dimen272
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
 Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
-)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen273
 \pgffor@skip=\dimen274
 \pgffor@stack=\toks37
 \pgffor@toks=\toks38
-)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@plot@mark@count=\count324
 \pgfplotmarksize=\dimen275
@@ -387,21 +529,28 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikznumberofchildren=\count326
 \tikznumberofcurrentchild=\count327
 \tikz@fig@count=\count328
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfmatrixcurrentrow=\count329
 \pgfmatrixcurrentcolumn=\count330
 \pgf@matrix@numberofcolumns=\count331
 )
 \tikz@expandcount=\count332
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.sty
+)))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup4
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
 Package: soul 2026-03-06 v3.2 Permit use of UTF-8 characters in soul (HO)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul-ori.sty
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul-ori.sty
 Package: soul-ori 2026-03-06 v3.2 letterspacing/underlining (mf)
 \SOUL@word=\toks39
 \SOUL@lasttoken=\toks40
@@ -423,84 +572,146 @@ Package: soul-ori 2026-03-06 v3.2 letterspacing/underlining (mf)
 \SOUL@ttwidth=\dimen290
 \SOUL@uldp=\dimen291
 \SOUL@ulht=\dimen292
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-))) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+)))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarymatrix.code.tex
+)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.st
+y
+Package: colortbl 2026/05/01 v1.0l Color table columns (DPC)
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen293
+\ar@mcellbox=\box70
+\extrarowheight=\dimen294
+\NC@list=\toks45
+\extratabsurround=\skip76
+\backup@length=\skip77
+\ar@cellbox=\box71
+)
+\everycr=\toks46
+\minrowclearance=\skip78
+\rownum=\count337
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.code.tex
 File: tikzlibraryshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.misc.code.tex
+))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.misc.code.tex
 File: tikzlibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code.tex
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.misc.code.tex
 File: pgflibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.symbols.code.tex
+))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.symbols.code.tex
 File: tikzlibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols.code.tex
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.symbols.code.tex
 File: pgflibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.arrows.code.tex
+))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.arrows.code.tex
 File: tikzlibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.code.tex
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.arrows.code.tex
 File: pgflibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.callouts.code.tex (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts.code.tex)) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex
+))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.callouts.code.tex
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.callouts.code.tex))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.multipart.code.tex
 File: tikzlibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfnodepartlowerbox=\box70
-\pgfnodeparttwobox=\box71
-\pgfnodepartthreebox=\box72
-\pgfnodepartfourbox=\box73
-\pgfnodeparttwentybox=\box74
-\pgfnodepartnineteenbox=\box75
-\pgfnodeparteighteenbox=\box76
-\pgfnodepartseventeenbox=\box77
-\pgfnodepartsixteenbox=\box78
-\pgfnodepartfifteenbox=\box79
-\pgfnodepartfourteenbox=\box80
-\pgfnodepartthirteenbox=\box81
-\pgfnodeparttwelvebox=\box82
-\pgfnodepartelevenbox=\box83
-\pgfnodeparttenbox=\box84
-\pgfnodepartninebox=\box85
-\pgfnodeparteightbox=\box86
-\pgfnodepartsevenbox=\box87
-\pgfnodepartsixbox=\box88
-\pgfnodepartfivebox=\box89
-))) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+\pgfnodepartlowerbox=\box72
+\pgfnodeparttwobox=\box73
+\pgfnodepartthreebox=\box74
+\pgfnodepartfourbox=\box75
+\pgfnodeparttwentybox=\box76
+\pgfnodepartnineteenbox=\box77
+\pgfnodeparteighteenbox=\box78
+\pgfnodepartseventeenbox=\box79
+\pgfnodepartsixteenbox=\box80
+\pgfnodepartfifteenbox=\box81
+\pgfnodepartfourteenbox=\box82
+\pgfnodepartthirteenbox=\box83
+\pgfnodeparttwelvebox=\box84
+\pgfnodepartelevenbox=\box85
+\pgfnodeparttenbox=\box86
+\pgfnodepartninebox=\box87
+\pgfnodeparteightbox=\box88
+\pgfnodepartsevenbox=\box89
+\pgfnodepartsixbox=\box90
+\pgfnodepartfivebox=\box91
+)))
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowinset=\dimen293
-\pgfarrowlength=\dimen294
-\pgfarrowwidth=\dimen295
-\pgfarrowlinewidth=\dimen296
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfit.code.tex
+\pgfarrowinset=\dimen295
+\pgfarrowlength=\dimen296
+\pgfarrowwidth=\dimen297
+\pgfarrowlinewidth=\dimen298
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryfit.code.tex
 File: tikzlibraryfit.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybackgrounds.code.tex
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@layerbox@background=\box90
-\pgf@layerboxsaved@background=\box91
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
+\pgf@layerbox@background=\box92
+\pgf@layerboxsaved@background=\box93
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count337
+\l__color_backend_stack_int=\count338
 ) (main.aux)
 \openout1 = `main.aux'.
 
@@ -518,41 +729,55 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
-\scratchdimen=\dimen297
-\scratchbox=\box92
-\nofMPsegments=\count339
-\nofMParguments=\count340
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count341
-\MPscratchDim=\dimen298
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
-\everyMPtoPDFconversion=\toks46
-) (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+\scratchcounter=\count339
+\scratchdimen=\dimen299
+\scratchbox=\box94
+\nofMPsegments=\count340
+\nofMParguments=\count341
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count342
+\MPscratchDim=\dimen300
+\MPnumerator=\count343
+\makeMPintoPDFobject=\count344
+\everyMPtoPDFconversion=\toks48
+)
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@maskedRefs=\count344
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/apacite\english.apc
+\c@maskedRefs=\count345
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/apacite\english.apc
 File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 28.
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 28
+.
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
- (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+
+
+(C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
@@ -563,150 +788,231 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.5> not available
 (Font)              size <10.95> substituted on input line 35.
 
-[1{C:/Users/Lewis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (text/abstract.tex) [2
+[1{C:/Users/Lewis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+(text/abstract.tex) [2
 
 ] (text/plain_english_summary.tex) (text/introduction.tex [3
 
 
 ]) [4] (text/related_work.tex) [5
 
-] (text/approach.tex
-<figs/approach/input/flux_series.png, id=31, 405.4347pt x 160.6803pt>
+] [6] (text/approach.tex
+<figs/approach/input/flux_series.png, id=34, 405.4347pt x 160.6803pt>
 File: figs/approach/input/flux_series.png Graphic file (type png)
 <use figs/approach/input/flux_series.png>
-Package pdftex.def Info: figs/approach/input/flux_series.png  used on input line 17.
+Package pdftex.def Info: figs/approach/input/flux_series.png  used on input lin
+e 17.
 (pdftex.def)             Requested size: 397.48499pt x 157.53917pt.
- [6
+ [7
 
- <./figs/approach/input/flux_series.png>] [7] (figs/approach/transformers/parameter_count.tex [8]) (figs/approach/transformers/transformer_architecture.tex
+ <./figs/approach/input/flux_series.png>] [8] (figs/approach/transformers/param
+eter_count.tex)
+(figs/approach/transformers/transformer_architecture.tex
 Underfull \hbox (badness 10000) in paragraph at lines 92--92
-[]\OT1/cmr/bx/n/9 Figure  2. \OT1/cmr/m/n/9 Generic trans-former ar-chi-tec-ture where po-si-tional en-codign meth-ods are in-di-cated
+[]\OT1/cmr/bx/n/9 Figure  2. \OT1/cmr/m/n/9 Generic trans-former ar-chi-tec-tur
+e where po-si-tional en-cod-ing meth-ods are in-di-cated
  []
 
-) [9] [10] (figs/approach/positional_encoding_methods/sinusoidal_positional_encoding/sin_positional_encoding.tex) (figs/approach/positional_encoding_methods/sinusoidal_positional_encoding/cos_positional_encoding.tex) [11] [12]) [13] (text/evaluation.tex (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/metrics_table.tex
+[9]) [10] [11]
+(figs/approach/positional_encoding_methods/sinusoidal_positional_encoding/sin_p
+ositional_encoding.tex)
+(figs/approach/positional_encoding_methods/sinusoidal_positional_encoding/cos_p
+ositional_encoding.tex) [12] [13]) [14] [15] (text/evaluation.tex
+(figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/me
+trics_table.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--3
-[]\OT1/cmr/bx/n/9 Table 2. \OT1/cmr/m/n/9 Eval-u-a-tion met-rics for con-tin-u-ous pro-ton flux pre-dic-tion and bi-nary SEP event clas-si-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--3
-\OT1/cmr/m/n/9 fi-ca-tion. $\OML/cmm/m/it/9 y[]$ \OT1/cmr/m/n/9 and $[]$ are the true and pre-dicted flux at time step $\OML/cmm/m/it/9 i$\OT1/cmr/m/n/9 , $[]$ is the mean true flux, and $\OML/cmm/m/it/9 N$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--3
-\OT1/cmr/m/n/9 is the num-ber of time steps. For lag, $\OML/cmm/m/it/9 x[]$ \OT1/cmr/m/n/9 and $[]$ are the true and pre-dicted flux within the onset-
+[]\OT1/cmr/bx/n/9 Table 2. \OT1/cmr/m/n/9 Eval-u-a-tion met-rics for con-tin-u-
+ous pro-ton flux pre-dic-tion and bi-nary SEP event clas-si-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--3
-\OT1/cmr/m/n/9 to-peak win-dow of an event, and $\OML/cmm/m/it/9 ^^\$ \OT1/cmr/m/n/9 is the time shift in 5-minute steps. TP, TN, FP, and FN are
+\OT1/cmr/m/n/9 fi-ca-tion. $\OML/cmm/m/it/9 y[]$ \OT1/cmr/m/n/9 and $[]$ are th
+e true and pre-dicted flux at time step $\OML/cmm/m/it/9 i$\OT1/cmr/m/n/9 , $[]
+$ is the mean true flux, and $\OML/cmm/m/it/9 N$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+\OT1/cmr/m/n/9 is the num-ber of time steps. For lag, $\OML/cmm/m/it/9 x[]$ \OT
+1/cmr/m/n/9 and $[]$ are the true and pre-dicted flux within the onset-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+\OT1/cmr/m/n/9 to-peak win-dow of an event, and $\OML/cmm/m/it/9 ^^\$ \OT1/cmr/
+m/n/9 is the time shift in 5-minute steps. TP, TN, FP, and FN are
  []
 
 )
-<figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png, id=70, 505.89pt x 361.35pt>
-File: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png Graphic file (type png)
-<use figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png>
-Package pdftex.def Info: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png  used on input line 20.
-(pdftex.def)             Requested size: 233.97044pt x 167.12175pt.
- [14
+<figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/la
+g_diagram_sin_t+6_phases_dataset0_run00_event1.png, id=76, 505.89pt x 361.35pt>
 
-] [15 <./figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png>]
-<figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_flux_series.png, id=80, 483.4863pt x 383.031pt>
-File: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_flux_series.png Graphic file (type png)
-<use figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_flux_series.png>
-Package pdftex.def Info: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_flux_series.png  used on input line 57.
+File: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metri
+cs/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png Graphic file (type png)
+
+<use figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metric
+s/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png>
+Package pdftex.def Info: figs/evaluation/evaluation_of_sep_time_intensity_profi
+le_prediction/metrics/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png  use
+d on input line 19.
+(pdftex.def)             Requested size: 233.97044pt x 167.12175pt.
+ [16
+
+] [17 <./figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/me
+trics/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png>]
+<figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_
+time_series_block_bootstrapping/bootstrap_flux_series.png, id=86, 483.4863pt x 
+383.031pt>
+File: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resam
+pled_time_series_block_bootstrapping/bootstrap_flux_series.png Graphic file (ty
+pe png)
+<use figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resamp
+led_time_series_block_bootstrapping/bootstrap_flux_series.png>
+Package pdftex.def Info: figs/evaluation/evaluation_of_sep_time_intensity_profi
+le_prediction/resampled_time_series_block_bootstrapping/bootstrap_flux_series.p
+ng  used on input line 59.
 (pdftex.def)             Requested size: 337.54543pt x 267.41267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
-[]\OT1/cmr/bx/n/9 Figure  4. \OT1/cmr/m/n/9 The orig-nal time se-ries par-ti-cle data with two vari-a-tions of the block boot-strap
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]\OT1/cmr/bx/n/9 Figure  4. \OT1/cmr/m/n/9 The orig-i-nal time se-ries par-ti-
+cle data with two vari-a-tions of the block boot-strap
  []
 
-[16] (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_estimate.tex) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/mean_bootstrap_estimate.tex) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_variance.tex [17 <./figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_flux_series.png>]) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/confidence_interval.tex) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sample_bootstrap_estimates_variance.tex) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases_figure.tex
-<figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases.png, id=88, 540.5796pt x 303.534pt>
-File: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases.png Graphic file (type png)
-<use figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases.png>
-Package pdftex.def Info: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases.png  used on input line 3.
+[18]
+(figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_
+time_series_block_bootstrapping/bootstrap_estimate.tex)
+(figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_
+time_series_block_bootstrapping/mean_bootstrap_estimate.tex)
+(figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_
+time_series_block_bootstrapping/bootstrap_variance.tex [19 <./figs/evaluation/e
+valuation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_
+bootstrapping/bootstrap_flux_series.png>])
+(figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_
+time_series_block_bootstrapping/confidence_interval.tex)
+(figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_
+time_series_block_bootstrapping/sample_bootstrap_estimates_variance.tex)
+(figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_
+time_series_block_bootstrapping/sin_metrics_t6_phases_figure.tex
+<figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_
+time_series_block_bootstrapping/sin_metrics_t6_phases.png, id=95, 540.5796pt x 
+303.534pt>
+File: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resam
+pled_time_series_block_bootstrapping/sin_metrics_t6_phases.png Graphic file (ty
+pe png)
+<use figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resamp
+led_time_series_block_bootstrapping/sin_metrics_t6_phases.png>
+Package pdftex.def Info: figs/evaluation/evaluation_of_sep_time_intensity_profi
+le_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases.p
+ng  used on input line 3.
 (pdftex.def)             Requested size: 397.49033pt x 223.18974pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
-[]\OT1/cmr/bx/n/9 Figure  5. \OT1/cmr/m/n/9 Boot-strap dis-tri-bu-tions of the eval-u-a-tion met-rics for the si-nu-soidal trans-former at
+[]\OT1/cmr/bx/n/9 Figure  5. \OT1/cmr/m/n/9 Boot-strap dis-tri-bu-tions of the 
+eval-u-a-tion met-rics for the si-nu-soidal trans-former at
  []
 
 
 Underfull \hbox (badness 1590) in paragraph at lines 4--4
-\OT1/cmr/m/n/9 the $\OML/cmm/m/it/9 t \OT1/cmr/m/n/9 + 6$ fore-cast hori-zon with phases, over the $\OML/cmm/m/it/9 B \OT1/cmr/m/n/9 = 10$ boot-strap datasets. Each panel shows
+\OT1/cmr/m/n/9 the $\OML/cmm/m/it/9 t \OT1/cmr/m/n/9 + 6$ fore-cast hori-zon wi
+th phases, over the $\OML/cmm/m/it/9 B \OT1/cmr/m/n/9 = 10$ boot-strap datasets
+. Each panel shows
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
-\OT1/cmr/m/n/9 the rel-a-tive fre-quency of one met-ric: mean ab-so-lute er-ror (MAE), mean squared er-ror (MSE),
+\OT1/cmr/m/n/9 the rel-a-tive fre-quency of one met-ric: mean ab-so-lute er-ror
+ (MAE), mean squared er-ror (MSE),
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
-\OT1/cmr/m/n/9 onset-to-peak (O2P) lag, pre-dic-tion ef-fi-ciency (PE), F1, Hei-dke skill score (HSS2), and true skill
+\OT1/cmr/m/n/9 onset-to-peak (O2P) lag, pre-dic-tion ef-fi-ciency (PE), F1, Hei
+-dke skill score (HSS$[]$), and true skill
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
-\OT1/cmr/m/n/9 statis-tic (TSS). The or-ange dashed line is the mean $[]$, the dot-ted lines are $[] \OMS/cmsy/m/n/9 ^^F \OML/cmm/m/it/9 S[]$ \OT1/cmr/m/n/9 , and the
+\OT1/cmr/m/n/9 statis-tic (TSS). The or-ange dashed line is the mean $[]$, the 
+dot-ted lines are $[] \OMS/cmsy/m/n/9 ^^F \OML/cmm/m/it/9 S[]$ \OT1/cmr/m/n/9 ,
+ and the
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
-\OT1/cmr/m/n/9 shaded re-gion is the 95% con-fi-dence in-ter-val of $[]$. The val-ues of $[]\OML/cmm/m/it/9 ; S[]$ \OT1/cmr/m/n/9 and the con-fi-dence in-ter-val
+\OT1/cmr/m/n/9 shaded re-gion is the 95% con-fi-dence in-ter-val of $[]$. The v
+al-ues of $[]\OML/cmm/m/it/9 ; S[]$ \OT1/cmr/m/n/9 and the con-fi-dence in-ter-
+val
  []
 
-) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/welch_t_test.tex [18 <./figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases.png>]) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/welch-t_hyp_test.tex) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/levenes_test.tex)) [19] (text/results.tex (figs/results/rq1/rq1_box_mae_nophases.tex
-<figs/results/rq1/rq1_box_mae_nophases.png, id=98, 323.0469pt x 297.2706pt>
+)
+(figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_
+time_series_block_bootstrapping/welch_t_test.tex [20 <./figs/evaluation/evaluat
+ion_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootst
+rapping/sin_metrics_t6_phases.png>])
+(figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_
+time_series_block_bootstrapping/welch-t_hyp_test.tex)
+(figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_
+time_series_block_bootstrapping/levenes_test.tex)) [21] (text/results.tex
+(figs/results/rq1/rq1_box_mae_nophases.tex
+<figs/results/rq1/rq1_box_mae_nophases.png, id=104, 323.0469pt x 297.2706pt>
 File: figs/results/rq1/rq1_box_mae_nophases.png Graphic file (type png)
 <use figs/results/rq1/rq1_box_mae_nophases.png>
-Package pdftex.def Info: figs/results/rq1/rq1_box_mae_nophases.png  used on input line 3.
+Package pdftex.def Info: figs/results/rq1/rq1_box_mae_nophases.png  used on inp
+ut line 3.
 (pdftex.def)             Requested size: 318.00343pt x 292.62955pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
-[]\OT1/cmr/bx/n/9 Figure  6. \OT1/cmr/m/n/9 Boot-strap dis-tri-bu-tions of MAE for ev-ery model with-out phases. Each marker is
+[]\OT1/cmr/bx/n/9 Figure  6. \OT1/cmr/m/n/9 Boot-strap dis-tri-bu-tions of MAE 
+for ev-ery model with-out phases. Each marker is
  []
 
 
 Underfull \hbox (badness 2181) in paragraph at lines 4--4
-\OT1/cmr/m/n/9 the es-ti-mate from one of the $\OML/cmm/m/it/9 B \OT1/cmr/m/n/9 = 10$ boot-strap datasets. Solid boxes and cir-cles are the $\OML/cmm/m/it/9 t \OT1/cmr/m/n/9 + 6$
+\OT1/cmr/m/n/9 the es-ti-mate from one of the $\OML/cmm/m/it/9 B \OT1/cmr/m/n/9
+ = 10$ boot-strap datasets. Solid boxes and cir-cles are the $\OML/cmm/m/it/9 t
+ \OT1/cmr/m/n/9 + 6$
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
-\OT1/cmr/m/n/9 (30-minute) fore-casts, and hatched boxes and squares are the $\OML/cmm/m/it/9 t \OT1/cmr/m/n/9 + 12$ (60-minute) fore-casts. The
+\OT1/cmr/m/n/9 (30-minute) fore-casts, and hatched boxes and squares are the $\
+OML/cmm/m/it/9 t \OT1/cmr/m/n/9 + 12$ (60-minute) fore-casts. The
  []
 
 ) (figs/results/rq1/rq1_box_nophases.tex
-<figs/results/rq1/rq1_box_nophases.png, id=99, 465.1779pt x 635.0124pt>
+<figs/results/rq1/rq1_box_nophases.png, id=105, 465.1779pt x 635.0124pt>
 File: figs/results/rq1/rq1_box_nophases.png Graphic file (type png)
 <use figs/results/rq1/rq1_box_nophases.png>
-Package pdftex.def Info: figs/results/rq1/rq1_box_nophases.png  used on input line 3.
+Package pdftex.def Info: figs/results/rq1/rq1_box_nophases.png  used on input l
+ine 3.
 (pdftex.def)             Requested size: 397.497pt x 542.62149pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
-[]\OT1/cmr/bx/n/9 Figure  7. \OT1/cmr/m/n/9 Boot-strap dis-tri-bu-tions of (a) MAE, (b) PE, (c) lag, (d) F1, (e) HSS2, and (f)
+[]\OT1/cmr/bx/n/9 Figure  7. \OT1/cmr/m/n/9 Boot-strap dis-tri-bu-tions of (a) 
+MAE, (b) PE, (c) lag, (d) F1, (e) HSS$[]$, and (f)
  []
 
 ) (figs/results/rq1/rq1_box_phases.tex
-<figs/results/rq1/rq1_box_phases.png, id=100, 465.4188pt x 635.0124pt>
+<figs/results/rq1/rq1_box_phases.png, id=106, 465.4188pt x 635.0124pt>
 File: figs/results/rq1/rq1_box_phases.png Graphic file (type png)
 <use figs/results/rq1/rq1_box_phases.png>
-Package pdftex.def Info: figs/results/rq1/rq1_box_phases.png  used on input line 3.
+Package pdftex.def Info: figs/results/rq1/rq1_box_phases.png  used on input lin
+e 3.
 (pdftex.def)             Requested size: 397.48979pt x 542.33081pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
-[]\OT1/cmr/bx/n/9 Figure  8. \OT1/cmr/m/n/9 Boot-strap dis-tri-bu-tions of (a) MAE, (b) PE, (c) lag, (d) F1, (e) HSS2, and (f)
+[]\OT1/cmr/bx/n/9 Figure  8. \OT1/cmr/m/n/9 Boot-strap dis-tri-bu-tions of (a) 
+MAE, (b) PE, (c) lag, (d) F1, (e) HSS$[]$, and (f)
  []
 
 
 Underfull \hbox (badness 7433) in paragraph at lines 4--4
-\OT1/cmr/m/n/9 TSS for ev-ery model with phases. Each marker is the es-ti-mate from one of the $\OML/cmm/m/it/9 B \OT1/cmr/m/n/9 = 10$ boot-
+\OT1/cmr/m/n/9 TSS for ev-ery model with phases. Each marker is the es-ti-mate 
+from one of the $\OML/cmm/m/it/9 B \OT1/cmr/m/n/9 = 10$ boot-
  []
 
-[20
+[22
 
  <./figs/results/rq1/rq1_box_mae_nophases.png>]
 Overfull \vbox (5.874pt too high) has occurred while \output is active []
@@ -714,43 +1020,62 @@ Overfull \vbox (5.874pt too high) has occurred while \output is active []
 
 Overfull \vbox (5.874pt too high) has occurred while \output is active []
 
- [21 <./figs/results/rq1/rq1_box_nophases.png>])
+ [23 <./figs/results/rq1/rq1_box_nophases.png>])
 Overfull \vbox (5.58331pt too high) has occurred while \output is active []
 
 
 Overfull \vbox (5.58331pt too high) has occurred while \output is active []
 
- [22 <./figs/results/rq1/rq1_box_phases.png>] (figs/results/rq1/rq1_box_phases_table.tex) (figs/results/rq1/rq1_box_nophases_table.tex) [23] (figs/results/rq1/rq1_welch_nophases.tex
-<figs/results/rq1/rq1_welch_nophases.png, id=116, 489.9906pt x 200.1879pt>
-File: figs/results/rq1/rq1_welch_nophases.png Graphic file (type png)
-<use figs/results/rq1/rq1_welch_nophases.png>
-Package pdftex.def Info: figs/results/rq1/rq1_welch_nophases.png  used on input line 3.
-(pdftex.def)             Requested size: 397.48499pt x 162.39871pt.
-) (figs/results/rq1/rq1_welch_phases.tex
-<figs/results/rq1/rq1_welch_phases.png, id=117, 489.9906pt x 200.1879pt>
-File: figs/results/rq1/rq1_welch_phases.png Graphic file (type png)
-<use figs/results/rq1/rq1_welch_phases.png>
-Package pdftex.def Info: figs/results/rq1/rq1_welch_phases.png  used on input line 3.
-(pdftex.def)             Requested size: 397.48499pt x 162.39871pt.
-) [24 <./figs/results/rq1/rq1_welch_nophases.png>] (figs/results/rq1/rq1_levene_phases.tex
-<figs/results/rq1/rq1_levene_phases.png, id=122, 496.7358pt x 200.1879pt>
-File: figs/results/rq1/rq1_levene_phases.png Graphic file (type png)
-<use figs/results/rq1/rq1_levene_phases.png>
-Package pdftex.def Info: figs/results/rq1/rq1_levene_phases.png  used on input line 3.
-(pdftex.def)             Requested size: 397.48499pt x 160.19328pt.
-) (figs/results/rq1/rq1_levene_nophases.tex
-<figs/results/rq1/rq1_levene_nophases.png, id=123, 496.7358pt x 200.1879pt>
-File: figs/results/rq1/rq1_levene_nophases.png Graphic file (type png)
-<use figs/results/rq1/rq1_levene_nophases.png>
-Package pdftex.def Info: figs/results/rq1/rq1_levene_nophases.png  used on input line 3.
-(pdftex.def)             Requested size: 397.48499pt x 160.19328pt.
-) [25 <./figs/results/rq1/rq1_welch_phases.png> <./figs/results/rq1/rq1_levene_phases.png>]) [26 <./figs/results/rq1/rq1_levene_nophases.png>] (text/conclusion.tex [27
 
-]) [28] (text/declarations.tex) [29
+[24 <./figs/results/rq1/rq1_box_phases.png>]
+(figs/results/rq1/rq1_box_table.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+[]\OT1/cmr/bx/n/9 Table 3. \OT1/cmr/m/n/9 Mean boot-strap met-ric es-ti-mates w
+ith boot-strap stan-dard er-rors. A pur-ple value
+ []
 
-] (main.bbl [30
 
-] [31] [32]) [33] (main.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+\OT1/cmr/m/n/9 in-di-cates the best value of that met-ric ob-served from a mode
+l for no phases while blue is for
+ []
+
+) [25] (figs/results/rq1/rq1_welch_nophases.tex
+<figs/results/rq1/rq1_welch.png, id=123, 468.3096pt x 385.44pt>
+File: figs/results/rq1/rq1_welch.png Graphic file (type png)
+<use figs/results/rq1/rq1_welch.png>
+Package pdftex.def Info: figs/results/rq1/rq1_welch.png  used on input line 3.
+(pdftex.def)             Requested size: 397.48499pt x 327.1668pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+[]\OT1/cmr/bx/n/9 Figure  9. \OT1/cmr/m/n/9 One-sided $\OML/cmm/m/it/9 p$\OT1/c
+mr/m/n/9 -values from Welch's $\OML/cmm/m/it/9 t$\OT1/cmr/m/n/9 -test against p
+er-sis-tence: No-Phases (a, b) and
+ []
+
+[26]) (figs/results/rq1/rq1_levene_nophases.tex
+<figs/results/rq1/rq1_levene.png, id=127, 474.8139pt x 385.44pt>
+File: figs/results/rq1/rq1_levene.png Graphic file (type png)
+<use figs/results/rq1/rq1_levene.png>
+Package pdftex.def Info: figs/results/rq1/rq1_levene.png  used on input line 3.
+
+(pdftex.def)             Requested size: 397.48499pt x 322.6617pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+[]\OT1/cmr/bx/n/9 Figure  10. \OT1/cmr/m/n/9 One-sided $\OML/cmm/m/it/9 p$\OT1/
+cmr/m/n/9 -values from Lev-ene's test against per-sis-tence: No-Phases (a, b) a
+nd
+ []
+
+) [27 <./figs/results/rq1/rq1_welch.png>]) [28 <./figs/results/rq1/rq1_levene.p
+ng>] (text/conclusion.tex [29
+
+]) [30] (text/declarations.tex) [31
+
+] (main.bbl
+[32
+
+] [33] [34] [35]) [36] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -763,17 +1088,45 @@ LaTeX Font Warning: Size substitutions with differences
  )
 (\end occurred when \ifx on line 2 was incomplete) 
 Here is how much of TeX's memory you used:
- 18427 strings out of 467867
- 402792 string characters out of 5418334
- 819559 words of memory out of 5000000
- 46829 multiletter control sequences out of 15000+600000
+ 18588 strings out of 467867
+ 404197 string characters out of 5418334
+ 838635 words of memory out of 5000000
+ 46995 multiletter control sequences out of 15000+600000
  639345 words of font info for 86 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 88i,14n,94p,948b,876s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (33 pages, 2686358 bytes).
+ 88i,15n,94p,1906b,876s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Lewis/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lewis/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/L
+ewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:
+/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9
+.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmbxti10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Lewis/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Lewis/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Lewis/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Lew
+is/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/U
+sers/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pf
+b><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr6.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lewis/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Lewis/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Lewis/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Lewis/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Use
+rs/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb
+><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mtt10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb>
+Output written on main.pdf (36 pages, 2638490 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
+ 264 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

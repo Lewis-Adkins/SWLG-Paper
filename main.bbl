@@ -1,6 +1,70 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Aminalragia-Giamini%
+\ \protect \BOthers {.}}{%
+Aminalragia-Giamini%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+aminalragia2021sep}
+\APACinsertmetastar {%
+aminalragia2021sep}%
+\begin{APACrefauthors}%
+Aminalragia-Giamini, S.%
+, Raptis, S.%
+, Anastasiadis, A.%
+, Tsigkanos, A.%
+, Sandberg, I.%
+, Papaioannou, A.%
+\BDBL {}Daglis, I\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Solar Energetic Particle Event Occurrence Prediction
+  Using Solar Flare Soft {X}-ray Measurements and Machine Learning} {Solar
+  energetic particle event occurrence prediction using solar flare soft {X}-ray
+  measurements and machine learning}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Space Weather and Space Climate}{11}{}{59}.
+\newblock
+\begin{APACrefDOI} \doi{10.1051/swsc/2021043} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ansari%
+\ \protect \BOthers {.}}{%
+Ansari%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+ansari2024chronos}
+\APACinsertmetastar {%
+ansari2024chronos}%
+\begin{APACrefauthors}%
+Ansari, A\BPBI F.%
+, Stella, L.%
+, Turkmen, C.%
+, Zhang, X.%
+, Mercado, P.%
+, Shen, H.%
+\BDBL {}Wang, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Chronos: Learning the Language of Time Series} {Chronos:
+  Learning the language of time series}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:2403.07815}{}{}{}.
+\newblock
+\begin{APACrefDOI} \doi{10.48550/arXiv.2403.07815} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Bertail%
 \ \BBA {} Dudek%
 }{%
@@ -27,6 +91,40 @@ Bertail, P.%
 \APACjournalVolNumPages{Bernoulli}{30}{3}{2521--2545}.
 \newblock
 \begin{APACrefDOI} \doi{10.3150/23-BEJ1683} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Boubrahimi%
+, Aydin%
+, Martens%
+\BCBL {}\ \BBA {} Angryk%
+}{%
+Boubrahimi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+boubrahimi2017prediction}
+\APACinsertmetastar {%
+boubrahimi2017prediction}%
+\begin{APACrefauthors}%
+Boubrahimi, S\BPBI F.%
+, Aydin, B.%
+, Martens, P.%
+\BCBL {}\ \BBA {} Angryk, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {On the Prediction of $>$100 {MeV} Solar Energetic
+  Particle Events Using {GOES} Satellite Data} {On the prediction of $>$100
+  {MeV} solar energetic particle events using {GOES} satellite data}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2017 IEEE International Conference on Big Data (Big
+  Data)} {2017 ieee international conference on big data (big data)}\ (\BPGS\
+  2533--2542).
+\newblock
+\begin{APACrefDOI} \doi{10.1109/BigData.2017.8258212} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -257,6 +355,40 @@ Efron, B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Engell%
+, Falconer%
+, Schuh%
+, Loomis%
+\BCBL {}\ \BBA {} Bissett%
+}{%
+Engell%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+engell2017sprints}
+\APACinsertmetastar {%
+engell2017sprints}%
+\begin{APACrefauthors}%
+Engell, A\BPBI J.%
+, Falconer, D\BPBI A.%
+, Schuh, M.%
+, Loomis, J.%
+\BCBL {}\ \BBA {} Bissett, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{SPRINTS}: A Framework for Solar-Driven Event
+  Forecasting and Research} {{SPRINTS}: A framework for solar-driven event
+  forecasting and research}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{15}{10}{1321--1346}.
+\newblock
+\begin{APACrefDOI} \doi{10.1002/2017SW001660} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Ito%
 \ \protect \BOthers {.}}{%
 Ito%
@@ -317,6 +449,37 @@ Kasapis, S.%
 \APACjournalVolNumPages{arXiv preprint arXiv:2606.19539}{}{}{}.
 \newblock
 \begin{APACrefDOI} \doi{10.48550/arXiv.2606.19539} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kasapis%
+\ \protect \BOthers {.}}{%
+Kasapis%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+kasapis2022interpretable}
+\APACinsertmetastar {%
+kasapis2022interpretable}%
+\begin{APACrefauthors}%
+Kasapis, S.%
+, Zhao, L.%
+, Chen, Y.%
+, Wang, X.%
+, Bobra, M.%
+\BCBL {}\ \BBA {} Gombosi, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Interpretable Machine Learning to Forecast {SEP} Events
+  for Solar Cycle 23} {Interpretable machine learning to forecast {SEP} events
+  for solar cycle 23}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{20}{2}{e2021SW002842}.
+\newblock
+\begin{APACrefDOI} \doi{10.1029/2021SW002842} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -423,6 +586,36 @@ LaNeve, C\BPBI M.%
 
 \bibitem [\protect \citeauthoryear {%
 Laurenza%
+, Alberti%
+\BCBL {}\ \BBA {} Cliver%
+}{%
+Laurenza%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+laurenza2018esperta}
+\APACinsertmetastar {%
+laurenza2018esperta}%
+\begin{APACrefauthors}%
+Laurenza, M.%
+, Alberti, T.%
+\BCBL {}\ \BBA {} Cliver, E\BPBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Short-term {ESPERTA}-based Forecast Tool for
+  Moderate-to-extreme Solar Proton Events} {A short-term {ESPERTA}-based
+  forecast tool for moderate-to-extreme solar proton events}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Astrophysical Journal}{857}{2}{107}.
+\newblock
+\begin{APACrefDOI} \doi{10.3847/1538-4357/aab712} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Laurenza%
 \ \protect \BOthers {.}}{%
 Laurenza%
 \ \protect \BOthers {.}}{%
@@ -453,6 +646,72 @@ Laurenza, M.%
 \APACjournalVolNumPages{Space Weather}{7}{4}{}.
 \newblock
 \begin{APACrefDOI} \doi{10.1029/2007SW000379} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lavasa%
+\ \protect \BOthers {.}}{%
+Lavasa%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+lavasa2021predictability}
+\APACinsertmetastar {%
+lavasa2021predictability}%
+\begin{APACrefauthors}%
+Lavasa, E.%
+, Giannopoulos, G.%
+, Papaioannou, A.%
+, Anastasiadis, A.%
+, Daglis, I\BPBI A.%
+, Aran, A.%
+\BDBL {}Sanahuja, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Assessing the Predictability of Solar Energetic
+  Particles with the Use of Machine Learning Techniques} {Assessing the
+  predictability of solar energetic particles with the use of machine learning
+  techniques}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Solar Physics}{296}{7}{107}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s11207-021-01837-x} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lim%
+, Ar{\i}k%
+, Loeff%
+\BCBL {}\ \BBA {} Pfister%
+}{%
+Lim%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+lim2021tft}
+\APACinsertmetastar {%
+lim2021tft}%
+\begin{APACrefauthors}%
+Lim, B.%
+, Ar{\i}k, S\BPBI {\"O}.%
+, Loeff, N.%
+\BCBL {}\ \BBA {} Pfister, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Temporal Fusion Transformers for Interpretable
+  Multi-horizon Time Series Forecasting} {Temporal fusion transformers for
+  interpretable multi-horizon time series forecasting}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of
+  Forecasting}{37}{4}{1748--1764}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.ijforecast.2021.03.012} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -915,6 +1174,37 @@ Yu, Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Zeng%
+, Chen%
+, Zhang%
+\BCBL {}\ \BBA {} Xu%
+}{%
+Zeng%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+zeng2022transformers}
+\APACinsertmetastar {%
+zeng2022transformers}%
+\begin{APACrefauthors}%
+Zeng, A.%
+, Chen, M.%
+, Zhang, L.%
+\BCBL {}\ \BBA {} Xu, Q.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Are Transformers Effective for Time Series Forecasting?}
+  {Are transformers effective for time series forecasting?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:2205.13504}{}{}{}.
+\newblock
+\begin{APACrefDOI} \doi{10.48550/arXiv.2205.13504} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Zerveas%
 , Jayaraman%
 , Patel%
@@ -980,11 +1270,45 @@ Zhao, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Zhou%
+H.~Zhou%
+\ \protect \BOthers {.}}{%
+H.~Zhou%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+zhou2021informer}
+\APACinsertmetastar {%
+zhou2021informer}%
+\begin{APACrefauthors}%
+Zhou, H.%
+, Zhang, S.%
+, Peng, J.%
+, Zhang, S.%
+, Li, J.%
+, Xiong, H.%
+\BCBL {}\ \BBA {} Zhang, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Informer: Beyond Efficient Transformer for Long Sequence
+  Time-Series Forecasting} {Informer: Beyond efficient transformer for long
+  sequence time-series forecasting}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the AAAI Conference on Artificial
+  Intelligence} {Proceedings of the aaai conference on artificial
+  intelligence}\ (\BVOL~35, \BPGS\ 11106--11115).
+\newblock
+\begin{APACrefDOI} \doi{10.1609/aaai.v35i12.17325} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Y.~Zhou%
 , Zhu%
 \BCBL {}\ \BBA {} Wong%
 }{%
-Zhou%
+Y.~Zhou%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2023}}%
 }]{%

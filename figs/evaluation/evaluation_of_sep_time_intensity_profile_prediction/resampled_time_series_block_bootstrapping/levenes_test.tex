@@ -2,5 +2,7 @@
     H_0&: \sigma^2_{\hat{\theta},\text{model}} \geq \sigma^2_{\hat{\theta},\text{pers}}
     \qquad H_a: \sigma^2_{\hat{\theta},\text{model}} < \sigma^2_{\hat{\theta},\text{pers}}\\[6pt]
     z_{k,i} &= \left|\hat{\theta}_{k,i}^* - \tilde{\theta}_k^*\right|, \qquad k \in \{\text{pers}, \text{model}\}, \quad i = 1, \dots, B\\[6pt]
+    \bar{z}_{k} &= \frac{1}{B}\sum_{i=1}^{B} z_{k,i}, \qquad
+    S^2_{z,k} = \frac{1}{B-1}\sum_{i=1}^{B}\left(z_{k,i} - \bar{z}_k\right)^2\\[6pt]
     t &= \frac{\bar{z}_{\text{pers}} - \bar{z}_{\text{model}}}{\sqrt{\frac{1}{B}\left(S_{z,\text{pers}}^2 + S_{z,\text{model}}^2\right)}}, \qquad v = 2B - 2, \qquad \text{reject } H_0 \text{ if } t > t_{\alpha, v}
 \end{align*}

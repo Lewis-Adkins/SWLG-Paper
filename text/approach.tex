@@ -1,13 +1,13 @@
 \section{Approach}
 \label{sec:approach}
 SEP events are comprised of high energy particles such as protons, electrons and alpha particles, with protons being the highest risk to space and ground based infrastructure \cite{wilkinson1991tdrs}.
-At 1 AU, relativistic electrons experience less scattering than protons when traveling to earth. Because of this, an early wanring forecast model can be created that only uses preceding
-relativistc electrons to warn us of high energy protons \cite{posner2007forecasting}, \cite{torres2025machine}.  A time series of raw particle channels from COSTEP is used for forecasting using time series transformers.
+At 1 AU, relativistic electrons experience less scattering than protons when traveling to earth. Because of this, an early warning forecast model can be created that only uses preceding
+relativistic electrons to warn us of high energy protons \cite{posner2007forecasting,torres2025machine}.  A time series of raw particle channels from COSTEP is used for forecasting using time series transformers.
 We build a series of transformer models with different encoding architectures that captures the correlation of proton and electron intensity
 using multiple methods.
 
-In Section \ref{sec:input} we discuss the particle time series and the instrument. Section \ref{sec:transformer} provides an explantion of what transformers are and they differ
-to previous machine learning models. \ref{sec:positionalencodingmethods} justifies the chosen positional encodings architectures.
+In Section \ref{sec:input} we discuss the particle time series and the instrument. Section \ref{sec:transformer} provides an explanation of what transformers are and how they differ
+from previous machine learning models. \ref{sec:positionalencodingmethods} justifies the chosen positional encodings architectures.
 
 \subsection{Input}
 \label{sec:input}
@@ -19,60 +19,58 @@ to previous machine learning models. \ref{sec:positionalencodingmethods} justifi
     \label{fig:data_overview_single}
 \end{figure}
 
-The particle channel data are obtained from the Comprehensive Suprathermal and Energetic Particle Analyzer - Electron Proton Helium Instrument (COSTEP-EPHIN)  on the Solar and Heliospheric Observatory (SOHO). SOHO first launched on December 2nd 1995 to take in situ of energy depostion and particle acceleration in the solar atmosphere \cite{SOHOCOSTEPEPHINCDFPT1M}.
+The particle channel data are obtained from the Comprehensive Suprathermal and Energetic Particle Analyzer - Electron Proton Helium Instrument (COSTEP-EPHIN)  on the Solar and Heliospheric Observatory (SOHO). SOHO first launched on December 2nd 1995 to take in situ measurements of energy deposition and particle acceleration in the solar atmosphere \cite{SOHOCOSTEPEPHINCDFPT1M}.
 SOHO orbits between the earth and sun around Lagrange Point 1 (L1), which is approximately 1.5 million kilometers from earth. L1 is an ideal location 
-for space weather isntrumetns as any satelltie situatued there enjoys an uninteruppted view of the sun.
-The EPHIN instirments switched to failure mode that reduced the energy ranges it was able to read on October of 1996 \cite{kuhl2019revising}.
-\cite{torres2025machine} provides a dataset of 39 SEP identified events using the particle data recorded by COSTEP-EPHIN. Two relatavistic electron intensities channels $\geq$0.25 and $\geq$0.67 MeV \cite{mullermellin1995costep} are the precursors for our incoming protons. Proton channels are seperated into four energy channels (P4,P8,P25, P41) each corresponding to  different energy ranges.
-Proton channel P4 corresponds to the energy range $4.3 - 7.8 \text{ MeV}$, P8 corresponds with $7.8-25 - 7.8 \text{ MeV}$,  P25 corresponds with  $25 - 40.9 \text{ MeV}$, and P41 corresponds with $40.9 - 53 - 7.8 \text{ MeV}$. To retreive a $>10$ MeV proton flux channel, a sum of the energy integrated fluxes P8,P25, and P41 channels minus the range
+for space weather instruments as any satellite situated there enjoys an uninterrupted view of the sun.
+The EPHIN instruments switched to failure mode that reduced the energy ranges it was able to read on October of 1996 \cite{kuhl2019revising}.
+\citeA{torres2025machine} provides a dataset of 39 SEP identified events using the particle data recorded by COSTEP-EPHIN. Two relativistic electron intensities channels $\geq$0.25 and $\geq$0.67 MeV \cite{mullermellin1995costep} are the precursors for our incoming protons. Proton channels are separated into four energy channels (P4,P8,P25, P41) each corresponding to  different energy ranges.
+Proton channel P4 corresponds to the energy range $4.3 - 7.8 \text{ MeV}$, P8 corresponds with $7.8-25 \text{ MeV}$,  P25 corresponds with  $25 - 40.9 \text{ MeV}$, and P41 corresponds with $40.9 - 53 \text{ MeV}$. To retrieve a $>10$ MeV proton flux channel, a sum of the energy integrated fluxes P8,P25, and P41 channels minus the range
 $7.8-10$ MeV is performed. The latter channel is determined by the a power law spectrum  interpolation of the first two channels, P4 and P8, differential fluxes and their mean energies \cite{torres2025machine}.
 
-SEP events were then identified for storms larger than 10 proton flux unit (pfu). Each event is partitioned into phases to highlight definable features: Onset, Threhsold, Peak, End.
-The onset is defined when the flux rises three times the error bar above the pre-event background, the threshold is when the flux first crosses over 10 pfu and the end time is when it drops again below 2 pfu.\cite{torres2025machine}.
+SEP events were then identified for storms larger than 10 proton flux unit (pfu). Each event is partitioned into phases to highlight definable features: Onset, Threshold, Peak, End.
+The onset is defined when the flux rises three times the error bar above the pre-event background, the threshold is when the flux first crosses over 10 pfu and the end time is when it drops again below 2 pfu \cite{torres2025machine}.
 
 \subsection{Why Transformers}
-the computaitonal power of a transfomrer can be parelized requireing less operaitons. Long range dependencies can be handled much easier
-with larger winow lengths. Inputs  passes forward and back signals that help to make predictions.
-As the input window length grows, the harder it is to learn long range dpeendencies on RNN and NN modles \cite{zhao2026transformersurvey}. Self Attention could yield more interpretabhle models \cite{vaswani2017attention}.
-NN and RNN scale suboptimally to large datasets compared to transformer models \cite{zhao2026transformersurvey}
-
-Physics based models simulating particle accelration and trnasport processes are omputionatially expensive and with the limited amount of data limited \cite{Camporeale2019} \cite{yu2026} \cite{kasapis2026review}.
-Fruthermore lmiations in forecast timeliness forces a trade off with realism \cite{yu2026}.
+the computational power of a transformer can be parallelized requiring less operations. Long range dependencies can be handled much easier
+with larger window lengths. Inputs  passes forward and back signals that help to make predictions.
+As the input window length grows, the harder it is to learn long range dependencies on RNN and NN models \cite{zhao2026transformersurvey}. Self Attention could yield more interpretable models \cite{vaswani2017attention}.
+NN and RNN scale suboptimally to large datasets compared to transformer models \cite{zhao2026transformersurvey}.
+Physics based models simulating particle acceleration and transport processes are computationally expensive and with the limited amount of data limited \cite{Camporeale2019,yu2026,kasapis2026review}.
+Furthermore limitations in forecast timeliness forces a trade off with realism \cite{yu2026}.
 
 \subsection{Transformers}
 \label{sec:transformer}
 
 The original transformer is comprised of encoder-decoder stacks with built in self attention modules that translates inputs $\mathbf{X}$ into vectors $\mathbf{Z}$,
 identifies correlations and relationships, and outputs a sequence of predictions $\mathbf{Y}$. The encoder stack handles the $\mathbf{X \rightarrow Z}$ transformations while the decoder  handles $\mathbf{Z \rightarrow Y}$ \cite{vaswani2017attention}.
-Because we are only predicting a singular timestamp of proton flux in the future, we drop our decoder stacks as its purpose is to gneerate a sequence of 
+Because we are only predicting a singular timestamp of proton flux in the future, we drop our decoder stacks as its purpose is to generate a sequence of 
 outputs from $\mathbf{Y}$ rather than one value \cite{vaswani2017attention}.
 
 For our time series data, we use two hours of historical particle flux data of our two electron channels and $>10$ MeV proton channel. The magnitude in differences of fluxes between our channels  is large enough to cause 
-unstable trianing and testing therefore we apply a natural $\log$ transformation to the entire dataset, resulting compressing the mean and  variance on the same scale. The standard method is to 
+unstable training and testing therefore we apply a natural $\log$ transformation to the entire dataset, resulting compressing the mean and  variance on the same scale. The standard method is to 
 subtract by the mean and divide by the standard deviation, a process called "standardization". To ensure our NN and RNN
-align with \cite{torres2025machine} model results, the prior method is selected instead to replicate \cite{torres2025machine}
-
-We set $t$ to indicate present time. Becasue of the cadence of 5 minutes,
+align with \citeA{torres2025machine} model results, the prior method is selected instead to replicate \citeA{torres2025machine}.
+We set $t$ to indicate present time. Because of the cadence of 5 minutes,
  $t - 25$ timestamps creates twenty-four 5-min intervals of particle flux forming a window of inputs before and including the current time. For each window, we define an input sample:
 $$
 \mathbf{X} \in \mathbb{R}^{l \times v} = \mathbb{R}^{25 \times 3}
 $$
 where $l$ is the length of the input window and $v$ is the number of variates. A processes that translates our particle fluxes at each timestep into transformer
-readable vecotrs, embedding, is calculated by:
+readable vectors, embedding, is calculated by:
 $$
 \mathbf{
 U} = \mathbf{XW_p}^T + \mathbf{1b_p}^T, \mathbf{1} \in \mathbb{R}^{l \times 1}
 $$
 $\mathbf{W_p} \in \mathbb{R}^{d \times v}$ and $\mathbf{b_p} \in \mathbb{R}^{d}$ are weighted and bias vectors respectively. They are initialized randomly at the start of training and then used to compute $\mathbf{U} \in \mathbb{R}^{l \times d}$.
 After every training cycle, these vectors  updates and learn to optimize minimizing loss, error.
-$d$  is the dimension of the embedding vector that represents our inputs. For large $d$, inputs are characterized at a higher resoltution allowing  models to learn finer grain patterns at the cost of compuational power and risk of overfitting. 
-The number of parameters in a model is proportional to the size of $\mathbf{W_p}$ and $\mathbf{b_p}$ \cite{vaswani2017attention} \cite{zerveas2020transformer}
+$d$  is the dimension of the embedding vector that represents our inputs. For large $d$, inputs are characterized at a higher resolution allowing  models to learn finer grain patterns at the cost of computational power and risk of overfitting. 
+The number of parameters in a model is proportional to the size of $\mathbf{W_p}$ and $\mathbf{b_p}$ \cite{vaswani2017attention,zerveas2020transformer}
 
 \input{figs/approach/transformers/parameter_count}
 
-To match parameter size of \cite{torres2025machine} we use $d = 16$. Our transformer models are slighlty larger than the RNN and NN provided by \cite{torres2025machine}. A model size $d=8$ would 
+To match parameter size of \citeA{torres2025machine} we use $d = 16$. Our transformer models are slightly larger than the RNN and NN provided by \citeA{torres2025machine}. A model size $d=8$ would 
 greatly reduce the models far below the parameter count of RNN and NN.  Table \ref{tab:param-count} provides
-a count of all parameters in each machin learning model in this study.
+a count of all parameters in each machine learning model in this study.
 The RNN and NN are implemented  with two layers: One layer is hidden with 30 units and then a second dense single output layer.
 The RNN is comprised of  Gated Recurrent Units (GRU) for its  hidden layers while the NN uses hidden layers.
 The NN model uses the same three channels for 25 timestep intervals.
@@ -85,8 +83,8 @@ All models (RNN,NN, transformers) minimize the loss function with mean square er
 \label{sec:positionalencodingmethods}
 
 Transformer models computes updates in $\mathbf{W_p}$ and $\mathbf{b_p}$ in parallel. This allows for large input sequences
-to be read at the same time without "forgetting" related timestamps that are far apart from eachother in the window.  
-Any reshuffling of the vectors that make  up $\mathbf{U}$ has no effect on the the update calculation. 
+to be read at the same time without "forgetting" related timestamps that are far apart from each other in the window.  
+Any reshuffling of the vectors that make  up $\mathbf{U}$ has no effect on the update calculation. 
 Additional positional information must be injected to bring  context to our input window \cite{vaswani2017attention}.
 For all input vectors $\mathbf{u_w}$ we add a $\mathbf{w_{\text{pos}, w}}$:
 $$
@@ -94,14 +92,15 @@ $$
 $$
 RNNs and NNs in contrast, reads the inputs sequentially learning order inherently.
 
-The particle flux dataset is small, therefore different positional encoding (PE) could effect predictions.
+The particle flux dataset is small, therefore different positional encoding (PE) could affect predictions.
 PE is said to be a major factor in "length generalization", ability to extrapolate effectively  large sequences of events
 from smaller training context windows. Transformers without PE outperform those with explicit PE methods \cite{kazemnejad2023impact}. 
 
 
 \subsubsection{Sinusoidal Positional Encoding}
 \label{sec:sinusoidalPE}
-Sinusoidal positional encoding was first introduced in the original proposed transformer architecture paper \cite{vaswani2017attention}.
+Sinusoidal positional encoding was the default mechanism in the original proposed transformer architecture paper \cite{vaswani2017attention}. Colloquially,
+transformers built in this architecture are referred to as "vanilla" models, however for this study to differentiate between the architectures we will say sinusoidal model. 
 It is an absolute position encoding method that uses sinusoidal and cosine functions of different frequencies to encode the positional indexes of tokens in a sequence.
 The input window is split into smaller chunks called tokens. For each token, a vector of dimension, $d$ is generated. The vector is determined by the position, $pos$, in the window and the length of the vector, $d$.
 $i$ is the dimension of the PE vector. Odd and even indexes in the vector are determined by \eqref{cosPE} and \eqref{sinPE} respectively. This gives us a new vector $\mathbf{w_\text{pos}} \in \mathbb{R}^{l \times 1}$.
@@ -114,11 +113,10 @@ $i$ is the dimension of the PE vector. Odd and even indexes in the vector are de
  The frequency decreases exponentially by a scale factor as the position in the model dimensions increase.
  Similarly stated in Section \ref{sec:transformer}, in the short term we can map small patterns in data, a $\sin/\cos$ function with a high frequency.
  At large vector indexes the frequency greatly decreases, taking on a more linear relationship.
- The positions are encoded uniquely based on value and position, allowing it to scale to unlimited sequence lengths. \cite{vaswani2017attention}
-
+ The positions are encoded uniquely based on value and position, allowing it to scale to unlimited sequence lengths \cite{vaswani2017attention}.
 \subsubsection{Rotary Positional Embedding}
 
-Rotary Positional Embedding (RoPE) is a PE method that stores the poistion infomration of a token,$m$ in a squence
+Rotary Positional Embedding (RoPE) is a PE method that stores the position information of a token,$m$ in a sequence
 in the total rotation of that query-key vectors by some angle $\theta_i$. The rotation amount is calculated by:
 $$
 \theta_i = 10000^{-2(i-1)/d}, \left\{i \in \mathbb{Z} \Bigg| 1 \leq i \leq \frac{d}{2}\right\}
@@ -156,7 +154,7 @@ where $ \mathbf{R}_{\Theta, n-m}^d = (\mathbf{R}_{\Theta, m}^d)^T \mathbf{R}_{\T
 
 A property of RoPE is long term decay.
 This means that pairs of query-key at large relative distance will have less connection than those that are close to each other \cite{su2021roformer}.
-For our flux data, this would coincide with the idea from \cite{posner2007forecasting} that only a short term forecasting of relativistic electrons is required to accurately predict future proton storms from 30 minutes to an hour. 
+For our flux data, this would coincide with the idea from \citeA{posner2007forecasting} that only a short term forecasting of relativistic electrons is required to accurately predict future proton storms from 30 minutes to an hour. 
 
 \subsubsection{Zero-Initialized}
 \label{sec:ZeroPE}
@@ -167,7 +165,7 @@ Small near zero initializations sampled with normal distributions were found to 
 
 Most timestamps in the relatively small proton electron flux dataset are near zero background values.
 A larger starting weights already has background information included leading to forecasting more background in the future during the early portion of training.
-Its not until after rounds of epochs the model unlearns patterns to map rising phases in fluxes occur to make accurate predictions.
+It's not until after rounds of epochs the model unlearns patterns to map rising phases in fluxes occur to make accurate predictions.
 
 % \subsection{Auto-Gluon}
 % Recurrent Neural Networks (RNN)s are unreliable for long range forecasting and irregular patterns \cite{zhao2026transformersurvey}.
@@ -198,12 +196,12 @@ and
 $$
 \text{head}_i = \text{softmax}\left(\frac{Q^TK}{\sqrt{d_k}}\right)V
 $$
-$W^O$ is the output ptojection of the attention layer.
+$W^O$ is the output projection of the attention layer.
 \label{sec:self-attention}
 
 \subsection{Statistical and Empirical Models}
 \label{sec: baseline_methods_used_for_comparison}
-A persistent model as a baseline is included in our study. its a simple nowcast model in which the predicted proton flux value is the current proton flux value.
-\cite{posner2007forecasting} Forecasting matrix will be compared to as well across the same metrics.
+A persistent model as a baseline is included in our study. it's a simple nowcast model in which the predicted proton flux value is the current proton flux value.
+\citeA{posner2007forecasting} Forecasting matrix will be compared to as well across the same metrics.
 
-A multi variant linear regression model that reads in  our three channels of particle fluxes will also be used as a baseline for our transformer.
+A multivariate linear regression model that reads in  our three channels of particle fluxes will also be used as a baseline for our transformer.
