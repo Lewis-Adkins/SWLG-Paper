@@ -1,30 +1,32 @@
 \section{Conclusion}
 \label{sec:conclusion}
-Our goal was to compare the forecasting of a RNN of relativistic electrons to be able to predict incoming protons  thirty minutes to an hour later.
-Using multiple positional encoding methods we were able to compare our model to a regular NN and RNN model performing the same task
+Our goal was to build a series of time series transformers to improve the forecasting of SEPs. We built three time series transformers to compete with previous models.
+We compared our metrics to those of previous models and found little change relative not only to the physics and empirical models,
+but also to the persistence model. MSE, MAE, F1, PE, $\text{HSS}_2$, and TSS were shown to be reliably better for the persistence model, even though all other models had better raw bootstrap mean scores across.
+The other models were able to reduce the lag time between predicted and true protons.
 
-Overall, our results indicate better  reduction in MAE but relatively similar lag and F1 scores, however highly outperforming the forecasting matrix from \citeA{posner2007forecasting}.
-Mirroring \citeA{torres2025machine}, transformers have issues with delayed SEP proton predictions which leads to yielding poorer recall, precision, and therefore F1 scores. scaling these models with more electron inputs would lead to higher proton prediction accuracy.
+The positional encodings within the transformer models also made no difference, indicating a low correlation with effective SEP forecasting. Improvements can be made by scaling the complexity of our models while also adding more context
+to the input window through a length generalization study.
 
 \subsection{Future Work}
-The machine learning models trained in this work are relatively simple. The results produced give us an initial reading 
-of how each model can forecast SEP events. When add more complexity to our models, we should see improved results that can beat persistence.
-increasing embedding lengths characterizes features at a higher resolution. Investigations into whether improvements or degradations in the predictions are important?
-Measuring the value added in improvement across all metrics is worth it given the computational cost and time to train. At what point do skills plateau and why? A hyperparameter search
-can be a method to explore and answer these questions
+The machine learning models trained in this work are relatively simple. The results produced give us an initial reading
+of how each model can forecast SEP events. As we add more complexity to our models, we should see improved results that can beat persistence.
+Increasing the embedding length characterizes features at a higher resolution. Are the resulting improvements or degradations in the predictions significant?
+Is the value added across all metrics worth the computational cost and training time? At what point does skill plateau, and why? A hyperparameter search
+can be a method to explore and answer these questions.
 
-The space sector is invested in protecting satellites in LEO and GEO. With improved forecast time
-we need to figure out if the timeliness of our model predictions is sufficient enough time for satellite operators to react
-and protect their platforms. A response time model that accounts for data acquisition, alerting, decision, uplinking, and switching satellite modes needs to be investigated. \citeA{LaNeve2026} surveys operators and documents common safeguards
-they use when confronted with a warning. operators must balance cost of inflicted damage to satellites due to Single Event Upsets. 
-and switching their satellites to safe mode. Only 10\% of operators place satellites in safe mode after a warning. Only one instance of satellite repositioning has been recorded in the survey.
-Despite this, operators have identified the need for accurate localized harmful space weather forecasts.
+The space sector is invested in protecting satellites in LEO and GEO \cite{LaNeve2026}. With improved forecast time,
+we need to determine whether our model predictions provide sufficient time for satellite operators to react
+and protect their platforms. A response time model that accounts for data acquisition, alerting, decision, uplinking, and switching satellite modes needs to be investigated. \citeA{LaNeve2026} survey operators and document common safeguards
+they use when confronted with a warning. Operators must balance the cost of inflicted damage to satellites due to Single Event Upsets \cite{noeldeke2021single}
+against the cost of switching their satellites to safe mode. Only 10\% of operators place satellites in safe mode after a warning. Only one instance of satellite repositioning has been recorded in the survey.
+Despite this, operators have identified the need for accurate, localized forecasts of harmful space weather.
 
-This study only examines the simple relationship of predicting proton fluxes from relativistic electrons. Other characteristics of space weather can correlate with events 
-to act as an precursor to SEP events.  Soft Xrays which are the one of the first detections of a solar storm has reduced false alarm rates in forecasting models \cite{laurenza2009technique}.
-Flares  and Coronal Mass ejections in addition to proton flux has also increased forecasting skill score \cite{yu2026}. 
+This study only examines the simple relationship of predicting proton fluxes from relativistic electrons. Other space weather phenomena correlate with SEP events
+and can act as precursors \cite{gopalswamy2024solar}. Soft X-rays, which are among the first detections of a solar storm, have reduced false alarm rates in forecasting models \cite{laurenza2009technique}.
+Flares and coronal mass ejections, in addition to proton flux, have also increased forecasting skill scores \cite{yu2026}.
 
-A Diebold-Mariano test is standard for time series forecasting models in field of transformers. Integrating with
-current testing pipeline must be undertaken to provide sound comparison. In space weather predictions they only test sample statistics such as MAE, PE etc,
-but in the field of time series transformer forecasting this is used instead.
+A Diebold--Mariano test \cite{diebold1995comparing} is standard for comparing time series forecasting models in the field of transformers. Integrating this test into
+our current testing pipeline must be undertaken to provide a sound comparison. Space weather studies typically compare only sample statistics such as MAE and PE,
+whereas the time series transformer field uses this test instead.
 

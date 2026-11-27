@@ -1,31 +1,35 @@
 \section{Results}
 \label{sec:results}
-Figure \ref{fig:rq1_box_mae_nophases} shows the distribution of MAE values on a box and whisker plot for each 
+Figure \ref{fig:rq1_box_mae_nophases} shows the distribution of MAE values on a box-and-whisker plot for each 
 bootstrap dataset. Each model has a set of estimates for both $t+6$ and $t+12$.  The solid bold vertical line indicates the 
-median MAE for $t+6$ and the dashed line is for $t+12$. these serve as our benchmarks for our other models to beat. Depending on the metric,
+median MAE for $t+6$ and the dashed line is for $t+12$. These serve as our benchmarks for our other models to beat. Depending on the metric,
 a value larger or smaller could indicate an improvement. At the bottom of the plot is an arrow that points in the direction of improvement. For 
 MAE, a smaller value is desirable.
 \input{figs/results/rq1/rq1_box_mae_nophases.tex}
-We can then analyze our results for all metrics in Figure \ref{fig:rq1_box_mae_nophases} for results using no phases, and Figure \ref{fig:rq1_box_phases} for phases.
+We can then analyze our results for all metrics in Figure \ref{fig:rq1_box_nophases} for results using no phases, and Figure \ref{fig:rq1_box_phases} for phases.
 \input{figs/results/rq1/rq1_box_nophases.tex}
 \input{figs/results/rq1/rq1_box_phases.tex}
-A common feature across all metrics is the Posner model underperforming in forecasting SEPs. \citeA{torres2025machine} demonstrates the same disparity 
-for the MAE values. The min and max values on the Posner plots are much further apart than all other models which indicates an
+A common feature across all metrics is the Posner model underperforming in forecasting SEPs. \citeA{torres2025machine} demonstrate the same disparity 
+for the MAE values. The min and max values on the Posner plots are much further apart than those of all other models which indicates an
 unreliability in the model. Posner was explained to have overpredicted SEP events causing a lower lag value \cite{torres2025machine}, but over multiple bootstrap runs, 
 that advantage disappears.
 
-Over the distribution all other models  appears to perform relatively equivalent to the persistence model. Despite the complex regressive training from the machine learning models a nowcast of the proton flux is 
-indistinguishable. The parameter size of the models and the limited SEP event dataset 
+Over the distribution, all other models appear to perform comparably to the persistence model. Despite the complex regressive training from the machine learning models, a nowcast of the proton flux is 
+indistinguishable in performance. The parameter size of the models and the limited SEP event dataset 
 play a role in the model performance. Table \ref{tab:rq1_box} displays the bootstrap mean and standard error of all metrics.    
 Bold values are the best mean metric results in that category.
 
 \input{figs/results/rq1/rq1_box_table.tex}
-To make a definitive statement on the effectiveness of the forecasting models, Figure \ref{fig:rq1_welch} shows the results of a one sided $t$ test. Each box is colored either red or green to indicate whether the model 
-performs on average better than persistence.The values inside are the reported $p$ values.
+To make a definitive statement on the effectiveness of the forecasting models, Figure \ref{fig:rq1_welch} shows the results of a one-sided $t$-test. Each box is colored either red or green to indicate whether the model 
+performs on average better than persistence. The values inside are the reported $p$ values. The machine learning models in gnereal, outperformed the statistical and persistence models by reducing lag across all time leads and phases/no phase modes.
+Positional encoding methods showed little change when reducing lag except for the time lead $t+6$ RoPE model who underperformed.
 \input{figs/results/rq1/rq1_welch_nophases.tex}
 
-All models hardly ever beat persistence. Posner $p$ value is always $\approx$ 1.00 which indicates it's significantly worse.
-The only advantage some models have is lag.
+The models rarely beat persistence. Posner's $p$-value is always $\approx$ 1.00 which indicates it is significantly worse.
+
 
 \input{figs/results/rq1/rq1_levene_nophases.tex}
-no model is more consistent than persistence cause they suck.
+
+The trianing time of all models are recorded in Table \ref{tab:train-time}. This is to help jusdge if the imporvements in resulting metrics outweight the computational load of these models. 
+according to our previous tests the value added is not apparent. All machine learning models were trained on an NVIDIA 5070 GPU.
+\input{figs/results/train_time_table.tex}

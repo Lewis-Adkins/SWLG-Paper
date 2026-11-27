@@ -1,1 +1,12 @@
 \section{Abstract}
+\label{sec:abstract}
+Solar energetic particles are a crucial limb in the solar storm anatomy.  Space and Earth-based infrastructure are at risk 
+due to damage caused by the bombardment of the particles in space and in the upper ionosphere. Satellite, avionic, and communication systems can degrade or completely malfunction  if the particle intensity is too high.
+Previous physics and statistical models have made progress in forecasting SEP events, however the reliance on other correlated solar storm parameters and the computational cost
+inhibits the ability to make real time warnings. Machine learning models has shown improvements in generalizing SEP behavior but issues with long range dependencies
+and lack of parallelization has led to the time series transformers as a viable alternative. We construct three time series transformers with different positional encoding methods to 
+train on past high energy proton and relativistic electron fluxes  of 5 minute cadence to predict 30 minutes to 1 hour ahead. We replicate a neural network and recurrent neural network designed for SEP 
+forecasting to compare the performance. Included also is a multivariate linear regression model, a forecasting matrix model, and a persistence model. A bootstrap analysis of the time series is performed to measure the forecast behavior of the models. Our results indicate that
+a persistence model outperforms on almost all key metrics with less variability in results. Machine learning models were able to reduce the time lag between proton predictions. 
+
+

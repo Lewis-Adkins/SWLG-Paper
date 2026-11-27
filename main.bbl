@@ -293,6 +293,67 @@ Delacre, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Devlin%
+, Chang%
+, Lee%
+\BCBL {}\ \BBA {} Toutanova%
+}{%
+Devlin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+devlin2019bert}
+\APACinsertmetastar {%
+devlin2019bert}%
+\begin{APACrefauthors}%
+Devlin, J.%
+, Chang, M\BHBI W.%
+, Lee, K.%
+\BCBL {}\ \BBA {} Toutanova, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {BERT: Pre-training of Deep Bidirectional Transformers
+  for Language Understanding} {Bert: Pre-training of deep bidirectional
+  transformers for language understanding}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:1810.04805}{}{}{}.
+\newblock
+\begin{APACrefDOI} \doi{10.48550/arXiv.1810.04805} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Diebold%
+\ \BBA {} Mariano%
+}{%
+Diebold%
+\ \BBA {} Mariano%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+diebold1995comparing}
+\APACinsertmetastar {%
+diebold1995comparing}%
+\begin{APACrefauthors}%
+Diebold, F\BPBI X.%
+\BCBT {}\ \BBA {} Mariano, R\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Comparing Predictive Accuracy} {Comparing predictive
+  accuracy}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Business \& Economic
+  Statistics}{13}{3}{253--263}.
+\newblock
+\begin{APACrefURL} \url{http://www.jstor.org/stable/1392185} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Eastwood%
 \ \protect \BOthers {.}}{%
 Eastwood%
@@ -386,6 +447,31 @@ Engell, A\BPBI J.%
 \APACjournalVolNumPages{Space Weather}{15}{10}{1321--1346}.
 \newblock
 \begin{APACrefDOI} \doi{10.1002/2017SW001660} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gopalswamy%
+}{%
+Gopalswamy%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+gopalswamy2024solar}
+\APACinsertmetastar {%
+gopalswamy2024solar}%
+\begin{APACrefauthors}%
+Gopalswamy, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Solar Energetic Particle Events and Radio Bursts} {Solar
+  energetic particle events and radio bursts}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:2410.08690}{}{}{}.
+\newblock
+\begin{APACrefDOI} \doi{10.48550/arXiv.2410.08690} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -545,6 +631,32 @@ K{\"u}hl, P.%
 \APACjournalVolNumPages{Space Weather}{17}{1}{84--98}.
 \newblock
 \begin{APACrefDOI} \doi{10.1029/2018SW002114} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+K{\"u}nsch%
+}{%
+K{\"u}nsch%
+}{%
+{\protect \APACyear {1989}}%
+}]{%
+kunsch1989jackknife}
+\APACinsertmetastar {%
+kunsch1989jackknife}%
+\begin{APACrefauthors}%
+K{\"u}nsch, H\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1989}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Jackknife and the Bootstrap for General Stationary
+  Observations} {The jackknife and the bootstrap for general stationary
+  observations}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Annals of Statistics}{17}{3}{1217--1241}.
+\newblock
+\begin{APACrefURL} \url{http://www.jstor.org/stable/2241719} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -747,6 +859,67 @@ Müller-Mellin, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Noeldeke%
+\ \protect \BOthers {.}}{%
+Noeldeke%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+noeldeke2021single}
+\APACinsertmetastar {%
+noeldeke2021single}%
+\begin{APACrefauthors}%
+Noeldeke, C.%
+, Boettcher, M.%
+, Mohr, U.%
+, Gaisser, S.%
+, Alvarez~Rua, M.%
+, Eickhoff, J.%
+\BDBL {}Varatharajoo, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Single event upset investigations on the ``Flying
+  Laptop'' satellite mission} {Single event upset investigations on the
+  ``flying laptop'' satellite mission}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Acta Astronautica}{}{}{}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.actaastro.2020.12.052} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+N{\'u}{\~n}ez%
+}{%
+N{\'u}{\~n}ez%
+}{%
+{\protect \APACyear {2022}}%
+}]{%
+nunez2022umasep}
+\APACinsertmetastar {%
+nunez2022umasep}%
+\begin{APACrefauthors}%
+N{\'u}{\~n}ez, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Evaluation of the {UMASEP}-10 Version 2 Tool for
+  Predicting All $>$10 {MeV} {SEP} Events of Solar Cycles 22, 23 and 24}
+  {Evaluation of the {UMASEP}-10 version 2 tool for predicting all $>$10 {MeV}
+  {SEP} events of solar cycles 22, 23 and 24}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Universe}{8}{1}{35}.
+\newblock
+\begin{APACrefURL} \url{https://www.mdpi.com/2218-1997/8/1/35} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3390/universe8010035} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 N{\'u}{\~n}ez%
 \ \protect \BOthers {.}}{%
 N{\'u}{\~n}ez%
@@ -847,6 +1020,38 @@ Posner, A.%
 \APACrefnote{e2024SW004013 2024SW004013}
 \newblock
 \begin{APACrefDOI} \doi{https://doi.org/10.1029/2024SW004013} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rastätter%
+\ \protect \BOthers {.}}{%
+Rastätter%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+Rastatter2011PE}
+\APACinsertmetastar {%
+Rastatter2011PE}%
+\begin{APACrefauthors}%
+Rastätter, L.%
+, Kuznetsova, M\BPBI M.%
+, Vapirev, A.%
+, Ridley, A.%
+, Wiltberger, M.%
+, Pulkkinen, A.%
+\BDBL {}Singer, H\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Geospace Environment Modeling 2008–2009 Challenge:
+  Geosynchronous magnetic field} {Geospace environment modeling 2008–2009
+  challenge: Geosynchronous magnetic field}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{9}{4}{S04005}.
+\newblock
+\begin{APACrefDOI} \doi{10.1029/2010SW000617} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -997,6 +1202,40 @@ Vaswani, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Wang%
+\ \protect \BOthers {.}}{%
+Wang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+wang2017comparing}
+\APACinsertmetastar {%
+wang2017comparing}%
+\begin{APACrefauthors}%
+Wang, Y.%
+, Rodr{\'i}guez~de Gil, P.%
+, Chen, Y\BPBI H.%
+, Kromrey, J\BPBI D.%
+, Kim, E\BPBI S.%
+, Pham, T.%
+\BDBL {}Romano, J\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Comparing the Performance of Approaches for Testing the
+  Homogeneity of Variance Assumption in One-Factor {ANOVA} Models} {Comparing
+  the performance of approaches for testing the homogeneity of variance
+  assumption in one-factor {ANOVA} models}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Educational and Psychological
+  Measurement}{77}{2}{305--329}.
+\newblock
+\begin{APACrefDOI} \doi{10.1177/0013164416645162} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Welch%
 }{%
 Welch%
@@ -1103,7 +1342,7 @@ Yu%
 Yu%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2026}}%
-{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+}]{%
 yu2026}
 \APACinsertmetastar {%
 yu2026}%
@@ -1117,45 +1356,7 @@ Yu, Y.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2026{\protect \BCnt {1}}}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Solar Energetic Particle Forecasting With Multi-Task
-  Deep Learning: SEPNET} {Solar energetic particle forecasting with multi-task
-  deep learning: Sepnet}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Geophysical Research: Machine Learning and
-  Computation}{3}{3}{e2026JH001247}.
-\newblock
-\begin{APACrefURL}
-  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2026JH001247}
-  \end{APACrefURL}
-\newblock
-\APACrefnote{e2026JH001247 2026JH001247}
-\newblock
-\begin{APACrefDOI} \doi{https://doi.org/10.1029/2026JH001247} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Yu%
-\ \protect \BOthers {.}}{%
-Yu%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2026}}%
-{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
-nunez2022umasep}
-\APACinsertmetastar {%
-nunez2022umasep}%
-\begin{APACrefauthors}%
-Yu, Y.%
-, Chen, Y.%
-, Zhao, L.%
-, Whitman, K.%
-, Manchester, W.%
-\BCBL {}\ \BBA {} Gombosi, T.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2026{\protect \BCnt {2}}}{}{}.
+\APACrefYearMonthDay{2026}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {Solar Energetic Particle Forecasting With Multi-Task
   Deep Learning: SEPNET} {Solar energetic particle forecasting with multi-task

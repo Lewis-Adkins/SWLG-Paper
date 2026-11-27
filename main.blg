@@ -15,47 +15,47 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
 Warning--entry type for "SOHOCOSTEPEPHINCDFPT1M" isn't style-file defined
---line 202 of file references.bib
+--line 206 of file references.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 41 entries,
+You've used 48 entries,
             6951 wiz_defined-function locations,
-            1546 strings with 25754 characters,
-and the built_in function-call counts, 99049 in all, are:
-= -- 11775
-> -- 974
-< -- 5101
-+ -- 5591
-- -- 82
-* -- 6866
-:= -- 18238
-add.period$ -- 163
-call.type$ -- 41
-change.case$ -- 717
+            1594 strings with 27653 characters,
+and the built_in function-call counts, 113711 in all, are:
+= -- 13500
+> -- 1090
+< -- 5866
++ -- 6422
+- -- 95
+* -- 7856
+:= -- 21034
+add.period$ -- 188
+call.type$ -- 48
+change.case$ -- 820
 chr.to.int$ -- 0
-cite$ -- 82
-duplicate$ -- 3116
-empty$ -- 3583
-format.name$ -- 1830
-if$ -- 17958
+cite$ -- 96
+duplicate$ -- 3559
+empty$ -- 4137
+format.name$ -- 2057
+if$ -- 20602
 int.to.chr$ -- 0
-int.to.str$ -- 127
+int.to.str$ -- 144
 missing$ -- 0
-newline$ -- 1207
-num.names$ -- 322
-pop$ -- 1390
+newline$ -- 1395
+num.names$ -- 378
+pop$ -- 1588
 preamble$ -- 1
-purify$ -- 163
+purify$ -- 191
 quote$ -- 0
-skip$ -- 5901
+skip$ -- 6805
 stack$ -- 0
-substring$ -- 6040
-swap$ -- 1758
-text.length$ -- 124
+substring$ -- 6938
+swap$ -- 1997
+text.length$ -- 138
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 3696
+type$ -- 4256
 warning$ -- 0
-while$ -- 615
+while$ -- 691
 width$ -- 0
-write$ -- 1587
+write$ -- 1818
 (There was 1 warning)

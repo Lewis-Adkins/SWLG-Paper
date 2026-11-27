@@ -29,9 +29,6 @@
         scale = 1
     ]
 
-        % outer container: the whole encoder block
-
-
         \node (pe) at (0,-8) {$\bigoplus$};
         \node[
             draw,
@@ -43,8 +40,6 @@
             above = 20mm of pe,
         ] (outer){};
 
-        % positional-encoding options, stacked left of pe: RoPE level with pe,
-        % Sinusoidal/Zero-Init symmetric above/below it -- no manual coordinates
         
         \node[text= olive, text width = 3 cm, align=center](pe_disclaimer) at (-6,-6){Only one of the positoinal enoders (RoPE, Sin, Zero) are used for each training run };
         \node[pebox, above left =.5mm and 2cm of pe] (Sinusoidal) {Sinusoidal};
@@ -60,7 +55,6 @@
         \node[feedforwardbox, above =  5mm of norm1, text width = 2 cm, align=center](FeedForward){Feed Forward};
         \node[below= 1cm of Input_Embedding, text width = 3cm, align=center](input) {2 hour window of high and low electrons w/ current proton flux};
         \node[normbox, below = 2cm of MultiHead](norm2){Norm};
-
 
         \node[align = center] at (-5,-2){$\times 1$ Encoding Layers};
         \node[above = 5mm of MultiHead] (pe2) {$\bigoplus$};
@@ -86,7 +80,7 @@
         \draw[->,thick](MultiHead.north)--(pe2.south);
         \draw[->, thick](pe2.north)--(norm1.south);
         \draw[->,thick, text width = 3 cm, align=center](linear.north) -- ++(0,5mm) node[above] {Forecasted proton flux at $t+6$/$t+12$};
-        \path (5,-2); % invisible point, balances the bounding box against the "$\times 1$" label on the left
+        \path (5,-2);
     \end{tikzpicture}
     }
     \caption{Generic transformer architecture where positional encoding methods are indicated to show the difference between all models}

@@ -9,14 +9,11 @@
 \usepackage{colortbl}
 \usetikzlibrary{matrix, shapes, positioning, arrows.meta, fit, backgrounds, calc}
 
-% Fix overfull hboxes: the AGU class leaves \RaggedRightRightskip as a rigid 24pt
-% (no stretch), so ragged-right lines cannot break. Restore stretch and allow
-% emergency stretch for lines with unbreakable \texttt items.
 \AtBeginDocument{%
   \setlength{\RaggedRightRightskip}{0pt plus 2em}%
   \RaggedRight
   \setlength{\emergencystretch}{2em}%
-  \raggedbottom% let short pages end early instead of stretching space between equations
+  \raggedbottom%
 }
 
 \begin{document}
@@ -32,14 +29,14 @@
 \authorrunninghead{Adkins}
 \titlerunninghead{Comparative Analysis of Proton Flux Forecasting}
 
-\keypoints{TBD}{TBD}{TBD}
+\keypoints
+{Persistence nowcasts can be as reliable as more advanced forecasting models when predicting solar energetic particles.}
+{Bootstrap analysis can be an effective method to measure the prediction variability of models.}
+{Positional encoding methods in transformers offer little to no improvement in forecasting tasks.}
 
 \maketitle
-% \clearpage
-% \input{text/research_questions}
 \clearpage
 \input{text/abstract}
-\clearpage
 \input{text/plain_english_summary}
 \clearpage
 \input{text/introduction}
