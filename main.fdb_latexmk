@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1795817509.87395 "main.aux" "main.bbl" "main" 1795817582.87243 0
+["bibtex main"] 1795818404.42444 "main.aux" "main.bbl" "main" 1795818408.93004 0
   "./references.bib" 1795817480 35640 e15bba4c448e9abfb6a6c56ee28f396d ""
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374952728 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "main.aux" 1795817582 19857 f116013dfe586869a429f5b1d2fcfcaf "pdflatex"
+  "main.aux" 1795818408 19308 f1b597f82072e3b78638b8437e908412 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1795817578.80402 "c:/Users/Lewis/Documents/SWLG-Paper/main.tex" "main.pdf" "main" 1795817582.87309 0
+["pdflatex"] 1795818404.67053 "c:/Users/Lewis/Documents/SWLG-Paper/main.tex" "main.pdf" "main" 1795818408.93071 0
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1795793347 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1793386577 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1793386578 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -196,7 +196,7 @@
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/tex/latex/tools/indentfirst.sty" 1761901070 1618 30b01152766afcef2ed8f904cfdd3cc6 ""
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/Lewis/Documents/SWLG-Paper/main.tex" 1795817578 1630 8044d446255d99d8daf517dbd567425a ""
+  "c:/Users/Lewis/Documents/SWLG-Paper/main.tex" 1795817826 1630 8044d446255d99d8daf517dbd567425a ""
   "figs/agu/agujournal2025.cls" 1793386359 66604 ce017f982165d540863e127a3ff62ac7 ""
   "figs/approach/input/flux_series.png" 1795287151 189721 8e2e0050fcb334c4a2e24188dc4381cb ""
   "figs/approach/positional_encoding_methods/sinusoidal_positional_encoding/cos_positional_encoding.tex" 1795666707 95 673099d2b5d256fcb51a9ae5594eaac0 ""
@@ -228,9 +228,9 @@
   "figs/results/rq1/rq1_welch.png" 1795792046 372824 0387ad71bb351175828826de1149b884 ""
   "figs/results/rq1/rq1_welch_nophases.tex" 1795792076 307 25979b6d0af75b809c1c43a4c522774d ""
   "figs/results/train_time_table.tex" 1795754650 1179 0f7133267c0c62539ddd844c2d26ec17 ""
-  "main.aux" 1795817582 19857 f116013dfe586869a429f5b1d2fcfcaf "pdflatex"
-  "main.bbl" 1795817510 41243 2ce226798da3a19a348be70cb2717ce5 "bibtex main"
-  "main.tex" 1795817578 1630 8044d446255d99d8daf517dbd567425a ""
+  "main.aux" 1795818408 19308 f1b597f82072e3b78638b8437e908412 "pdflatex"
+  "main.bbl" 1795818404 39444 4fff02477516a0a83b6f34e5a35c991f "bibtex main"
+  "main.tex" 1795817826 1630 8044d446255d99d8daf517dbd567425a ""
   "text/abstract.tex" 1795815064 1569 a6806810f7710aad7f53ec3bdc0255f0 ""
   "text/approach.tex" 1795817480 15674 c158d54258dd2e24c1cb190c89807213 ""
   "text/conclusion.tex" 1795817480 3423 8cce7335337cfbd38bf2d4f7f0cf3cad ""
@@ -238,7 +238,7 @@
   "text/evaluation.tex" 1795817480 8420 913e1c5b60b67d00b98169b48a68c5d2 ""
   "text/introduction.tex" 1795817480 5301 99abdad660c13eb02deb4b52589660e5 ""
   "text/plain_english_summary.tex" 1795815117 873 43c06e1649b75ac285edc485e2ba6cea ""
-  "text/related_work.tex" 1795815409 3724 405100c1dd0bae914df3a8b2c0dc3ada ""
+  "text/related_work.tex" 1795818395 3096 20f2f44192060ad27412a0d379cabb0d ""
   "text/results.tex" 1795812305 3104 40bb226212dc240ea2b7343ed49df718 ""
   (generated)
   "main.aux"
