@@ -1,0 +1,30 @@
+\begin{table}[H]
+\centering
+\caption{Mean (standard deviation) training time in seconds of each model, over the 100 runs (10 bootstrap datasets $\times$ 10 seeds; one run per dataset for the baselines), for each forecast horizon with and without phases.}
+\label{tab:train-time}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+ & \multicolumn{2}{c}{Without phases} & \multicolumn{2}{c}{With phases} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Model & $t+6$ & $t+12$ & $t+6$ & $t+12$ \\
+\midrule
+Persistence & $<0.1$ & $<0.1$ & $<0.1$ & $<0.1$ \\
+\midrule
+Posner (2007) & 29.4 (1.8) & 29.5 (1.9) & 29.4 (1.8) & 29.3 (1.6) \\
+\midrule
+Linear regression & 0.9 (0.0) & 0.9 (0.0) & 2.4 (0.1) & 2.4 (0.0) \\
+\midrule
+NN & 18.0 (11.9) & 18.7 (11.8) & 17.1 (13.2) & 18.5 (10.1) \\
+\midrule
+RNN & 198.8 (90.7) & 231.4 (124.9) & 192.1 (119.5) & 193.8 (102.6) \\
+\midrule
+RoPE & 70.9 (41.5) & 91.1 (52.0) & 90.6 (61.3) & 101.3 (65.1) \\
+\midrule
+Sinusoidal & 3,148.5 (761.6) & 3,291.8 (704.7) & 3,307.4 (773.0) & 3,618.9 (1,016.9) \\
+\midrule
+Zero-Init & 68.2 (49.4) & 92.6 (66.7) & 84.0 (52.3) & 95.1 (80.6) \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.30)  26 NOV 2026 21:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.30)  27 NOV 2026 00:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -658,15 +658,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--4
 \OT1/cmr/m/n/9 shaded re-gion is the 95% con-fi-dence in-ter-val of $[]$. The val-ues of $[]\OML/cmm/m/it/9 ; S[]$ \OT1/cmr/m/n/9 and the con-fi-dence in-ter-val
  []
 
-) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/welch_t_test.tex [18 <./figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases.png>]) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/welch-t_hyp_test.tex) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/levenes_test.tex)) [19] (text/results.tex) [20
+) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/welch_t_test.tex [18 <./figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases.png>]) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/welch-t_hyp_test.tex) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/levenes_test.tex)) [19] (text/results.tex (figs/results/rq1/rq1_box_mae_nophases.tex
+<figs/results/rq1/rq1_box_mae_nophases.png, id=98, 323.0469pt x 297.2706pt>
+File: figs/results/rq1/rq1_box_mae_nophases.png Graphic file (type png)
+<use figs/results/rq1/rq1_box_mae_nophases.png>
+Package pdftex.def Info: figs/results/rq1/rq1_box_mae_nophases.png  used on input line 3.
+(pdftex.def)             Requested size: 318.00343pt x 292.62955pt.
 
-] (text/conclusion.tex) [21
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+[]\OT1/cmr/bx/n/9 Figure  6. \OT1/cmr/m/n/9 Boot-strap dis-tri-bu-tions of MAE for ev-ery model with-out phases. Each marker is
+ []
 
-] (text/declarations.tex) [22
 
-] (main.bbl [23
+Underfull \hbox (badness 2181) in paragraph at lines 4--4
+\OT1/cmr/m/n/9 the es-ti-mate from one of the $\OML/cmm/m/it/9 B \OT1/cmr/m/n/9 = 10$ boot-strap datasets. Solid boxes and cir-cles are the $\OML/cmm/m/it/9 t \OT1/cmr/m/n/9 + 6$
+ []
 
-] [24] [25]) [26] (main.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+\OT1/cmr/m/n/9 (30-minute) fore-casts, and hatched boxes and squares are the $\OML/cmm/m/it/9 t \OT1/cmr/m/n/9 + 12$ (60-minute) fore-casts. The
+ []
+
+) (figs/results/rq1/rq1_box_nophases.tex
+<figs/results/rq1/rq1_box_nophases.png, id=99, 465.1779pt x 635.0124pt>
+File: figs/results/rq1/rq1_box_nophases.png Graphic file (type png)
+<use figs/results/rq1/rq1_box_nophases.png>
+Package pdftex.def Info: figs/results/rq1/rq1_box_nophases.png  used on input line 3.
+(pdftex.def)             Requested size: 397.497pt x 542.62149pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+[]\OT1/cmr/bx/n/9 Figure  7. \OT1/cmr/m/n/9 Boot-strap dis-tri-bu-tions of (a) MAE, (b) PE, (c) lag, (d) F1, (e) HSS2, and (f)
+ []
+
+) (figs/results/rq1/rq1_box_phases.tex
+<figs/results/rq1/rq1_box_phases.png, id=100, 465.4188pt x 635.0124pt>
+File: figs/results/rq1/rq1_box_phases.png Graphic file (type png)
+<use figs/results/rq1/rq1_box_phases.png>
+Package pdftex.def Info: figs/results/rq1/rq1_box_phases.png  used on input line 3.
+(pdftex.def)             Requested size: 397.48979pt x 542.33081pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+[]\OT1/cmr/bx/n/9 Figure  8. \OT1/cmr/m/n/9 Boot-strap dis-tri-bu-tions of (a) MAE, (b) PE, (c) lag, (d) F1, (e) HSS2, and (f)
+ []
+
+
+Underfull \hbox (badness 7433) in paragraph at lines 4--4
+\OT1/cmr/m/n/9 TSS for ev-ery model with phases. Each marker is the es-ti-mate from one of the $\OML/cmm/m/it/9 B \OT1/cmr/m/n/9 = 10$ boot-
+ []
+
+[20
+
+ <./figs/results/rq1/rq1_box_mae_nophases.png>]
+Overfull \vbox (5.874pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (5.874pt too high) has occurred while \output is active []
+
+ [21 <./figs/results/rq1/rq1_box_nophases.png>])
+Overfull \vbox (5.58331pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (5.58331pt too high) has occurred while \output is active []
+
+ [22 <./figs/results/rq1/rq1_box_phases.png>] (figs/results/rq1/rq1_box_phases_table.tex) (figs/results/rq1/rq1_box_nophases_table.tex)) [23] [24] (text/conclusion.tex [25
+
+]) [26] (text/declarations.tex) [27
+
+] (main.bbl [28
+
+] [29] [30]) [31] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -679,17 +739,17 @@ LaTeX Font Warning: Size substitutions with differences
  )
 (\end occurred when \ifx on line 2 was incomplete) 
 Here is how much of TeX's memory you used:
- 18307 strings out of 467867
- 397736 string characters out of 5418334
- 802180 words of memory out of 5000000
- 46738 multiletter control sequences out of 15000+600000
+ 18371 strings out of 467867
+ 400344 string characters out of 5418334
+ 819460 words of memory out of 5000000
+ 46785 multiletter control sequences out of 15000+600000
  639345 words of font info for 86 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  88i,14n,94p,948b,876s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (26 pages, 1333826 bytes).
+Output written on main.pdf (31 pages, 2014555 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
+ 245 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

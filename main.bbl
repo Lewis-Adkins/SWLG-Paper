@@ -385,6 +385,77 @@ K{\"u}hl, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+LaNeve%
+\ \protect \BOthers {.}}{%
+LaNeve%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2026}}%
+}]{%
+LaNeve2026}
+\APACinsertmetastar {%
+LaNeve2026}%
+\begin{APACrefauthors}%
+LaNeve, C\BPBI M.%
+, Oughton, E\BPBI J.%
+, Rivera, N.%
+, Weigel, R\BPBI S.%
+, Thomas, D.%
+\BCBL {}\ \BBA {} Gaunt, C\BPBI T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2026}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Space Weather Mitigation Decisions by Critical
+  Infrastructure Operators During Solar Cycle 25} {Space weather mitigation
+  decisions by critical infrastructure operators during solar cycle 25}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{24}{9}{e2026SW005072}.
+\newblock
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2026SW005072}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{e2026SW005072 2026SW005072}
+\newblock
+\begin{APACrefDOI} \doi{10.1029/2026SW005072} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Laurenza%
+\ \protect \BOthers {.}}{%
+Laurenza%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+laurenza2009technique}
+\APACinsertmetastar {%
+laurenza2009technique}%
+\begin{APACrefauthors}%
+Laurenza, M.%
+, Cliver, E\BPBI W.%
+, Hewitt, J.%
+, Storini, M.%
+, Ling, A\BPBI G.%
+, Balch, C\BPBI C.%
+\BCBL {}\ \BBA {} Kaiser, M\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A technique for short-term warning of solar energetic
+  particle events based on flare location, flare size, and evidence of particle
+  escape} {A technique for short-term warning of solar energetic particle
+  events based on flare location, flare size, and evidence of particle
+  escape}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Space Weather}{7}{4}{}.
+\newblock
+\begin{APACrefDOI} \doi{10.1029/2007SW000379} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Müller-Mellin%
 \ \protect \BOthers {.}}{%
 Müller-Mellin%

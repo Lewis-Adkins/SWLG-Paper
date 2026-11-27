@@ -1,2 +1,22 @@
 \section{Results}
 \label{sec:results}
+Figure \ref{fig:rq1_box_mae_nophases} shows the distirbution of MAE values on a box and whisker plot for each 
+bootstrap dataset. Each model has a set of estimates for both $t+6$ and $t+12$.  The solid bold vertical line indicates the 
+median MAE for $t+6$ and the dashed line is for $t+12$. these serve as our benchmarks for our other models to beat. Depending on the metric,
+a value larger or smaller could indicate an imporvement. At the bottom of the plot is an arrow that points in the direction of imporvement. For 
+MAE, a smaller value is desirable.
+\input{figs/results/rq1/rq1_box_mae_nophases.tex}
+We can then analyze our results for all metrics in Figure \ref{fig:rq1_box_mae_nophases} for resutls using no phases, and Figure \ref{fig:rq1_box_phases} for phases.
+\input{figs/results/rq1/rq1_box_nophases.tex}
+\input{figs/results/rq1/rq1_box_phases.tex}
+A common feature across all across is the Posner model underperforming in forecasting SEPs. \cite{torres2025machine} demonstrates the same disparity 
+for the MAE values. The min and max values on the Posner plots are much further apart than all other models which indicates an
+unreliableness in the model. Posner was explained to have overpredicted SEP events causing a lower lag value \cite{torres2025machine}, but over multiple bootstrap runs, 
+that advantage disappears.
+
+Over the distirbution all other models  appears to perform relatively equivalent to the persistence model. Despoite te complex regressive training from the machine learning models a now cast of the proton flux is 
+indistinguishable. The parameter size of the models and the limited SEP event dataset 
+play a role in the model performance. Table \ref{tab:rq1_box_nophases} and Table \ref{tab:rq1_box_phases} displays the bootstrap mean and standard error of all metrics.    
+Bold values are the best mean metric results in that category
+\input{figs/results/rq1/rq1_box_phases_table.tex}
+\input{figs/results/rq1/rq1_box_nophases_table.tex}

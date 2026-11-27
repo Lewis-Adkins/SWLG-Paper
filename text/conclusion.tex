@@ -7,8 +7,21 @@ Overall, our results indicate better  reduction in MAE but relatively similar la
 Mirroring \cite{torres2025machine}, transformers have issues with delyaed SEP proton predictions whic leads to yielding poorer recall, precision, and therefore F1 scores. scaling these models with more electron inputs would lead to higher proton prediciton accuracy.
 
 \subsection{Future Work}
-After a baseline comparison of Torres RNN model, a hyper parameterization search can be used to find the model with the highest prediction accuracy.
-Other inputs to further inform the model such as coronal mass ejections (CME) or  magnetic B fields could also yield a higher prediction accuracy and F1 score.
-Further investigation of the effects of space weather into the the satellites components is another possibility.
-This requires satellite specific models to be produced to take in Single Event Upset (SEU) as an input.
-The main goal is to transfer techiniques developed here towards LEO sats such as GOES with there proton flux data.
+The machine leanring models trained in this work are relatively simple. The results produced give us an initial reading 
+of how each model can forecast SEP events. When add more complexity to our models, we should see improved results that can beat persistence.
+increasing embedding lengths characterizes features at a higher resolution. Investiagtions into whether improvements or degradations in the predictions are important?
+Measureing the value added in imporvement across all metrics is worth it given the computational cost and time to train. At what point do skills plateus and why? A hyperparameter search
+can be a method to explore and answer these questions
+
+The space sector is invested in protecting satellites in LEO and GEO. With improved forecast time
+we need to figure out if the timeliness of our model predictions is sufficient enough time for satellite operators to react
+and protect their platforms. A resposne time model that accounts for data acquistition, alerting, decision, uplilnking, and swithing satellie modes needs to be investiagted. \cite{LaNeve2026} surveys operators and documents common safegaruds
+they use when confronted with a warning. operators must balance cost of inflicted damange to satellites due to Single Event Upsets. 
+and switching their satellites to safe mode. Only 10\% of operators palce satellties in safe mode after a warning. Only one instance of satelltie repostioning has been recorded in the survey.
+Despite this, operators have identified the need for accurate localized harmful space weather forecasts.
+
+This study only examines the simple relationship of predicting proton fluxes from relativistic electrons. Other characteristics of space weather can correlate with events 
+to act as an precursor to SEP events.  Soft Xrays which are the one of th first detections of a solar storm has reduced false alram rates in forecasting models \cite{laurenza2009technique}.
+Flares  and Coronal Mass ejections in addition to proton flux has also increased forecasting skill score \cite{yu2026}. 
+
+
