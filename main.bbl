@@ -95,6 +95,37 @@ Camporeale, E.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Carlstein%
+, Do%
+, Hall%
+, Hesterberg%
+\BCBL {}\ \BBA {} K{\"u}nsch%
+}{%
+Carlstein%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1998}}%
+}]{%
+carlstein1998matched}
+\APACinsertmetastar {%
+carlstein1998matched}%
+\begin{APACrefauthors}%
+Carlstein, E.%
+, Do, K\BHBI A.%
+, Hall, P.%
+, Hesterberg, T.%
+\BCBL {}\ \BBA {} K{\"u}nsch, H\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Matched-block bootstrap for dependent data}
+  {Matched-block bootstrap for dependent data}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bernoulli}{4}{3}{305--328}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Dayeh%
 \ \protect \BOthers {.}}{%
 Dayeh%

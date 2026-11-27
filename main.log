@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.30)  26 NOV 2026 11:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.30)  26 NOV 2026 21:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -504,20 +504,20 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
  (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count338
@@ -543,35 +543,29 @@ File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 27.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 28.
  (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
  (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
  (C:\Users\Lewis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 34.
+(Font)              size <10.95> substituted on input line 35.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 34.
+(Font)              size <10.95> substituted on input line 35.
 
 [1{C:/Users/Lewis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (text/abstract.tex) [2
 
-] (text/plain_english_summary.tex) (text/introduction.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3
+] (text/plain_english_summary.tex) (text/introduction.tex [3
 
 
 ]) [4] (text/related_work.tex) [5
@@ -584,36 +578,12 @@ Package pdftex.def Info: figs/approach/input/flux_series.png  used on input line
 (pdftex.def)             Requested size: 397.48499pt x 157.53917pt.
  [6
 
- <./figs/approach/input/flux_series.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7] (figs/approach/transformers/parameter_count.tex [8]) (figs/approach/transformers/transformer_architecture.tex
+ <./figs/approach/input/flux_series.png>] [7] (figs/approach/transformers/parameter_count.tex [8]) (figs/approach/transformers/transformer_architecture.tex
 Underfull \hbox (badness 10000) in paragraph at lines 92--92
 []\OT1/cmr/bx/n/9 Figure  2. \OT1/cmr/m/n/9 Generic trans-former ar-chi-tec-ture where po-si-tional en-codign meth-ods are in-di-cated
  []
 
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9]
-Underfull \vbox (badness 1571) has occurred while \output is active []
-
-
-Underfull \vbox (badness 1571) has occurred while \output is active []
-
- [10] (figs/approach/transformers/sinusoidal_positional_encoding/equations/sin_positional_encoding.tex) (figs/approach/transformers/sinusoidal_positional_encoding/equations/cos_positional_encoding.tex)
-Underfull \vbox (badness 1072) has occurred while \output is active []
-
-
-Underfull \vbox (badness 1072) has occurred while \output is active []
-
- [11] [12]) [13] (text/evaluation.tex (figs/evaluation/time_intensity_profile/evaluation_criteria/tables/metrics_table.tex
+) [9] [10] (figs/approach/positional_encoding_methods/sinusoidal_positional_encoding/sin_positional_encoding.tex) (figs/approach/positional_encoding_methods/sinusoidal_positional_encoding/cos_positional_encoding.tex) [11] [12]) [13] (text/evaluation.tex (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/metrics_table.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--3
 []\OT1/cmr/bx/n/9 Table 2. \OT1/cmr/m/n/9 Eval-u-a-tion met-rics for con-tin-u-ous pro-ton flux pre-dic-tion and bi-nary SEP event clas-si-
  []
@@ -634,413 +604,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--3
  []
 
 )
-<figs/evaluation/time_intensity_profile/evaluation_criteria/equations/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png, id=70, 505.89pt x 361.35pt>
-File: figs/evaluation/time_intensity_profile/evaluation_criteria/equations/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png Graphic file (type png)
-<use figs/evaluation/time_intensity_profile/evaluation_criteria/equations/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png>
-Package pdftex.def Info: figs/evaluation/time_intensity_profile/evaluation_criteria/equations/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png  used on input line 20.
+<figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png, id=70, 505.89pt x 361.35pt>
+File: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png Graphic file (type png)
+<use figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png>
+Package pdftex.def Info: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png  used on input line 20.
 (pdftex.def)             Requested size: 233.97044pt x 167.12175pt.
  [14
 
-]
-<figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/bootstrap_stack.png, id=76, 867.24pt x 476.982pt>
-File: figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/bootstrap_stack.png Graphic file (type png)
-<use figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/bootstrap_stack.png>
-Package pdftex.def Info: figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/bootstrap_stack.png  used on input line 43.
-(pdftex.def)             Requested size: 357.74092pt x 196.75749pt.
- [15 <./figs/evaluation/time_intensity_profile/evaluation_criteria/equations/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png>] (figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/bootstrap_estimate.tex) (figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/mean_bootstrap_estimate.tex) (figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/bootstrap_variance.tex) (figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/confidence_interval.tex) (figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/sample_bootstrap_estimates_variance.tex [16 <./figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/bootstrap_stack.png>]) (figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/welch_t_test.tex) (figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/welch-t_hyp_test.tex) (figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/levenes_test.tex)) [17] (text/results.tex
-<figs/results/bootstrap/mae_sin_t+6_phases.png, id=88, 433.62pt x 289.08pt>
-File: figs/results/bootstrap/mae_sin_t+6_phases.png Graphic file (type png)
-<use figs/results/bootstrap/mae_sin_t+6_phases.png>
-Package pdftex.def Info: figs/results/bootstrap/mae_sin_t+6_phases.png  used on input line 12.
-(pdftex.def)             Requested size: 278.23827pt x 185.50018pt.
+] [15 <./figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png>]
+<figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_flux_series.png, id=80, 483.4863pt x 383.031pt>
+File: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_flux_series.png Graphic file (type png)
+<use figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_flux_series.png>
+Package pdftex.def Info: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_flux_series.png  used on input line 57.
+(pdftex.def)             Requested size: 337.54543pt x 267.41267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--13
-[]\OT1/cmr/bx/n/9 Figure  5. \OT1/cmr/m/n/9 MAE of the si-nu-soidal trans-former at $\OML/cmm/m/it/9 t \OT1/cmr/m/n/9 + 6$ (30 min-utes) on each of the 10 boot-
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
+[]\OT1/cmr/bx/n/9 Figure  4. \OT1/cmr/m/n/9 The orig-nal time se-ries par-ti-cle data with two vari-a-tions of the block boot-strap
+ []
+
+[16] (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_estimate.tex) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/mean_bootstrap_estimate.tex) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_variance.tex [17 <./figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_flux_series.png>]) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/confidence_interval.tex) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sample_bootstrap_estimates_variance.tex) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases_figure.tex
+<figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases.png, id=88, 540.5796pt x 303.534pt>
+File: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases.png Graphic file (type png)
+<use figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases.png>
+Package pdftex.def Info: figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases.png  used on input line 3.
+(pdftex.def)             Requested size: 397.49033pt x 223.18974pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+[]\OT1/cmr/bx/n/9 Figure  5. \OT1/cmr/m/n/9 Boot-strap dis-tri-bu-tions of the eval-u-a-tion met-rics for the si-nu-soidal trans-former at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--13
-\OT1/cmr/m/n/9 strap datasets (seeds av-er-aged per dataset), with the mean, mean $\OMS/cmsy/m/n/9 ^^F$ \OT1/cmr/m/n/9 SE and the 95% per-centile
- []
-
-<figs/results/bootstrap/train_time_bars_grouped.png, id=89, 469.755pt x 578.16pt>
-File: figs/results/bootstrap/train_time_bars_grouped.png Graphic file (type png)
-<use figs/results/bootstrap/train_time_bars_grouped.png>
-Package pdftex.def Info: figs/results/bootstrap/train_time_bars_grouped.png  used on input line 19.
-(pdftex.def)             Requested size: 278.23827pt x 342.44356pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
-[]\OT1/cmr/bx/n/9 Figure  6. \OT1/cmr/m/n/9 Mean train-ing time of ev-ery model over the 10 boot-strap datasets, one bar per
+Underfull \hbox (badness 1590) in paragraph at lines 4--4
+\OT1/cmr/m/n/9 the $\OML/cmm/m/it/9 t \OT1/cmr/m/n/9 + 6$ fore-cast hori-zon with phases, over the $\OML/cmm/m/it/9 B \OT1/cmr/m/n/9 = 10$ boot-strap datasets. Each panel shows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
-\OT1/cmr/m/n/9 fore-cast hori-zon and phase set-ting, with boot-strap stan-dard er-ror bars. Base-lines are above the
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+\OT1/cmr/m/n/9 the rel-a-tive fre-quency of one met-ric: mean ab-so-lute er-ror (MAE), mean squared er-ror (MSE),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
-\OT1/cmr/m/n/9 dashed line and cham-pi-ons be-low it. Green marks the low-est mean (out-line) and small-est stan-
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+\OT1/cmr/m/n/9 onset-to-peak (O2P) lag, pre-dic-tion ef-fi-ciency (PE), F1, Hei-dke skill score (HSS2), and true skill
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18
-
- <./figs/results/bootstrap/mae_sin_t+6_phases.png>]
-<figs/results/bootstrap/mae_bars_grouped.png, id=95, 469.755pt x 578.16pt>
-File: figs/results/bootstrap/mae_bars_grouped.png Graphic file (type png)
-<use figs/results/bootstrap/mae_bars_grouped.png>
-Package pdftex.def Info: figs/results/bootstrap/mae_bars_grouped.png  used on input line 28.
-(pdftex.def)             Requested size: 278.23827pt x 342.44356pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-[]\OT1/cmr/bx/n/9 Figure  7. \OT1/cmr/m/n/9 Mean MAE of ev-ery model over the 10 boot-strap datasets, one bar per fore-cast
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+\OT1/cmr/m/n/9 statis-tic (TSS). The or-ange dashed line is the mean $[]$, the dot-ted lines are $[] \OMS/cmsy/m/n/9 ^^F \OML/cmm/m/it/9 S[]$ \OT1/cmr/m/n/9 , and the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-\OT1/cmr/m/n/9 hori-zon and phase set-ting, with boot-strap stan-dard er-ror bars. Base-lines are above the dashed
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+\OT1/cmr/m/n/9 shaded re-gion is the 95% con-fi-dence in-ter-val of $[]$. The val-ues of $[]\OML/cmm/m/it/9 ; S[]$ \OT1/cmr/m/n/9 and the con-fi-dence in-ter-val
  []
 
+) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/welch_t_test.tex [18 <./figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases.png>]) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/welch-t_hyp_test.tex) (figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/levenes_test.tex)) [19] (text/results.tex) [20
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-\OT1/cmr/m/n/9 line and cham-pi-ons be-low it. Green marks the low-est mean (out-line) and small-est stan-dard er-ror
- []
+] (text/conclusion.tex) [21
 
+] (text/declarations.tex) [22
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+] (main.bbl [23
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19 <./figs/results/bootstrap/train_time_bars_grouped.png>]
-<figs/results/bootstrap/mae_boxplot_grouped.png, id=101, 469.755pt x 578.16pt>
-File: figs/results/bootstrap/mae_boxplot_grouped.png Graphic file (type png)
-<use figs/results/bootstrap/mae_boxplot_grouped.png>
-Package pdftex.def Info: figs/results/bootstrap/mae_boxplot_grouped.png  used on input line 40.
-(pdftex.def)             Requested size: 278.23827pt x 342.44356pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
-[]\OT1/cmr/bx/n/9 Figure  8. \OT1/cmr/m/n/9 MAE of ev-ery model on the 10 boot-strap datasets (seeds av-er-aged per dataset), one
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
-\OT1/cmr/m/n/9 box per fore-cast hori-zon and phase set-ting. Base-lines are above the dashed line and cham-pi-ons
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
-\OT1/cmr/m/n/9 be-low it. Green marks the low-est me-dian (line) and small-est in-terquar-tile range (box out-line)
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20 <./figs/results/bootstrap/mae_bars_grouped.png>]
-<figs/results/bootstrap/o2p_lag_bars_grouped.png, id=106, 469.755pt x 578.16pt>
-File: figs/results/bootstrap/o2p_lag_bars_grouped.png Graphic file (type png)
-<use figs/results/bootstrap/o2p_lag_bars_grouped.png>
-Package pdftex.def Info: figs/results/bootstrap/o2p_lag_bars_grouped.png  used on input line 50.
-(pdftex.def)             Requested size: 278.23827pt x 342.44356pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--51
-[]\OT1/cmr/bx/n/9 Figure  9. \OT1/cmr/m/n/9 Mean onset-to-peak (O2P) lag of ev-ery model over the 10 boot-strap datasets, in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--51
-\OT1/cmr/m/n/9 5-minute steps, one bar per fore-cast hori-zon and phase set-ting, with boot-strap stan-dard er-ror
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--51
-\OT1/cmr/m/n/9 bars. Base-lines are above the dashed line and cham-pi-ons be-low it. Green marks the mean clos-est
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21 <./figs/results/bootstrap/mae_boxplot_grouped.png>]
-<figs/results/bootstrap/o2p_lag_boxplot_grouped.png, id=111, 469.755pt x 578.16pt>
-File: figs/results/bootstrap/o2p_lag_boxplot_grouped.png Graphic file (type png)
-<use figs/results/bootstrap/o2p_lag_boxplot_grouped.png>
-Package pdftex.def Info: figs/results/bootstrap/o2p_lag_boxplot_grouped.png  used on input line 63.
-(pdftex.def)             Requested size: 278.23827pt x 342.44356pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
-[]\OT1/cmr/bx/n/9 Figure  10. \OT1/cmr/m/n/9 Onset-to-peak (O2P) lag of ev-ery model on the 10 boot-strap datasets (seeds av-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
-\OT1/cmr/m/n/9 er-aged per dataset), in 5-minute steps, one box per fore-cast hori-zon and phase set-ting. Base-lines
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
-\OT1/cmr/m/n/9 are above the dashed line and cham-pi-ons be-low it. Green marks the me-dian clos-est to zero (line)
- []
-
-[22 <./figs/results/bootstrap/o2p_lag_bars_grouped.png>]
-<figs/results/bootstrap/pe_bars_grouped.png, id=116, 469.755pt x 578.16pt>
-File: figs/results/bootstrap/pe_bars_grouped.png Graphic file (type png)
-<use figs/results/bootstrap/pe_bars_grouped.png>
-Package pdftex.def Info: figs/results/bootstrap/pe_bars_grouped.png  used on input line 72.
-(pdftex.def)             Requested size: 278.23827pt x 342.44356pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
-[]\OT1/cmr/bx/n/9 Figure  11. \OT1/cmr/m/n/9 Mean pre-dic-tion ef-fi-ciency (PE) of ev-ery model over the 10 boot-strap datasets,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
-\OT1/cmr/m/n/9 one bar per fore-cast hori-zon and phase set-ting, with boot-strap stan-dard er-ror bars. Base-lines
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
-\OT1/cmr/m/n/9 are above the dashed line and cham-pi-ons be-low it. Green marks the high-est mean (out-line) and
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23 <./figs/results/bootstrap/o2p_lag_boxplot_grouped.png>]
-<figs/results/bootstrap/pe_boxplot_grouped.png, id=121, 469.755pt x 578.16pt>
-File: figs/results/bootstrap/pe_boxplot_grouped.png Graphic file (type png)
-<use figs/results/bootstrap/pe_boxplot_grouped.png>
-Package pdftex.def Info: figs/results/bootstrap/pe_boxplot_grouped.png  used on input line 84.
-(pdftex.def)             Requested size: 278.23827pt x 342.44356pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
-[]\OT1/cmr/bx/n/9 Figure  12. \OT1/cmr/m/n/9 Pre-dic-tion ef-fi-ciency (PE) of ev-ery model on the 10 boot-strap datasets (seeds
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
-\OT1/cmr/m/n/9 av-er-aged per dataset), one box per fore-cast hori-zon and phase set-ting. Base-lines are above the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
-\OT1/cmr/m/n/9 dashed line and cham-pi-ons be-low it. Green marks the high-est me-dian (line) and small-est in-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24 <./figs/results/bootstrap/pe_bars_grouped.png>]
-<figs/results/true_vs_pred/best_model_counts_phases.png, id=126, 722.7pt x 361.35pt>
-File: figs/results/true_vs_pred/best_model_counts_phases.png Graphic file (type png)
-<use figs/results/true_vs_pred/best_model_counts_phases.png>
-Package pdftex.def Info: figs/results/true_vs_pred/best_model_counts_phases.png  used on input line 100.
-(pdftex.def)             Requested size: 278.23827pt x 139.11742pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
-[]\OT1/cmr/bx/n/9 Figure  13. \OT1/cmr/m/n/9 Num-ber of events on which each model had the high-est $\OML/cmm/m/it/9 R[]$ \OT1/cmr/m/n/9 be-tween true and pre-
- []
-
-
-Underfull \vbox (badness 2799) has occurred while \output is active []
-
-
-Underfull \vbox (badness 2799) has occurred while \output is active []
-
- [25 <./figs/results/bootstrap/pe_boxplot_grouped.png>]
-<figs/results/true_vs_pred/best_model_counts_nophases.png, id=132, 722.7pt x 361.35pt>
-File: figs/results/true_vs_pred/best_model_counts_nophases.png Graphic file (type png)
-<use figs/results/true_vs_pred/best_model_counts_nophases.png>
-Package pdftex.def Info: figs/results/true_vs_pred/best_model_counts_nophases.png  used on input line 107.
-(pdftex.def)             Requested size: 278.23827pt x 139.11742pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]\OT1/cmr/bx/n/9 Figure  14. \OT1/cmr/m/n/9 Num-ber of events on which each model had the high-est $\OML/cmm/m/it/9 R[]$ \OT1/cmr/m/n/9 be-tween true and pre-
- []
-
-<figs/results/true_vs_pred/event_01_phases.png, id=133, 1011.78pt x 3468.96pt>
-File: figs/results/true_vs_pred/event_01_phases.png Graphic file (type png)
-<use figs/results/true_vs_pred/event_01_phases.png>
-Package pdftex.def Info: figs/results/true_vs_pred/event_01_phases.png  used on input line 114.
-(pdftex.def)             Requested size: 165.73228pt x 568.22694pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
-[]\OT1/cmr/bx/n/9 Figure  15. \OT1/cmr/m/n/9 True vs pre-dicted pro-ton flux for event 1 (on-set 1997-11-04), with phases: one
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
-\OT1/cmr/m/n/9 panel per model (rows) and fore-cast hori-zon (columns), with the re-gres-sion fit, the 95% con-fi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
-\OT1/cmr/m/n/9 dence in-ter-val of the slope and the 95% pre-dic-tion in-ter-val. Green boxes mark the high-est $\OML/cmm/m/it/9 R[]$ \OT1/cmr/m/n/9 for
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [26 <./figs/results/true_vs_pred/best_model_counts_phases.png> <./figs/results/true_vs_pred/best_model_counts_nophases.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27 <./figs/results/true_vs_pred/event_01_phases.png>]
-<figs/results/f1/f1_approaches_t+6_phases.png, id=143, 469.755pt x 469.755pt>
-File: figs/results/f1/f1_approaches_t+6_phases.png Graphic file (type png)
-<use figs/results/f1/f1_approaches_t+6_phases.png>
-Package pdftex.def Info: figs/results/f1/f1_approaches_t+6_phases.png  used on input line 126.
-(pdftex.def)             Requested size: 337.86465pt x 337.86494pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-[]\OT1/cmr/bx/n/9 Figure  16. \OT1/cmr/m/n/9 F1 against alert win-dow for the four alert-ing ap-proaches (W, EW, EAW, AW),
- []
-
-<figs/results/f1/f1_approaches_t+6_nophases.png, id=144, 469.755pt x 469.755pt>
-File: figs/results/f1/f1_approaches_t+6_nophases.png Graphic file (type png)
-<use figs/results/f1/f1_approaches_t+6_nophases.png>
-Package pdftex.def Info: figs/results/f1/f1_approaches_t+6_nophases.png  used on input line 133.
-(pdftex.def)             Requested size: 337.86465pt x 337.86494pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
-[]\OT1/cmr/bx/n/9 Figure  17. \OT1/cmr/m/n/9 F1 against alert win-dow for the four alert-ing ap-proaches (W, EW, EAW, AW),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
-\OT1/cmr/m/n/9 ($\OML/cmm/m/it/9 t \OT1/cmr/m/n/9 + 6$, no-phases). Each line is the mean over the 10 boot-strap datasets (seeds av-er-aged per
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28 <./figs/results/f1/f1_approaches_t+6_phases.png>]
-<figs/results/f1/f1_approaches_t+12_phases.png, id=149, 469.755pt x 469.755pt>
-File: figs/results/f1/f1_approaches_t+12_phases.png Graphic file (type png)
-<use figs/results/f1/f1_approaches_t+12_phases.png>
-Package pdftex.def Info: figs/results/f1/f1_approaches_t+12_phases.png  used on input line 140.
-(pdftex.def)             Requested size: 337.86465pt x 337.86494pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
-[]\OT1/cmr/bx/n/9 Figure  18. \OT1/cmr/m/n/9 F1 against alert win-dow for the four alert-ing ap-proaches (W, EW, EAW, AW),
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29 <./figs/results/f1/f1_approaches_t+6_nophases.png>]
-<figs/results/f1/f1_approaches_t+12_nophases.png, id=154, 469.755pt x 469.755pt>
-File: figs/results/f1/f1_approaches_t+12_nophases.png Graphic file (type png)
-<use figs/results/f1/f1_approaches_t+12_nophases.png>
-Package pdftex.def Info: figs/results/f1/f1_approaches_t+12_nophases.png  used on input line 147.
-(pdftex.def)             Requested size: 337.86465pt x 337.86494pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
-[]\OT1/cmr/bx/n/9 Figure  19. \OT1/cmr/m/n/9 F1 against alert win-dow for the four alert-ing ap-proaches (W, EW, EAW, AW),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
-\OT1/cmr/m/n/9 ($\OML/cmm/m/it/9 t \OT1/cmr/m/n/9 + 12$, no-phases). Each line is the mean over the 10 boot-strap datasets (seeds av-er-aged per
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30 <./figs/results/f1/f1_approaches_t+12_phases.png>]
-<figs/results/hypothesis_testing/welch_sin.png, id=159, 685.96275pt x 643.203pt>
-File: figs/results/hypothesis_testing/welch_sin.png Graphic file (type png)
-<use figs/results/hypothesis_testing/welch_sin.png>
-Package pdftex.def Info: figs/results/hypothesis_testing/welch_sin.png  used on input line 167.
-(pdftex.def)             Requested size: 397.48499pt x 372.7145pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--168
-[]\OT1/cmr/bx/n/9 Figure  20. \OT1/cmr/m/n/9 One-sided Welch's $\OML/cmm/m/it/9 t$\OT1/cmr/m/n/9 -test of the si-nu-soidal trans-former against each base-line, for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--168
-\OT1/cmr/m/n/9 ev-ery met-ric and cat-e-gory, on the per-dataset means. Green: $\OML/cmm/m/it/9 H[]$ \OT1/cmr/m/n/9 re-jected (si-nu-soidal trans-former
- []
-
-[31 <./figs/results/f1/f1_approaches_t+12_nophases.png>]
-<figs/results/hypothesis_testing/levene_sin.png, id=165, 685.96275pt x 643.203pt>
-File: figs/results/hypothesis_testing/levene_sin.png Graphic file (type png)
-<use figs/results/hypothesis_testing/levene_sin.png>
-Package pdftex.def Info: figs/results/hypothesis_testing/levene_sin.png  used on input line 176.
-(pdftex.def)             Requested size: 397.48499pt x 372.7145pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
-[]\OT1/cmr/bx/n/9 Figure  21. \OT1/cmr/m/n/9 One-sided Lev-ene's test (me-dian cen-tre) of the si-nu-soidal trans-former against each
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
-\OT1/cmr/m/n/9 base-line, for ev-ery met-ric and cat-e-gory, on the per-dataset val-ues. Green: $\OML/cmm/m/it/9 H[]$ \OT1/cmr/m/n/9 re-jected (si-nu-soidal
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32 <./figs/results/hypothesis_testing/welch_sin.png>]) [33 <./figs/results/hypothesis_testing/levene_sin.png>] (text/conclusion.tex) [34
-
-] (text/declarations.tex) [35
-
-] (main.bbl
-Underfull \vbox (badness 5862) has occurred while \output is active []
-
-
-Underfull \vbox (badness 5862) has occurred while \output is active []
-
- [36
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38]) [39] (main.aux)
+] [24] [25]) [26] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1053,17 +679,17 @@ LaTeX Font Warning: Size substitutions with differences
  )
 (\end occurred when \ifx on line 2 was incomplete) 
 Here is how much of TeX's memory you used:
- 18424 strings out of 467867
- 400587 string characters out of 5418334
- 802345 words of memory out of 5000000
- 46858 multiletter control sequences out of 15000+600000
+ 18307 strings out of 467867
+ 397736 string characters out of 5418334
+ 802180 words of memory out of 5000000
+ 46738 multiletter control sequences out of 15000+600000
  639345 words of font info for 86 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 88i,14n,94p,729b,876s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,14n,94p,948b,876s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Lewis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (39 pages, 2925997 bytes).
+Output written on main.pdf (26 pages, 1333826 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
+ 223 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

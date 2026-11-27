@@ -48,9 +48,9 @@ Because we are only predicting a singular timestamp of proton flux in the future
 outputs from $\mathbf{Y}$ rather than one value \cite{vaswani2017attention}.
 
 For our time series data, we use two hours of historical particle flux data of our two electron channels and $>10$ MeV proton channel. The magnitude in differences of fluxes between our channels  is large enough to cause 
-unstable trianing and testing therefore we apply a $\log$ transformation to the entire dataset, resulting compressing the mean and  variance on the same scale. The standard method is to 
+unstable trianing and testing therefore we apply a natural $\log$ transformation to the entire dataset, resulting compressing the mean and  variance on the same scale. The standard method is to 
 subtract by the mean and divide by the standard deviation, a process called "standardization". To ensure our NN and RNN
-align with \cite{torres2025machine} model results, the prior method is selected instead. 
+align with \cite{torres2025machine} model results, the prior method is selected instead to replicate \cite{torres2025machine}
 
 We set $t$ to indicate present time. Becasue of the cadence of 5 minutes,
  $t - 25$ timestamps creates twenty-four 5-min intervals of particle flux forming a window of inputs before and including the current time. For each window, we define an input sample:
@@ -107,9 +107,9 @@ The input window is split into smaller chunks called tokens. For each token, a v
 $i$ is the dimension of the PE vector. Odd and even indexes in the vector are determined by \eqref{cosPE} and \eqref{sinPE} respectively. This gives us a new vector $\mathbf{w_\text{pos}} \in \mathbb{R}^{l \times 1}$.
 \eqref{sinPE} and \eqref{cosPE} to represent a linear relationship between two encoded positions.
 
-\input{figs/approach/transformers/sinusoidal_positional_encoding/equations/sin_positional_encoding}
+\input{figs/approach/positional_encoding_methods/sinusoidal_positional_encoding/sin_positional_encoding}
 
-\input{figs/approach/transformers/sinusoidal_positional_encoding/equations/cos_positional_encoding}
+\input{figs/approach/positional_encoding_methods/sinusoidal_positional_encoding/cos_positional_encoding}
 
  The frequency decreases exponentially by a scale factor as the position in the model dimensions increase.
  Similarly stated in Section \ref{sec:transformer}, in the short term we can map small patterns in data, a $\sin/\cos$ function with a high frequency.

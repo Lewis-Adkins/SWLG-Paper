@@ -9,7 +9,7 @@ To quantify the performance of predicting proton flux intensity we use four cont
 three binary deterministic bianry classification scores \cite{Camporeale2019}. The continuous variable metrics are 
 measured for each event while the bianry classifications over the entire flux dataset. 
 
-\input{figs/evaluation/time_intensity_profile/evaluation_criteria/tables/metrics_table.tex}
+\input{figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/metrics_table.tex}
 
 The metrics are standard in time series forecasting benchmarks except for lag, which measures if a preidction is on time, too late or too ealy.
 We shift our predicted protons between the onset and peak of each event align with the true protons and measure MAE at each shift.
@@ -17,59 +17,71 @@ Once we have the minimum value of MAE we measure the time lag \cite{torres2025ma
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.7\textwidth,height=0.25\textheight,keepaspectratio]{figs/evaluation/time_intensity_profile/evaluation_criteria/equations/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png}
+    \includegraphics[width=0.7\textwidth,height=0.25\textheight,keepaspectratio]{figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/metrics/lag_diagram_sin_t+6_phases_dataset0_run00_event1.png}
     \caption{Lag observed on event 1 from sinusoidal transformer.}
     \label{fig:lag_event1}
 \end{figure}
 
-\subsubsection{Resampled Block Bootstrapping}
+\subsubsection{Resampled Time Series Block Bootstrapping}
 
 The resample bootstrap is a statistical process that measures the accuracy of our estimated metrics $\hat{\theta}$ with standard
  $\hat{\sigma}$.  With the standard errors we can then approximate confidence intervals of our unknown parameter $\theta$ \cite{Efron1986}. All metrics are computed with
  a $95 \%$ confidence interval.
 
-For a time series, a A block bootstrap partitions the original data and resample the blocks in a shuffled order for a new time series dataset.
+For a time series, a variation of the bootstrap, Moving Block Bootstrap (MBB), is used.
 A standard bootstrap samples individual timestamps of the fluxes from the original dataset  causing loss of the electron proton rising patterns 
-necessary to make predictions.
-
-We first block from $t-36$ before the onset of each event to the end event timestamp and slice them out of the dataset.
+necessary to make predictions. We first block from $t-36$ before the onset of each event to the end event timestamp and slice them out of the dataset.
 This leaves us with the background data left in the time series.
-We choose a block size of $N^{1/3}$ where $N$ is the length of our eventless time series data.
-\cite{bertail2024optimal}.
-Repeating this process nine times plus our original dataset, $d_0$, we are left with ten total datasets. 
 
-\begin{figure}[!htbp]
+With the remainig background flux data we perform a MBB and resample with replacement. To determine the block size we use a optimized formula
+that considers the autocovariance $\gamma(k)$ of the time series and spectral density function $f(\omega)$ \cite{bertail2024optimal}.
+\begin{align}
+    \gamma(k) &= \text{Cov}(X_1, X_{1+k})&& 
+    f(0) = \frac{1}{\pi}\sum_{k = 0}^{M} \gamma(k) \\
+    D &= \frac{4}{3}\left(2\pi f(0)\right)^2 &&
+    G = \sum_{k=0}^{M} |k| \gamma(k) \\
+    b_\text{opt} &= \left[ \frac{2Gn}{D} \right]^{1/3}
+\end{align}
+where $k$ is the steps between two timestamps (lag). $M$ is the maximum amount of steps between two timestamps that we sum.
+This block size optimization expects the multivarite time series autocovraince to decay over time \cite{bertail2024optimal}. With our data
+we set $M = 100$, $8.3$ hours, which is above the median length of SEP events.
+
+Another issue is the matching of our block ends. when we resample, a preivous block ending with a high proton flux
+could be joined with a block with low proton flux. this jump in the fluxes disrupts are training and creates
+spikes in data where they dont exists. when an initial block is selected we check the last proton flux value.
+We increase the probability of resmapling a block that starts with that same proton flux value. repeating until the number of blocks yields us a 
+dataset that is the saem size as the oringal particle data \cite{carlstein1998matched}. We repeat until we have 
+ten datasets in totla including the original.
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,height=0.5\textheight,keepaspectratio]{figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/bootstrap_stack.png}
-    \caption{.}
-    \label{fig:bootstrap_chunking}
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_flux_series.png}
+    \caption{The orignal time series particle data with two variations of the block bootstrap methods}
+    \label{fig:bootstrap_flux_series}
 \end{figure}
-
-Each dataset is split into training and testing portions with an 80/20 ratio. $d_0$ contains $21$ SEP events in the training split and $18$ in the test split.
+Each dataset is split into training and testing portions with an 80/20 ratio. the original dataset contains $21$ SEP events in the training split and $18$ in the test split.
 Bootstrapping randomly switches these events from train or test portions allowing forecasting models learn from all $39$ SEP events rather than $21$.
 Each machine learning model trains 10 models on each dataset totaling 100 models for one forecasting time lead $(t+6, t+12)$.
 
 For each model and each dataset we produce a sample, $\theta^*$ of every metric (MAE, Lag, F1, PE). We assume a Student-T distribution for a  small sample size ($n=10$) and unknown population variance. We compute mean estimates for all samples to get a bootstrap estimate of a metric $\hat{\theta}$:
-\input{figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/bootstrap_estimate}
-
+\input{figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_estimate}
 For each metric measured from a model trained on a dataset we compute the mean bootstrap estimate
-
-\input{figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/mean_bootstrap_estimate}
-
+\input{figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/mean_bootstrap_estimate}
 Where $B$ is the number of datasets. We retrieve the standard error for  and the standard bias respectively:
-\input{figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/bootstrap_variance}
-
+\input{figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/bootstrap_variance}
 A bootstrap confidence is calculated with a significance level of $\alpha = .05$:
-\input{figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/confidence_interval}
+\input{figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/confidence_interval}
 where $v$ is the degrees of freedom and $s_{\theta^*}$ is the sample variance of the bootrap estimate:
-\input{figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/sample_bootstrap_estimates_variance.tex}
- For every deep learning "champion" model we want to compare our metrics with baseline models described in Section~\ref{sec: baseline_methods_used_for_comparison}. A Welch -T Test compares the mean performance of each champion model to baseline model. Neither the population variances are known making this test the most fitting method \cite{delacre2017welch}. We don't expect 
+\input{figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sample_bootstrap_estimates_variance.tex}
+\input{figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/sin_metrics_t6_phases_figure}
+ For every model we want to compare our metrics with the persistence model described in Section~\ref{sec: baseline_methods_used_for_comparison}. A Welch -T Test compares the mean performance of each champion model to baseline model. Neither the population variances are known making this test the most fitting method \cite{delacre2017welch}. We don't expect 
  baseline and champion models to have homogenous variances \cite{welch1947generalization}.
- \input{figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/welch_t_test}
-
+ \input{figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/welch_t_test}
 The associated alternative hypothesis tests for each metric is as follows:
-\input{figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/welch-t_hyp_test.tex}
+\input{figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/welch-t_hyp_test.tex}
+The Welch-T test does not test the variances of the sample metrics \cite{welch1947generalization}. 
 
-The Welch-T test does not test the variances of the sample metrics \cite{welch1947generalization}. The Levenes test has been used to measure the spread of samples \cite{zhou2023homogeneity}.
-\input{figs/evaluation/time_intensity_profile/learning_and_evaluation_procedures/equations/levenes_test.tex}
-
+The Levenes test has been used to measure the spread of samples \cite{zhou2023homogeneity} We take the sum of the absolute deviations for all models at every bootstrap $z_{k,i}$ resulting in $B=10$ values.
+Because we are comparing our variances to persistence $k$ only indicates if its a persistence model or not. We then take the mean and find the sample variance of $z_{k,i}$, $S_z^2$.
+\input{figs/evaluation/evaluation_of_sep_time_intensity_profile_prediction/resampled_time_series_block_bootstrapping/levenes_test.tex}
+$v$ is our degrees of freedom and if $t$ is  larger than the $t$-critical value, then the persistence model has a larger variance in its predictions
+and therefore less consistent
