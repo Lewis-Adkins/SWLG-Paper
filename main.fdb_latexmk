@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1795755681.2771 "main.aux" "main.bbl" "main" 1795755837.82303 0
+["bibtex main"] 1795758217.36188 "main.aux" "main.bbl" "main" 1795758221.69596 0
   "./references.bib" 1795751630 32186 a1fa91466751aa5183e5ba8a264dd7fe ""
   "C:/Users/Lewis/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374952728 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "main.aux" 1795755837 14126 cf6aa73e04985d95b643381f4c832c5a "pdflatex"
+  "main.aux" 1795758221 14396 45d01b89a8f82bedf0e19360fee191c7 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1795755834.40308 "c:/Users/Lewis/Documents/SWLG-Paper/main.tex" "main.pdf" "main" 1795755837.8237 0
+["pdflatex"] 1795758217.59214 "c:/Users/Lewis/Documents/SWLG-Paper/main.tex" "main.pdf" "main" 1795758221.69656 0
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1795216271 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1793386577 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/Lewis/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1793386578 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -221,8 +221,16 @@
   "figs/results/rq1/rq1_box_phases.png" 1795753446 330109 28d147616ff67b7e94805f3761c1d47f ""
   "figs/results/rq1/rq1_box_phases.tex" 1795752374 710 59ad5e5af5c36a3955ce7ae91ecf953e ""
   "figs/results/rq1/rq1_box_phases_table.tex" 1795755677 2577 b99c4a15c60ece7e78a3807a72609ecb ""
-  "main.aux" 1795755837 14126 cf6aa73e04985d95b643381f4c832c5a "pdflatex"
-  "main.bbl" 1795755681 27430 82289da1968349e2997568a4e63509d9 "bibtex main"
+  "figs/results/rq1/rq1_levene_nophases.png" 1795757741 200384 58991e33865f66b3420951bc8edd10f9 ""
+  "figs/results/rq1/rq1_levene_nophases.tex" 1795757830 244 8501ff564486e2829292747b6ecc4448 ""
+  "figs/results/rq1/rq1_levene_phases.png" 1795757742 201156 e1b10b6bebd83af47c596f85a0c158a9 ""
+  "figs/results/rq1/rq1_levene_phases.tex" 1795757830 237 a6211a1e7ee9d4657ba318984cef3655 ""
+  "figs/results/rq1/rq1_welch_nophases.png" 1795757389 197516 845d4ec4c3922fb4394595c32a8c6ceb ""
+  "figs/results/rq1/rq1_welch_nophases.tex" 1795756993 245 308da3d512e8992371bc26a96dc1ad13 ""
+  "figs/results/rq1/rq1_welch_phases.png" 1795757389 197871 21f35487ac63f253cb44cbbf1d96159d ""
+  "figs/results/rq1/rq1_welch_phases.tex" 1795756966 238 cb81884464f95edc037459f1f8450f93 ""
+  "main.aux" 1795758221 14396 45d01b89a8f82bedf0e19360fee191c7 "pdflatex"
+  "main.bbl" 1795758217 27430 82289da1968349e2997568a4e63509d9 "bibtex main"
   "main.tex" 1795744689 1659 660503249906f288eed6c71e8b4193af ""
   "text/abstract.tex" 1795052657 20 1dc04139a615819eb415c78705704f15 ""
   "text/approach.tex" 1795746399 16456 3db99de1900f0e0248c373568afb4bee ""
@@ -232,7 +240,7 @@
   "text/introduction.tex" 1795069157 3992 9dd596c8fa407ba11ed0d30ffd990a99 ""
   "text/plain_english_summary.tex" 1793386359 0 d41d8cd98f00b204e9800998ecf8427e ""
   "text/related_work.tex" 1793387037 923 c7a72da1ae9ffd47a707cf813be66c8b ""
-  "text/results.tex" 1795755833 2013 f73d9a313663e08ed8ef9462024deb39 ""
+  "text/results.tex" 1795758212 2787 bf53a8d273d3b03f9dfd40ddfe29b1c8 ""
   (generated)
   "main.aux"
   "main.log"

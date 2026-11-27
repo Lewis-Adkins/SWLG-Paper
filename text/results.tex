@@ -17,6 +17,15 @@ that advantage disappears.
 Over the distirbution all other models  appears to perform relatively equivalent to the persistence model. Despoite te complex regressive training from the machine learning models a now cast of the proton flux is 
 indistinguishable. The parameter size of the models and the limited SEP event dataset 
 play a role in the model performance. Table \ref{tab:rq1_box_nophases} and Table \ref{tab:rq1_box_phases} displays the bootstrap mean and standard error of all metrics.    
-Bold values are the best mean metric results in that category
+Bold values are the best mean metric results in that category.
 \input{figs/results/rq1/rq1_box_phases_table.tex}
 \input{figs/results/rq1/rq1_box_nophases_table.tex}
+To make a definitive statement on the effectivness of the forecasting models, Figure \ref{fig:rq1_welch_nophases} and Figure \ref{fig:rq1_box_phases} show the results of a one sided $t$ test. Each box is colored either red or green to indicate whether the model 
+performs on average better than persistence.The values inside are the reported $p$ values.
+\input{figs/results/rq1/rq1_welch_nophases.tex}
+\input{figs/results/rq1/rq1_welch_phases.tex}
+All models hardly ever beat persistence. Posner $p$ value is alwyas $\approx$ 1.00 which indicates its significantly worse.
+The only advantage some models have is lag.
+\input{figs/results/rq1/rq1_levene_phases.tex}
+\input{figs/results/rq1/rq1_levene_nophases.tex}
+no model is more consistent than peristence cause they suck.
