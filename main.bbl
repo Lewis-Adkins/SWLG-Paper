@@ -794,39 +794,6 @@ Lavasa, E.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Lim%
-, Ar{\i}k%
-, Loeff%
-\BCBL {}\ \BBA {} Pfister%
-}{%
-Lim%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
-}]{%
-lim2021tft}
-\APACinsertmetastar {%
-lim2021tft}%
-\begin{APACrefauthors}%
-Lim, B.%
-, Ar{\i}k, S\BPBI {\"O}.%
-, Loeff, N.%
-\BCBL {}\ \BBA {} Pfister, T.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Temporal Fusion Transformers for Interpretable
-  Multi-horizon Time Series Forecasting} {Temporal fusion transformers for
-  interpretable multi-horizon time series forecasting}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{International Journal of
-  Forecasting}{37}{4}{1748--1764}.
-\newblock
-\begin{APACrefDOI} \doi{10.1016/j.ijforecast.2021.03.012} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Müller-Mellin%
 \ \protect \BOthers {.}}{%
 Müller-Mellin%
@@ -1471,45 +1438,11 @@ Zhao, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-H.~Zhou%
-\ \protect \BOthers {.}}{%
-H.~Zhou%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
-}]{%
-zhou2021informer}
-\APACinsertmetastar {%
-zhou2021informer}%
-\begin{APACrefauthors}%
-Zhou, H.%
-, Zhang, S.%
-, Peng, J.%
-, Zhang, S.%
-, Li, J.%
-, Xiong, H.%
-\BCBL {}\ \BBA {} Zhang, W.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Informer: Beyond Efficient Transformer for Long Sequence
-  Time-Series Forecasting} {Informer: Beyond efficient transformer for long
-  sequence time-series forecasting}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Proceedings of the AAAI Conference on Artificial
-  Intelligence} {Proceedings of the aaai conference on artificial
-  intelligence}\ (\BVOL~35, \BPGS\ 11106--11115).
-\newblock
-\begin{APACrefDOI} \doi{10.1609/aaai.v35i12.17325} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Y.~Zhou%
+Zhou%
 , Zhu%
 \BCBL {}\ \BBA {} Wong%
 }{%
-Y.~Zhou%
+Zhou%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2023}}%
 }]{%

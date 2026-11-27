@@ -3,22 +3,20 @@
 
 \textbf{SEP ML Forecasting}
 Machine learning has been applied to SEP forecasting mainly as an event-occurrence problem, using solar-source precursors.
-\citeA{boubrahimi2017prediction} treated GOES proton and X-ray fluxes as multivariate time series and used interpretable decision trees to predict $>100$ MeV SEP events,
-finding that the correlation between proton and X-ray channels is an early precursor.
-\citeA{engell2017sprints} developed SPRINTS, which forecasts SEP events from GOES X-ray flare metadata using expert-guided, statistical, and machine-learned decision tree models.
-\citeA{laurenza2018esperta} adapted the ESPERTA empirical model, which uses flare location, soft X-ray fluence, and 1 MHz radio fluence, to provide short-term warnings of moderate-to-extreme solar proton events.
+\citeA{boubrahimi2017prediction} used other satellites  like GOES and their proton and X-ray fluxes data as multivariate time series for a  interpretable decision trees to predict $>100$ MeV SEP events
+\citeA{engell2017sprints} developed SPRINTS, which also uses GOES X-ray flare metadata using statistical, and machine-learned decision tree models.
+\citeA{laurenza2018esperta} adapted the ESPERTA empirical model, using flare location, soft X-ray fluence, and 1 MHz radio fluence, providing short-term warnings of moderate-to-extreme solar proton events.
 \citeA{aminalragia2021sep} trained neural networks on GOES soft X-ray measurements of solar flares to predict whether a flare would be followed by an SEP event.
-\citeA{lavasa2021predictability} treated SEP prediction as an imbalanced binary classification problem and compared several machine learning methods on flare and coronal mass ejection data, finding CME speed,
-CME width, and flare soft X-ray fluence to be the most informative features. \citeA{kasapis2022interpretable} used support vector machines and regression models on active region magnetograms from SOHO/MDI
+\citeA{lavasa2021predictability} treated SEP prediction as a is happening/ is not happening result and compared several machine learning methods on flare and coronal mass ejection data. CME speed,
+CME width, and flare soft X-ray fluence were concluded to be informative features. \citeA{kasapis2022interpretable} used support vector machines and regression models on active region magnetograms from SOHO/MDI
 to forecast SEP events during Solar Cycle 23. These studies predict whether an event will occur from solar-source precursors, using decision trees, support vector machines,
 ensembles, and feedforward neural networks. In contrast, this study forecasts the time profile of the >10 MeV proton flux from relativistic electrons measured in situ at L1
 \cite{posner2007forecasting,torres2025machine},
 and evaluates attention-based transformer architectures, which have not been applied to this task.
 
 \textbf{Time Series Transformer Applications}
-Since their introduction for machine translation \cite{vaswani2017attention}, transformers have been adapted to time series forecasting across many domains \cite{zhao2026transformersurvey}.
-Early forecasting variants focused on interpretability and efficiency: the Temporal Fusion Transformer combines gated variable selection with multi-head attention to produce interpretable multi-step forecasts \cite{lim2021tft}, Informer reduces the cost of self-attention from $O(L^2)$ to $O(L\log L)$ for long input sequences \cite{zhou2021informer},
-and the Time Series Transformer uses learnable positional encodings with unsupervised pre-training to perform well when data are scarce \cite{zerveas2020transformer}.
+Since their introduction for machine translation \cite{vaswani2017attention}, transformers have been adapted to time series forecasting across many fields \cite{zhao2026transformersurvey}.
+Time Series Transformer uses learnable positional encodings with unsupervised pre-training to perform well when data are scarce \cite{zerveas2020transformer}.
 More recent models such as Chronos treat forecasting as a language-modeling task and pre-train on many datasets to forecast without task-specific training \cite{ansari2024chronos}.
 These architectures have been applied to stock market prediction, clinical and physiological monitoring, battery state-of-health estimation,
 and traffic flow forecasting \cite{cai2020traffictransformer,zhao2026transformersurvey}, but rarely to space weather.
@@ -26,5 +24,3 @@ Their advantage is not guaranteed, however. Simple baselines can match or beat t
 repeats the last observed value outperformed transformer models on exchange-rate data \cite{zeng2022transformers},
 and transformers tend to overfit when training data are limited \cite{zhao2026transformersurvey}.
 \citeA{zhao2026transformersurvey} further note that their performance depends strongly on the choice of positional encoding.
-These findings motivate the comparison in this study, which evaluates three positional encodings against persistence and other baselines
-on a small set of 39 SEP events.
