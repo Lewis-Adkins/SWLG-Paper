@@ -1,34 +1,12 @@
 \section{Approach}
 \label{sec:approach}
-We propose seven time series transformers of different architectures to forecast proton intensities from preceding relativistic electrons.
-A transformer is a deep learning architecture that was first introduced in 2017 \cite{vaswani2017attention} as an improvement to previous machine learning models.
-We test this by using a window of electron and proton intensities to make future proton predictions.
-Current transformer models have been appealing as to researchers as they have the ability to capture long range dependencies and scale effectively with large dataset.
-This makes them suitable  for our challenge of  time series forecasting with multi horizon demand predictions.\cite{zhao2026transformersurvey}.
-We make a selection of transformer models of different architectures to model our incoming proton intensity flux. 
 
-Section \ref{sec:input} will discuss the time time series dates and characteristics.
-Section \ref{sec:transformer} outline our transformer approach and compare the architectures with \cite{torres2025machine}.
-In Section \ref{sec:positionalencodingmethods}, we will explain each of the used architectures in our study.
 
+ 
 \subsection{Input}
-\label{sec:input}
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{figs/approach/input/data_overview_single.png}
-    \caption{SOHO COSTEP-EPHIN dataset from 1995-2002}
-    \label{fig:data_overview_single}
-\end{figure}
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{figs/approach/input/data_overview.png}
-    \caption{SOHO COSTEP-EPHIN dataset from 1995-2002}
-    \label{fig:data_overview}
-\end{figure}
-
 The input data  is obtained from the Comprehensive Suprathermal and Energetic Particle Analyzer - Electron Proton Helium Instrument (COSTEP-EPHIN)  on the Solar and Heliospheric Observatory (SOHO) located at Lagrange Point 1 (L1) \cite{SOHOCOSTEPEPHINCDFPT1M}.
+
+
 The main features we will be using to make are proton flux predictions are two electron intensities channels $\geq$0.25 and $\geq$0.67 MeV and the current proton intensity channel $\geq$10 MeV \cite{mullermellin1995costep}.
 In total, the number of timestamped fluxes is $\approx 600,000$ entries.
 The resultant proton channel has been integrated across several channels and interpolated using the power-law spectrum.
@@ -117,5 +95,3 @@ Commonly, small near zero initializations sampled with normal distributions were
 Most timestamps in the relatively small proton electron flux dataset are near zero background values.
 A larger starting weights already has background information included leading to forecasting more background in the future during the early portion of training.
 Its not until after rounds of epochs to unlearn patterns are to finally map where spikes in fluxes start to occur in order to make accurate predictions.
-
-\subsection{Auto-Gluon}
